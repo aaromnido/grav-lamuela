@@ -2,13 +2,13 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-lamuela-dev/user/config/system.yaml',
-    'modified' => 1471162498,
+    'modified' => 1472747503,
     'data' => [
         'home' => [
             'alias' => '/blog'
         ],
         'pages' => [
-            'theme' => 'antimatter',
+            'theme' => 'opentown',
             'process' => [
                 'markdown' => true,
                 'twig' => false
