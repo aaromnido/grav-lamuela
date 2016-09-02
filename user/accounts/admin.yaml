@@ -4,8 +4,9 @@ title: Webmaster
 state: enabled
 access:
   admin:
-    login: true
-    super: true
+    login: 'true'
+    super: 'true'
   site:
-    login: true
-hashed_password: $2y$10$OP3Y6.xYyDZ5wyik1dY7D.Kiu0iqR39orKQEiRdsbVjzmgaNzBHha
+    login: 'true'
+hashed_password: $2y$10$s6BpLQt0Y3KCnIcV7XEsUuPuzBsI3MkngLaPB6fQPltjjmMaexqba
+language: es

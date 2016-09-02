@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1472749706,
-    'checksum' => 'e6c6ed02b90f239da833e53cf6f0a35b',
+    'timestamp' => 1472798492,
+    'checksum' => 'f9824c077935b86c30c1a0c84bdd4dde',
     'files' => [
         'user/config' => [
             'media' => [
@@ -15,7 +15,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1471162498
+                'modified' => 1472798492
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -23,7 +23,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1472749578
+                'modified' => 1472798434
             ]
         ],
         'system/config' => [
@@ -621,10 +621,10 @@ return [
             ]
         ],
         'site' => [
-            'title' => 'Grav',
+            'title' => 'La Muela',
             'author' => [
-                'name' => 'Joe Bloggs',
-                'email' => 'joe@test.com'
+                'name' => 'Webmaster',
+                'email' => 'aaromnido@gmail.com'
             ],
             'taxonomies' => [
                 0 => 'category',
@@ -676,7 +676,7 @@ return [
         ],
         'system' => [
             'absolute_urls' => false,
-            'timezone' => '',
+            'timezone' => 'Europe/Madrid',
             'default_locale' => NULL,
             'param_sep' => ':',
             'wrapped_site' => false,
@@ -707,9 +707,9 @@ return [
                     'count' => 20
                 ],
                 'dateformat' => [
-                    'default' => NULL,
-                    'short' => 'jS M Y',
-                    'long' => 'F jS \\a\\t g:ia'
+                    'default' => 'd-m-Y H:i',
+                    'short' => 'd-m-y G:i',
+                    'long' => 'D, d M Y G:i:s'
                 ],
                 'publish_dates' => true,
                 'process' => [
@@ -746,7 +746,7 @@ return [
                 'etag' => false,
                 'vary_accept_encoding' => false,
                 'redirect_default_route' => false,
-                'redirect_default_code' => 301,
+                'redirect_default_code' => '301',
                 'redirect_trailing_slash' => true,
                 'ignore_files' => [
                     0 => '.DS_Store'
@@ -765,7 +765,7 @@ return [
                 ]
             ],
             'cache' => [
-                'enabled' => true,
+                'enabled' => false,
                 'check' => [
                     'method' => 'file'
                 ],
@@ -775,7 +775,7 @@ return [
                 'gzip' => false
             ],
             'twig' => [
-                'cache' => true,
+                'cache' => false,
                 'debug' => true,
                 'auto_reload' => true,
                 'autoescape' => false,
@@ -800,11 +800,11 @@ return [
                 ]
             ],
             'errors' => [
-                'display' => false,
+                'display' => true,
                 'log' => true
             ],
             'debugger' => [
-                'enabled' => false,
+                'enabled' => true,
                 'shutdown' => [
                     'close_connection' => true
                 ],
