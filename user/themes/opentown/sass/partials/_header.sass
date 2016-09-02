@@ -1,0 +1,74 @@
+.header
+    width: 100%
+
+    .logo,
+    .navbar,
+    .navigation
+        width: 100%
+        text-align: center
+        padding: 0 1rem
+
+    .wrapper
+        border: 1px solid lime
+        max-width: 1276px
+        margin: 0 auto
+        background: transparentize(white, 0.1) url(../images/header-top-bg.png) top center no-repeat
+        border: 1px solid transparent
+        margin-top: -1px
+
+    .navigation
+        display: flex !important
+        justify-content: space-between
+        border-bottom: 5px solid transparent
+        transition: all 0.8s
+        margin-bottom: 0
+        padding-bottom: calc(1rem - 3px)
+
+        li
+            list-style: none
+
+        a
+            color: $night
+            font-family: Lato
+            text-transform: uppercase
+            font-size: 16px
+            padding-bottom: 1rem
+            transition: all 0.4s ease-in
+
+        a:hover,
+        li.active a
+            border-bottom: 6px solid $night
+            color: $grey
+
+        li:nth-child(2) a
+            border-color: $blue
+        li:nth-child(3) a
+            border-color: $sky
+        li:nth-child(4) a
+            border-color: $red
+        li:nth-child(5) a
+            border-color: $green
+        li:nth-child(6) a
+            border-color: $yellow
+
+    .menu-btn
+        display: none
+
+    .logo
+        margin-top: 55px
+        margin-bottom: 40px
+
+        a
+            display: inline-block
+            width: 140px
+            height: 53px
+            background: url(../images/logo-main.png) center no-repeat
+            background-size: cover
+            text-indent: -9999px
+            transition: all 0.4 ease-in
+
+            &:hover
+                opacity: 0.85
+
+
+
