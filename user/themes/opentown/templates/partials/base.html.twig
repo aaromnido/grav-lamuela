@@ -41,23 +41,7 @@
 </head>
 <body id="top" class="{{ page.header.body_classes }}">
     <div id="sb-site">
-        {% block header %}
-        <header id="header">
-            <div id="logo">
-                <h3><a href="{{ base_url == '' ? '/' : base_url }}">{{ config.site.title }}</a></h3>
-            </div>
-            <div id="navbar">
-                {% block header_extra %}{% endblock %}
-                {% if config.plugins.langswitcher.enabled %}
-                {% include 'partials/langswitcher.html.twig' %}
-                {% endif %}
-                {% block header_navigation %}
-                {% include 'partials/navigation.html.twig' %}
-                {% endblock %}
-                <span class="panel-activation sb-toggle-left navbar-left menu-btn fa fa-bars"></span>
-            </div>
-        </header>
-        {% endblock %}
+        {% include 'partials/_header.html.twig' %}
 
         {% block showcase %}{% endblock %}
 
@@ -67,14 +51,7 @@
         </section>
         {% endblock %}
 
-        {% block footer %}
-        <footer id="footer">
-            <div class="totop">
-                <span><a href="#" id="toTop"><i class="fa fa-arrow-up"></i></a></span>
-            </div>
-            <p><a href="http://getgrav.org">Grav</a> was <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> by <a href="http://www.rockettheme.com">RocketTheme</a>.</p>
-        </footer>
-        {% endblock %}
+        {% include 'partials/_footer.html.twig' %}
     </div>
     <div class="sb-slidebar sb-left sb-width-thin">
         <div id="panel">
