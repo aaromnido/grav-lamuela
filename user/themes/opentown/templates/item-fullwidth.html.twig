@@ -1,0 +1,25 @@
+{% embed 'partials/base.html.twig' %}
+
+	{% block content %}
+	<div class="body-content">
+		<div class="body-content-picture">
+			{% for image in page.media.images %}
+			{{ image.cropZoom(1440, 740).html }}
+			{% endfor %}
+		</div>
+
+		<div class="wrapper">
+			<header class="blog-content-header">
+				<h1 class="p-name">{{ page.title }}</h1>
+			</header>
+
+			<div class="blog-content-item grid pure-g-r">
+				<div id="item" class="block pure-u-2-3 h-entry">
+					{% include 'partials/blog_item-fullwidth.html.twig' with {'blog':page.parent, 'truncate':false} %}
+				</div>
+			</div>
+		</div>
+	</div>
+	{% endblock %}
+
+{% endembed %}

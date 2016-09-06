@@ -14,14 +14,6 @@ p {
   color: #304255;
 }
 
-#body {
-  padding-top: 147px;
-}
-
-#body .blog-header {
-  padding: 16rem 1rem 4rem 1rem;
-}
-
 .header {
   width: 100%;
 }
@@ -35,9 +27,6 @@ p {
 }
 
 .header .wrapper {
-  border: 1px solid lime;
-  max-width: 1276px;
-  margin: 0 auto;
   background: rgba(255, 255, 255, 0.9) url(../images/header-top-bg.png) top center no-repeat;
   border: 1px solid transparent;
   margin-top: -1px;
@@ -112,4 +101,98 @@ p {
 
 .header .logo a:hover {
   opacity: 0.85;
+}
+
+#body {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+}
+
+.body-content {
+  background-repeat: no-repeat;
+  padding-top: 290px;
+  background-size: 100%;
+  position: relative;
+}
+
+.body-content .body-content-picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 1px solid transparent;
+}
+
+.body-content .body-content-picture img {
+  width: 100%;
+}
+
+.body-content .body-content-picture::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(48, 66, 85, 0.5);
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,ffffff+100 */
+  background: #2e3f52;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #2e3f52 0%, rgba(255, 255, 255, 0.01) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #2e3f52 0%, rgba(255, 255, 255, 0.01) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #2e3f52 0%, rgba(255, 255, 255, 0.01) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.body-content .wrapper {
+  position: relative;
+}
+
+.blog-content-header {
+  text-align: center;
+}
+
+.blog-content-header h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin-bottom: 1.5em;
+  text-shadow: 0 2px 0 #304255;
+  letter-spacing: 0.02rem;
+}
+
+.blog-content-item {
+  background: white;
+  padding: 60px 180px;
+}
+
+.blog-content-item h2 {
+  font-size: 38px;
+  color: #0F1B26;
+  line-height: 1.2em;
+  font-weight: 700;
+  letter-spacing: 0.01rem;
+}
+
+.blog-content-item .list-blog-date {
+  border-top: 1px solid #EFF1F3;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  text-align: left;
+}
+
+.blog-content-item .list-blog-date span {
+  font-size: 14px;
+  font-weight: 700;
+  color: #9DA9B3;
+}
+
+.wrapper {
+  max-width: 1060px;
+  margin: 0 auto;
 }
