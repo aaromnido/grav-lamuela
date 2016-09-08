@@ -1,0 +1,23 @@
+<article class="card card-new card-new-wide pictured highlighted {{ page.parent.title|underscorize }}">
+    <a href="{{ page.url }}">
+        <header class="picture">
+            {% set images = page.media.images %}
+
+    		{% if images %}
+    			{% for image in images %}
+    				{{ image.cropZoom(350, 340).html }}
+    			{% endfor %}
+    		{% else %}
+    			<img src="{{ url('theme://images/image-item-dummy.jpg') }}" alt="{{ page.title }}" />
+    		{% endif %}
+        </header>
+
+        <h4>{{ page.parent.title }}</h4>
+        <h3 class="title">{{ page.title }}</h3>
+
+        <footer class="footer">
+            <small class="date">{{ page.date|date("M j, Y")}}</small> |
+            <small class="font">{{ page.taxonomy.tag|first }}</small>
+        </footer>
+    </a>
+</article>

@@ -1,5 +1,6 @@
 ---
-title: Inicio
+title: 'Ayuntamiento de La Muela'
+menu: Inicio
 ---
 
-Home page
+## Está pasando en La Muela

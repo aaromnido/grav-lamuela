@@ -7,6 +7,8 @@
     margin-right: -1px
     position: relative
     transition: all 0.4s ease-in-out
+    max-width: 700px
+
     &::after
         content: ""
         position: absolute
@@ -52,9 +54,12 @@
         padding: 0
         z-index: 10
         position: relative
+        min-height: 2.5em
 
     .summary
         margin: 0.5em 0 0.5em 0
+        min-height: 4.1em
+
         em
             font-style: normal
 
@@ -62,6 +67,7 @@
             font-size: 16px
             line-height: 1.4rem
             color: darken($grey, 10%)
+            margin-top: 0
 
     .footer
         .date
@@ -78,6 +84,7 @@
             left: -5px
             height: $height
             width: calc(100% + 10px)
+            width: 800px
             z-index: 0
             overflow: hidden
             $color-top: transparentize(darken($night, 5%), 0.4)
@@ -91,7 +98,65 @@
                 position: absolute
                 top: 0
                 left: 0
+
     &:hover
         opacity: 0.9
         .picture::before
             opacity: 0.5
+
+    &.highlighted
+        $height: 120px
+        border: none
+        max-width: 351px
+        padding-top: $gutter * 3
+        min-height: $height * 2.55
+        background: $sky
+
+        &::after
+            content: "VER MÁS"
+            height: 50px
+            color: white
+            font-weight: 600
+            text-align: center
+            line-height: 50px
+            cursor: pointer
+
+        h3,
+        h4
+            position: relative
+            color: white
+            font-size: 22px
+        h3
+            min-height: 3.6em
+
+        h4
+            opacity: 0.8
+            font-size: 14px
+            text-transform: uppercase
+            font-weight: 600
+            color: lighten($blue, 35%)
+            color: white
+            background: $blue
+            display: inline-block
+            padding: 2px 6px
+            text-shadow: 0 0 0 2px $night
+
+        footer small
+            color: $grey-light !important
+
+        .picture
+            margin-left: 5px
+            height: $height * 2.2
+            &::before
+                @include gradient(transparentize($blue, 0.2), transparentize(darken($blue, 30%), 0.05))
+
+        &.prensa
+            h4
+                color: lighten($sky, 15%)
+                color: white
+                background: $sky
+
+            &::after
+                background-color: $sky
+            .picture::before
+                @include gradient(transparentize($sky, 0.2), transparentize(darken($sky, 40%), 0.05))

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import 'https://fonts.googleapis.com/css?family=Lato:100,300,400,700|Lora:400,700';
 body, h1, h2, h3, h4, h5, h6 {
   font-family: Lato;
@@ -30,6 +31,7 @@ p {
   background: rgba(255, 255, 255, 0.9) url(../images/header-top-bg.png) top center no-repeat;
   border: 1px solid transparent;
   margin-top: -1px;
+  background-size: 100%;
 }
 
 .header .navigation {
@@ -241,6 +243,7 @@ p {
   margin-right: -1px;
   position: relative;
   transition: all 0.4s ease-in-out;
+  max-width: 700px;
 }
 
 .card::after {
@@ -297,10 +300,12 @@ p {
   padding: 0;
   z-index: 10;
   position: relative;
+  min-height: 2.5em;
 }
 
 .card .summary {
   margin: 0.5em 0 0.5em 0;
+  min-height: 4.1em;
 }
 
 .card .summary em {
@@ -311,6 +316,7 @@ p {
   font-size: 16px;
   line-height: 1.4rem;
   color: #80909d;
+  margin-top: 0;
 }
 
 .card .footer .date {
@@ -328,6 +334,7 @@ p {
   left: -5px;
   height: 150px;
   width: calc(100% + 10px);
+  width: 800px;
   z-index: 0;
   overflow: hidden;
 }
@@ -359,8 +366,110 @@ p {
   opacity: 0.5;
 }
 
+.card.highlighted {
+  border: none;
+  max-width: 351px;
+  padding-top: 60px;
+  min-height: 306px;
+  background: #4ECBFA;
+}
+
+.card.highlighted::after {
+  content: "VER MÁS";
+  height: 50px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.card.highlighted h3,
+.card.highlighted h4 {
+  position: relative;
+  color: white;
+  font-size: 22px;
+}
+
+.card.highlighted h3 {
+  min-height: 3.6em;
+}
+
+.card.highlighted h4 {
+  opacity: 0.8;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #a2d0ee;
+  color: white;
+  background: #227FBB;
+  display: inline-block;
+  padding: 2px 6px;
+  text-shadow: 0 0 0 2px #304255;
+}
+
+.card.highlighted footer small {
+  color: #EFF1F3 !important;
+}
+
+.card.highlighted .picture {
+  margin-left: 5px;
+  height: 264px;
+}
+
+.card.highlighted .picture::before {
+  background: rgba(48, 66, 85, 0.5);
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,ffffff+100 */
+  background: rgba(34, 127, 187, 0.8);
+  /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(34, 127, 187, 0.8) 0%, rgba(10, 39, 58, 0.95) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(34, 127, 187, 0.8) 0%, rgba(10, 39, 58, 0.95) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(34, 127, 187, 0.8) 0%, rgba(10, 39, 58, 0.95) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.card.highlighted.prensa h4 {
+  color: #98e1fc;
+  color: white;
+  background: #4ECBFA;
+}
+
+.card.highlighted.prensa::after {
+  background-color: #4ECBFA;
+}
+
+.card.highlighted.prensa .picture::before {
+  background: rgba(48, 66, 85, 0.5);
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,ffffff+100 */
+  background: rgba(78, 203, 250, 0.8);
+  /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(78, 203, 250, 0.8) 0%, rgba(3, 89, 121, 0.95) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(78, 203, 250, 0.8) 0%, rgba(3, 89, 121, 0.95) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(78, 203, 250, 0.8) 0%, rgba(3, 89, 121, 0.95) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
 .page {
   min-height: 60vh;
+}
+
+.home h1 {
+  margin: 0;
+}
+
+.home .claim h2 {
+  color: #9DA9B3;
+  font-size: 28px;
+  margin-top: 0;
+  letter-spacing: 0.01rem;
+}
+
+.home .blog-content-item {
+  padding: 20px;
 }
 
 #body {
