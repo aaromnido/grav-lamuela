@@ -1,0 +1,22 @@
+{% embed 'partials/base.html.twig' %}
+
+	{% block content %}
+	<div class="body-content-list">
+		<div class="wrapper">
+			<div class="blog-content-list grid pure-g-r">
+				<div id="item" class="block pure-u-2-3 h-entry">
+					<div class="list-blog-header">
+				        <h2 class="p-name">{{ page.title }}</h2>
+						<div class="e-content">
+				            {{ page.content }}
+				        </div>
+				    </div>
+
+					{% include 'partials/blog_list.html.twig' with {'blog':page.parent, 'truncate':false} %}
+				</div>
+			</div>
+		</div>
+	</div>
+	{% endblock %}
+
+{% endembed %}

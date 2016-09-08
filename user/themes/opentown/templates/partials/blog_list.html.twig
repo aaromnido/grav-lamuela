@@ -1,0 +1,23 @@
+<div class="content-wrapper blog-content-list grid pure-g">
+    <div id="listing" class="block pure-u-2-3 h-feed">
+        {% for page in page.find('/noticias').children.order('date', 'desc').slice(0, 5) %}
+        <div class="card card-new card-new-wide">
+            <a href="{{ page.url }}">
+                <div class="body-content-picture">
+        			{% for image in page.media.images %}
+        			{{ image.cropZoom(680, 150).html }}
+        			{% endfor %}
+        		</div>
+
+                <h3 class="title">{{ page.title }}</h3>
+                <p>
+                    {{ page.summary(150) }}
+                </p>
+                <div class="footer">
+                    <small class="date">{{ page.date|date("M j, Y")}}</small>
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
