@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledLanguages',
-    'timestamp' => 1473353412,
-    'checksum' => '116c12bb12b25885ce4e3052b122f873',
+    'timestamp' => 1473369206,
+    'checksum' => '9784ca76c7990eda77d82ffc08ecf757',
     'files' => [
         'system/languages' => [
             'ar' => [
@@ -125,7 +125,7 @@ return [
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/languages.yaml',
-                'modified' => 1471162500
+                'modified' => 1473369201
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/languages.yaml',
@@ -4208,7 +4208,7 @@ Pfad: `%2$s`
             ],
             'PLUGIN_ERROR' => [
                 'ERROR' => 'Error',
-                'ERROR_MESSAGE' => 'Woops. Looks like this page doesn\'t exist.'
+                'ERROR_MESSAGE' => 'Lo siento, parece que esa página no existe'
             ],
             'PLUGIN_FORM' => [
                 'NOT_VALIDATED' => 'Form not validated. One or more required fields are missing.',
@@ -5082,6 +5082,10 @@ Path: `%2$s`
             'PLUGIN_EMAIL' => [
                 'PLEASE_CONFIGURE_A_TO_ADDRESS' => 'Por favor configura una dirección de \'remitente\' en la configuración del Plugin de Email o en el formulario',
                 'PLEASE_CONFIGURE_A_FROM_ADDRESS' => 'Por favor configura una dirección de \'destinatario\' en la configuración del Plugin de Email o en el formulario'
+            ],
+            'PLUGIN_ERROR' => [
+                'ERROR' => 'Error',
+                'ERROR_MESSAGE' => 'Woops. Looks like this page doesn\'t exist.'
             ],
             'PLUGIN_FORM' => [
                 'NOT_VALIDATED' => 'Falló la validación del formulario. Uno o más campos obligatorios no fueron cubiertos.',
@@ -15580,6 +15584,6 @@ Path: `%2$s`
                 6 => 'Chủ Nhật'
             ]
         ],
-        'checksum' => '116c12bb12b25885ce4e3052b122f873'
+        'checksum' => '9784ca76c7990eda77d82ffc08ecf757'
     ]
 ];
