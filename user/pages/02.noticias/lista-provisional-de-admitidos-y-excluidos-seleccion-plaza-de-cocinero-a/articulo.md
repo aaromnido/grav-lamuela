@@ -3,10 +3,8 @@ title: 'Lista provisional de admitidos y excluidos selección plaza de cocinero/
 metadata:
     Fuente: Ayuntamiento
 taxonomy:
-    category:
-        - Noticias
     tag:
-        - Destacado
+        - Bando
         - Empleo
 autor: yo
 ---

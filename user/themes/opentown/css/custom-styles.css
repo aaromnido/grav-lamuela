@@ -122,6 +122,10 @@ p {
   padding-top: 0;
 }
 
+.body-content-list .listing-featured #featured {
+  max-width: 50%;
+}
+
 .body-content-list .listing-featured .card .title {
   min-height: 2.4em;
 }
@@ -142,8 +146,16 @@ p {
   top: 0;
   left: 0;
   width: 100%;
-  border: 1px solid transparent;
-  background: #304255;
+  background: rgba(48, 66, 85, 0.5);
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,ffffff+100 */
+  background: #2e3f52;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #2e3f52 0%, rgba(255, 255, 255, 0.01) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #2e3f52 0%, rgba(255, 255, 255, 0.01) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #2e3f52 0%, rgba(255, 255, 255, 0.01) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   overflow: hidden;
 }
 
@@ -221,11 +233,12 @@ p {
 }
 
 .card {
-  border: 1px solid #EFF1F3;
+  border: 1px solid #d8dde2;
   background: white;
   overflow: hidden;
   padding: 30px 20px;
   margin-bottom: 20px;
+  margin-right: -1px;
   position: relative;
   transition: all 0.4s ease-in-out;
 }
@@ -241,7 +254,23 @@ p {
 }
 
 .card.noticias::after {
+  background: #227FBB;
+}
+
+.card.prensa::after {
   background: #4ECBFA;
+}
+
+.card.lamuela-tv::after {
+  background: #FF3A1F;
+}
+
+.card.el-municipio::after {
+  background: #37BA72;
+}
+
+.card.el-ayuntamiento::after {
+  background: #F59D00;
 }
 
 .card:hover {
@@ -274,6 +303,10 @@ p {
   margin: 0.5em 0 0.5em 0;
 }
 
+.card .summary em {
+  font-style: normal;
+}
+
 .card .summary p {
   font-size: 16px;
   line-height: 1.4rem;
@@ -297,6 +330,25 @@ p {
   width: calc(100% + 10px);
   z-index: 0;
   overflow: hidden;
+}
+
+.card.pictured .picture::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(48, 66, 85, 0.5);
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,ffffff+100 */
+  background: rgba(39, 53, 69, 0.6);
+  /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(39, 53, 69, 0.6) 0%, rgba(255, 255, 255, 0.01) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(39, 53, 69, 0.6) 0%, rgba(255, 255, 255, 0.01) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(39, 53, 69, 0.6) 0%, rgba(255, 255, 255, 0.01) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .page {

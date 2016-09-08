@@ -2,7 +2,7 @@
 title: Noticias
 sitemap:
     changefreq: monthly
-body_classes: 'list'
+body_classes: list
 content:
     items: '@self.children'
     order:

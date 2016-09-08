@@ -5,14 +5,13 @@
 	<div class="body-content-picture">
 		{% set images = page.media.images %}
 
-			{% if images %}
-				{% for image in images %}
-					{{ image.cropZoom(1440, 740).html }}
-				{% endfor %}
-			{% else %}
-				<img src="{{ url('theme://images/image-item-dummy.jpg') }}" alt="{{ page.title }}" />
-			{% endif %}
-
+		{% if images %}
+			{% for image in images %}
+				{{ image.cropZoom(1440, 740).html }}
+			{% endfor %}
+		{% else %}
+			<img src="{{ url('theme://images/image-item-dummy.jpg') }}" alt="{{ page.title }}" />
+		{% endif %}
 	</div>
 
 	<div class="wrapper">
