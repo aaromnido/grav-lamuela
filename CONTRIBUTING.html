@@ -1,0 +1,92 @@
+<h1 id="contributing-to-grav">Contributing to Grav</h1>
+<p>:+1::tada: First, thanks for getting involved with Grav! :tada::+1:</p>
+<p>Please take a moment to review this document in order to make the contribution
+process easy and effective for everyone involved.</p>
+<p>Following these guidelines helps to communicate that you respect the time of
+the developers managing and developing this open source project. In return,
+they should reciprocate that respect in addressing your issue or assessing
+patches and features.</p>
+<h2 id="grav-plugins-themes-and-skeletons">Grav, Plugins, Themes and Skeletons</h2>
+<p>Grav is a large open source project—it&#39;s made up of over 100 repositories. When you initially consider contributing to Grav, you might be unsure about which of those 200 repositories implements the functionality you want to change or report a bug for.</p>
+<p><a href="https://github.com/getgrav/grav">https://github.com/getgrav/grav</a> is the main Grav repository. The core of Grav is provided by this repo.</p>
+<p><a href="https://github.com/getgrav/grav-plugin-admin">https://github.com/getgrav/grav-plugin-admin</a> is the Admin Plugin repository.</p>
+<p>Every Plugin and Theme has its own repository. If you have a problem you think is specific to a Theme or Plugin, please report it in its corresponding repository. Please read the Plugin or Theme documentation to ensure the problem is not addressed there already.</p>
+<p>Every Skeleton also has its own repository, so if an issue is not specific to a theme or plugin but rather to its usage in the skeleton, report it in the skeleton repository.</p>
+<h2 id="using-the-issue-tracker">Using the issue tracker</h2>
+<p>The issue tracker is the preferred channel for <a href="#bugs">bug reports</a>,
+<a href="#features">features requests</a> and <a href="#pull-requests">submitting pull
+requests</a>, but please respect the following restrictions:</p>
+<ul>
+<li>Please <strong>do not</strong> use the issue tracker for support requests. Use
+<a href="http://getgrav.org/forum">the Forum</a> or <a href="https://gitter.im/getgrav/grav">the Gitter chat</a>.</li>
+</ul>
+<p><a name="bugs"></a></p>
+<h2 id="bug-reports">Bug reports</h2>
+<p>A bug is a <em>demonstrable problem</em> that is caused by the code in the repository.
+Good bug reports are extremely helpful - thank you!</p>
+<p>Guidelines for bug reports:</p>
+<ol>
+<li><p><strong>Check you satisfy the Grav requirements</strong> &mdash; <a href="http://learn.getgrav.org/basics/requirements">http://learn.getgrav.org/basics/requirements</a></p>
+</li>
+<li><p><strong>Check this happens on a clean Grav install</strong> &mdash; check if the issue happens on any Grav site, or just with a specific configuration of plugins / theme</p>
+</li>
+<li><p><strong>Use the GitHub issue search</strong> &mdash; check if the issue has already been
+reported.</p>
+</li>
+<li><p><strong>Check if the issue is already being solved in a PR</strong> &mdash; check the open Pull Requests to see if one already solves the problem you&#39;re having</p>
+</li>
+<li><p><strong>Check if the issue has been fixed</strong> &mdash; try to reproduce it using the
+latest <code>develop</code> branch in the repository.</p>
+</li>
+<li><p><strong>Isolate the problem</strong> &mdash; create a <a href="http://css-tricks.com/reduced-test-cases/">reduced test
+case</a> and provide a step-by-step instruction set on how to recreate the problem. Include code samples, page snippets or yaml configurations if needed.</p>
+</li>
+<li><p><strong>Check the problem on Grav 1.1</strong> &mdash; if you&#39;re using Grav 1.0, latest stable release, please also check if you can replicate the issue on Grav 1.1 RC as many bugs are already solved in the next Grav release.</p>
+</li>
+</ol>
+<p>A good bug report shouldn&#39;t leave others needing to chase you up for more
+information. Please try to be as detailed as possible in your report.</p>
+<p>What is your environment? Is it localhost, OSX, Linux, on a remote server? Same happening locally and or the server, or just locally or just on Linux?</p>
+<p>What steps will reproduce the issue? What browser(s) and OS experience the problem?</p>
+<p>What would you expect to be the outcome?</p>
+<p>Did the problem start happening recently (e.g. after updating to a new version of Grav) or was this always a problem?</p>
+<p>If the problem started happening recently, can you reproduce the problem in an older version of Grav? What&#39;s the most recent version in which the problem doesn&#39;t happen? You can download older versions of Grav from the releases page on Github.</p>
+<p>Can you reliably reproduce the issue? If not, provide details about how often the problem happens and under which conditions it normally happens.</p>
+<p>All these details will help people to fix any potential bugs.</p>
+<p>Important: <a href="https://help.github.com/articles/github-flavored-markdown/#fenced-code-blocks">include Code Samples in triple backticks</a> so that Github will provide a proper indentation. <a href="https://help.github.com/articles/github-flavored-markdown/#syntax-highlighting">Add the language name after the backticks</a> to add syntax highlighting to the code snippets.</p>
+<p>Example:</p>
+<blockquote>
+<p>Short and descriptive example bug report title</p>
+<p>A summary of the issue and the browser/OS environment in which it occurs. If
+suitable, include the steps required to reproduce the bug.</p>
+<ol>
+<li>This is the first step</li>
+<li>This is the second step</li>
+<li>Further steps, etc.
+&gt;
+Any other information you want to share that is relevant to the issue being
+reported. This might include the lines of code that you have identified as
+causing the bug, and potential solutions (and your opinions on their
+merits).</li>
+</ol>
+</blockquote>
+<p><a name="features"></a></p>
+<h2 id="feature-requests">Feature requests</h2>
+<p>Feature requests are welcome. But take a moment to find out whether your idea
+fits with the scope and aims of the project. It&#39;s up to <em>you</em> to make a strong
+case to convince the project&#39;s developers of the merits of this feature. Please
+provide as much detail and context as possible.</p>
+<p><a name="pull-requests"></a></p>
+<h2 id="pull-requests">Pull requests</h2>
+<p>Good pull requests - patches, improvements, new features - are a fantastic
+help. They should remain focused in scope and avoid containing unrelated
+commits.</p>
+<p><strong>Please ask first</strong> in Gitter or in the Forum before embarking on any significant pull request (e.g.
+implementing features, refactoring code..),
+otherwise you risk spending a lot of time working on something that the
+project&#39;s developers might not want to merge into the project.</p>
+<p>Please adhere to the coding conventions used throughout the project (indentation,
+accurate comments, etc.) and any other requirements.</p>
+<p>See <a href="https://help.github.com/articles/using-pull-requests/">Using Pull Request</a> and <a href="https://help.github.com/articles/fork-a-repo/">Fork a Repo</a> if you&#39;re not familiar with Pull Requests.</p>
+<p><strong>IMPORTANT</strong>: By submitting a patch, you agree to allow the project owner to
+license your work under the same license as that used by the project.</p>

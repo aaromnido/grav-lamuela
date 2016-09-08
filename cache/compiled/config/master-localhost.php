@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1473174557,
-    'checksum' => 'b1394bdf6a1182887c022684fb0a6291',
+    'timestamp' => 1473353145,
+    'checksum' => 'cda9fd080a29d63a7d93e653798b8ca6',
     'files' => [
         'user/config' => [
             'media' => [
@@ -29,19 +29,19 @@ return [
         'system/config' => [
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ]
         ],
         'user/plugins' => [
@@ -831,12 +831,14 @@ return [
                 'timeout' => 1800,
                 'name' => 'grav-site',
                 'secure' => false,
-                'httponly' => true
+                'httponly' => true,
+                'path' => NULL
             ],
             'gpm' => [
                 'releases' => 'stable',
                 'proxy_url' => NULL
-            ]
+            ],
+            'custom_base_url' => ''
         ],
         'security' => [
             'salt' => 'UmxlIEABCSok9W'

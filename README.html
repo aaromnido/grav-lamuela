@@ -1,0 +1,79 @@
+<h1 id="-https-avatars1-githubusercontent-com-u-8237355-v-2-s-50-grav"><img src="https://avatars1.githubusercontent.com/u/8237355?v=2&amp;s=50" alt=""> Grav</h1>
+<p><a href="https://insight.sensiolabs.com/projects/cfd20465-d0f8-4a0a-8444-467f5b5f16ad"><img src="https://insight.sensiolabs.com/projects/cfd20465-d0f8-4a0a-8444-467f5b5f16ad/mini.png" alt="SensioLabsInsight"></a> <a href="https://gitter.im/getgrav/grav?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/Join Chat.svg" alt="Gitter"></a> <a href="https://travis-ci.org/getgrav/grav"><img src="https://travis-ci.org/getgrav/grav.svg?branch=develop" alt="Build Status"></a></p>
+<p>Grav is a <strong>Fast</strong>, <strong>Simple</strong>, and <strong>Flexible</strong>, file-based Web-platform.  There is <strong>Zero</strong> installation required.  Just extract the ZIP archive, and you are already up and running.  It follows similar principles to other flat-file CMS platforms, but has a different design philosophy than most. Grav comes with a powerful <strong>Package Management System</strong> to allow for simple installation and upgrading of plugins and themes, as well as simple updating of Grav itself.</p>
+<p>The underlying architecture of Grav is designed to use well-established and <em>best-in-class</em> technologies to ensure that Grav is simple to use and easy to extend. Some of these key technologies include:</p>
+<ul>
+<li><a href="http://twig.sensiolabs.org/">Twig Templating</a>: for powerful control of the user interface</li>
+<li><a href="http://en.wikipedia.org/wiki/Markdown">Markdown</a>: for easy content creation</li>
+<li><a href="http://yaml.org">YAML</a>: for simple configuration</li>
+<li><a href="http://parsedown.org/">Parsedown</a>: for fast Markdown and Markdown Extra support</li>
+<li><a href="http://doctrine-orm.readthedocs.io/projects/doctrine-orm/en/latest/reference/caching.html">Doctrine Cache</a>: layer for performance</li>
+<li><a href="http://pimple.sensiolabs.org/">Pimple Dependency Injection Container</a>: for extensibility and maintainability</li>
+<li><a href="http://symfony.com/doc/current/components/event_dispatcher/introduction.html">Symfony Event Dispatcher</a>: for plugin event handling</li>
+<li><a href="http://symfony.com/doc/current/components/console/introduction.html">Symfony Console</a>: for CLI interface</li>
+<li><a href="https://github.com/Gregwar/Image">Gregwar Image Library</a>: for dynamic image manipulation</li>
+</ul>
+<h1 id="requirements">Requirements</h1>
+<ul>
+<li>PHP 5.5.9 or higher. Check the <a href="http://learn.getgrav.org/basics/requirements#php-requirements">required modules list</a></li>
+<li>Check the <a href="http://learn.getgrav.org/basics/requirements#apache-requirements">Apache</a> or <a href="http://learn.getgrav.org/basics/requirements#iis-requirements">IIS</a> requirements</li>
+</ul>
+<h1 id="quickstart">QuickStart</h1>
+<p>These are the options to get Grav:</p>
+<h3 id="downloading-a-grav-package">Downloading a Grav Package</h3>
+<p>You can download a <strong>ready-built</strong> package from the <a href="http://getgrav.org/downloads">Downloads page on http://getgrav.org</a></p>
+<h3 id="with-composer">With Composer</h3>
+<p>You can create a new project with the latest <strong>stable</strong> Grav release with the following command:</p>
+<pre><code>$ composer create-project getgrav/grav ~/webroot/grav
+</code></pre><h3 id="from-github">From GitHub</h3>
+<ol>
+<li><p>Clone the Grav repository from <a href="">https://github.com/getgrav/grav</a> to a folder in the webroot of your server, e.g. <code>~/webroot/grav</code>. Launch a <strong>terminal</strong> or <strong>console</strong> and navigate to the webroot folder:</p>
+<pre><code>$ cd ~/webroot
+$ git clone https://github.com/getgrav/grav.git
+</code></pre></li>
+<li><p>Install the <strong>plugin</strong> and <strong>theme dependencies</strong> by using the <a href="http://learn.getgrav.org/advanced/grav-cli">Grav CLI application</a> <code>bin/grav</code>:</p>
+<pre><code>$ cd ~/webroot/grav
+$ bin/grav install
+</code></pre></li>
+</ol>
+<p>Check out the <a href="http://learn.getgrav.org/basics/installation">install procedures</a> for more information.</p>
+<h1 id="adding-functionality">Adding Functionality</h1>
+<p>You can download <a href="http://getgrav.org/downloads/plugins">plugins</a> or <a href="http://getgrav.org/downloads/themes">themes</a> manually from the appropriate tab on the <a href="http://getgrav.org/downloads">Downloads page on http://getgrav.org</a>, but the preferred solution is to use the <a href="http://learn.getgrav.org/advanced/grav-gpm">Grav Package Manager</a> or <code>GPM</code>:</p>
+<pre><code>$ bin/gpm index
+</code></pre><p>This will display all the available plugins and then you can install one or more with:</p>
+<pre><code>$ bin/gpm install &lt;plugin/theme&gt;
+</code></pre><h1 id="updating">Updating</h1>
+<p>To update Grav you should use the <a href="http://learn.getgrav.org/advanced/grav-gpm">Grav Package Manager</a> or <code>GPM</code>:</p>
+<pre><code>$ bin/gpm selfupgrade
+</code></pre><p>To update plugins and themes:</p>
+<pre><code>$ bin/gpm update
+</code></pre><h1 id="contributing">Contributing</h1>
+<p>We appreciate any contribution to Grav, whether it is related to bugs, grammar, or simply a suggestion or improvement.
+However, we ask that any contributions follow our simple guidelines in order to be properly received.</p>
+<p>All our projects follow the <a href="http://nvie.com/posts/a-successful-git-branching-model/">GitFlow branching model</a>, from development to release. If you are not familiar with it, there are several guides and tutorials to make you understand what it is about.</p>
+<p>You will probably want to get started by installing <a href="https://github.com/nvie/gitflow">this very good collection of git extensions</a>.</p>
+<p>What you mainly want to know is that:</p>
+<ul>
+<li>All the main activity happens in the <code>develop</code> branch. Any pull request should be addressed only to that branch. We will not consider pull requests made to the <code>master</code>.</li>
+<li>It&#39;s very well appreciated, and highly suggested, to start a new feature whenever you want to make changes or add functionalities. It will make it much easier for us to just checkout your feature branch and test it, before merging it into <code>develop</code></li>
+</ul>
+<h1 id="getting-started">Getting Started</h1>
+<ul>
+<li><a href="http://learn.getgrav.org/basics/what-is-grav">What is Grav?</a></li>
+<li><a href="http://learn.getgrav.org/basics/installation">Install</a> Grav in few seconds</li>
+<li>Understand the <a href="http://learn.getgrav.org/basics/grav-configuration">Configuration</a></li>
+<li>Take a peek at our available free <a href="http://getgrav.org/downloads/skeletons">Skeletons</a></li>
+<li>If you have questions, jump on our <a href="https://gitter.im/getgrav/grav">Gitter Room</a>!</li>
+<li>Have fun!</li>
+</ul>
+<h1 id="exploring-more">Exploring More</h1>
+<ul>
+<li>Have a look at our <a href="http://learn.getgrav.org/basics/basic-tutorial">Basic Tutorial</a></li>
+<li>Dive into more <a href="http://learn.getgrav.org/advanced">advanced</a> functions</li>
+</ul>
+<h1 id="license">License</h1>
+<p>See <a href="LICENSE.txt">LICENSE</a></p>
+<h1 id="running-tests">Running Tests</h1>
+<p>First install the dev dependencies by running <code>composer update</code> from the Grav root.
+Then <code>composer test</code> will run the Unit Tests, which should be always executed successfully on any site.</p>
+<p>You can also run a single unit test file, e.g. <code>composer test tests/unit/Grav/Common/AssetsTest.php</code></p>

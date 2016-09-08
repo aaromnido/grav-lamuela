@@ -1,25 +1,25 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1473174557,
-    'checksum' => 'fb6b739356d02384d8c23a4f1ee676e8',
+    'timestamp' => 1473353145,
+    'checksum' => '527d93f7bf3a8c3255b4e7e325628d35',
     'files' => [
         'system/blueprints/config' => [
             'media' => [
                 'file' => 'system/blueprints/config/media.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ],
             'site' => [
                 'file' => 'system/blueprints/config/site.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ],
             'streams' => [
                 'file' => 'system/blueprints/config/streams.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ],
             'system' => [
                 'file' => 'system/blueprints/config/system.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ]
         ],
         'user/plugins' => [
@@ -476,8 +476,9 @@ return [
                 'label' => 'PLUGIN_ADMIN.REDIRECT_DEFAULT_CODE',
                 'options' => [
                     301 => '301 - Permanent',
+                    302 => '302 - Found',
                     303 => '303 - Other',
-                    307 => '307 - Temporary'
+                    304 => '304 - Not Modified'
                 ],
                 'name' => 'system.pages.redirect_default_code',
                 'validation' => 'loose'
@@ -1471,6 +1472,13 @@ return [
                 'name' => 'system.session.httponly',
                 'validation' => 'loose'
             ],
+            'system.session.path' => [
+                'type' => 'text',
+                'size' => 'small',
+                'label' => 'PLUGIN_ADMIN.SESSION_PATH',
+                'name' => 'system.session.path',
+                'validation' => 'loose'
+            ],
             'system.gpm' => [
                 'type' => '_parent',
                 'name' => 'system.gpm',
@@ -1561,6 +1569,13 @@ return [
                     'type' => 'bool'
                 ],
                 'name' => 'system.force_ssl',
+                'validation' => 'loose'
+            ],
+            'system.custom_base_url' => [
+                'type' => 'text',
+                'size' => 'medium',
+                'label' => 'PLUGIN_ADMIN.CUSTOM_BASE_URL',
+                'name' => 'system.custom_base_url',
                 'validation' => 'loose'
             ],
             'system.advanced' => [
@@ -3674,7 +3689,8 @@ return [
                     'timeout' => 'system.session.timeout',
                     'name' => 'system.session.name',
                     'secure' => 'system.session.secure',
-                    'httponly' => 'system.session.httponly'
+                    'httponly' => 'system.session.httponly',
+                    'path' => 'system.session.path'
                 ],
                 'advanced' => 'system.advanced',
                 'gpm' => [
@@ -3685,7 +3701,8 @@ return [
                 'wrapped_site' => 'system.wrapped_site',
                 'absolute_urls' => 'system.absolute_urls',
                 'param_sep' => 'system.param_sep',
-                'force_ssl' => 'system.force_ssl'
+                'force_ssl' => 'system.force_ssl',
+                'custom_base_url' => 'system.custom_base_url'
             ],
             'plugins' => [
                 'admin' => [
