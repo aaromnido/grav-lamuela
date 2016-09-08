@@ -5,11 +5,11 @@ sitemap:
 body_classes: 'header-image fullwidth'
 content:
     items: '@self.children'
-    limit: 5
     order:
         by: date
         dir: desc
     pagination: true
+    limit: 5
     url_taxonomy_filters: true
 blog_url: blog
 feed:

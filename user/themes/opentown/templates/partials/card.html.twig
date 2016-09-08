@@ -1,0 +1,18 @@
+<div class="card card-new card-new-wide">
+    <a href="{{ page.url }}">
+        <div class="body-content-picture">
+            {% for image in page.media.images %}
+            {{ image.cropZoom(680, 150).html }}
+            {% endfor %}
+        </div>
+
+        <h3 class="title">{{ page.title }}</h3>
+        <p>
+            {{ page.summary(150) }}
+        </p>
+        <div class="footer">
+            <small class="date">{{ page.date|date("M j, Y")}}</small>
+            <small class="font">{{ page.autor }}</small>
+        </div>
+    </a>
+</div>
