@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Lato:400,700|Lora:400,700';
+@import 'https://fonts.googleapis.com/css?family=Lato:100,300,400,700|Lora:400,700';
 body, h1, h2, h3, h4, h5, h6 {
   font-family: Lato;
   color: #304255;
@@ -103,6 +103,33 @@ p {
   opacity: 0.85;
 }
 
+.body-content-list {
+  background: url(../images/list-bg.png) top center repeat-x;
+}
+
+.body-content-list .p-name {
+  font-weight: 300;
+  padding: 0;
+  line-height: 1em;
+  margin: 80px 0 0.5rem 0;
+}
+
+.body-content-list .e-content p {
+  font-size: 16px;
+  font-family: Lato;
+  color: #80909d;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.body-content-list .listing-featured .card .title {
+  min-height: 2.4em;
+}
+
+.body-content-list .listing {
+  margin: 0 auto 20px auto;
+}
+
 .body-content {
   background-repeat: no-repeat;
   padding-top: 290px;
@@ -116,6 +143,8 @@ p {
   left: 0;
   width: 100%;
   border: 1px solid transparent;
+  background: #304255;
+  overflow: hidden;
 }
 
 .body-content .body-content-picture img {
@@ -189,6 +218,85 @@ p {
 .wrapper {
   max-width: 1060px;
   margin: 0 auto;
+}
+
+.card {
+  border: 1px solid #EFF1F3;
+  background: white;
+  overflow: hidden;
+  padding: 30px 20px;
+  margin-bottom: 20px;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: #227FBB;
+}
+
+.card.noticias::after {
+  background: #4ECBFA;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px #4ECBFA;
+  border: 1px solid #4ECBFA;
+}
+
+.card .picture {
+  display: none;
+}
+
+.card .title,
+.card .summary,
+.card .footer {
+  position: relative;
+}
+
+.card .title {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.2em;
+  text-transform: none;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+  position: relative;
+}
+
+.card .summary {
+  margin: 0.5em 0 0.5em 0;
+}
+
+.card .summary p {
+  font-size: 16px;
+  line-height: 1.4rem;
+  color: #80909d;
+}
+
+.card .footer .date {
+  color: #80909d;
+}
+
+.card.pictured {
+  padding-top: 170px;
+}
+
+.card.pictured .picture {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -5px;
+  height: 150px;
+  width: calc(100% + 10px);
+  z-index: 0;
+  overflow: hidden;
 }
 
 #body {

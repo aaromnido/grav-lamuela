@@ -13,4 +13,4 @@ content:
     url_taxonomy_filters: true
 ---
 
-En esta sección se irán publicando todas aquellas noticias, novedades y avisos, que puedan ser de interés para los vecinos y vecinas de La Muela.
+Artículos y notas de prensa de interés para La Muela

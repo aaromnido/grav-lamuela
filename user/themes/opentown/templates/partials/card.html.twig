@@ -1,18 +1,18 @@
-<div class="card card-new card-new-wide">
+<article class="card card-new card-new-wide pictured {{ page.taxonomy.category|first|underscorize }}">
     <a href="{{ page.url }}">
-        <div class="body-content-picture">
+        <header class="picture">
             {% for image in page.media.images %}
-            {{ image.cropZoom(680, 150).html }}
+            {{ image.cropZoom(870, 250).html }}
             {% endfor %}
-        </div>
+        </header>
 
         <h3 class="title">{{ page.title }}</h3>
-        <p>
+        <div class="summary">
             {{ page.summary(150) }}
-        </p>
-        <div class="footer">
-            <small class="date">{{ page.date|date("M j, Y")}}</small>
-            <small class="font">{{ page.autor }}</small>
         </div>
+        <footer class="footer">
+            <small class="date">{{ page.date|date("M j, Y")}}</small> |
+            <small class="font">{{ page.taxonomy.tag|first }}</small>
+        </footer>
     </a>
-</div>
+</article>
