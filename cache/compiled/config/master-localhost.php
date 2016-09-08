@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1473353412,
-    'checksum' => '1eb8ab2455ade9b3fe632a628c10cd5a',
+    'timestamp' => 1473369757,
+    'checksum' => '6c2321c513bd82f62923c196ecf7a9ba',
     'files' => [
         'user/config' => [
             'media' => [
@@ -23,7 +23,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1472834131
+                'modified' => 1473369757
             ]
         ],
         'system/config' => [
@@ -689,9 +689,9 @@ return [
             'force_ssl' => false,
             'languages' => [
                 'supported' => [
-                    
+                    0 => 'es'
                 ],
-                'include_default_lang' => true,
+                'include_default_lang' => false,
                 'translations' => true,
                 'translations_fallback' => true,
                 'session_store_active' => false,
@@ -699,8 +699,8 @@ return [
                 'override_locale' => false
             ],
             'home' => [
-                'alias' => '/blog',
-                'hide_in_urls' => false
+                'alias' => '/inicio',
+                'hide_in_urls' => true
             ],
             'pages' => [
                 'theme' => 'opentown',

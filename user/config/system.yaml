@@ -1,21 +1,21 @@
 absolute_urls: false
 timezone: Europe/Madrid
-default_locale: null
 param_sep: ':'
 wrapped_site: false
 reverse_proxy_setup: false
 force_ssl: false
 languages:
-  supported: {  }
-  include_default_lang: true
+  supported:
+    - es
+  include_default_lang: false
   translations: true
   translations_fallback: true
   session_store_active: false
   http_accept_language: false
   override_locale: false
 home:
-  alias: /blog
-  hide_in_urls: false
+  alias: /inicio
+  hide_in_urls: true
 pages:
   theme: opentown
   order:
@@ -51,7 +51,6 @@ pages:
     - json
     - rss
     - atom
-  append_url_extension: ''
   expires: 604800
   last_modified: false
   etag: false
@@ -116,8 +115,6 @@ images:
 media:
   enable_media_timestamp: false
   upload_limit: 0
-  unsupported_inline_types: {  }
-  allowed_fallback_types: {  }
 session:
   enabled: true
   timeout: 1800
@@ -126,4 +123,3 @@ session:
   httponly: true
 gpm:
   releases: stable
-  proxy_url: null
