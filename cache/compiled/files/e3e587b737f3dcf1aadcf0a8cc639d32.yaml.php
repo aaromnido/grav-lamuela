@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-lamuela-dev/user/plugins/form/blueprints.yaml',
-    'modified' => 1472749560,
+    'modified' => 1473353339,
     'data' => [
         'name' => 'Form',
-        'version' => '1.3.2',
+        'version' => '2.0.1',
         'description' => 'Enables the forms handling',
         'icon' => 'check-square',
         'author' => [
@@ -20,7 +20,7 @@ return [
         'dependencies' => [
             0 => [
                 'name' => 'grav',
-                'version' => '~1.1'
+                'version' => '>=1.1.4'
             ]
         ],
         'form' => [
@@ -37,6 +37,25 @@ return [
                     ],
                     'validate' => [
                         'type' => 'bool'
+                    ]
+                ],
+                'general' => [
+                    'type' => 'section',
+                    'title' => 'PLUGIN_FORM.GENERAL',
+                    'fields' => [
+                        'built_in_css' => [
+                            'type' => 'toggle',
+                            'label' => 'PLUGIN_FORM.USE_BUILT_IN_CSS',
+                            'highlight' => 1,
+                            'default' => 1,
+                            'options' => [
+                                1 => 'Enabled',
+                                0 => 'Disabled'
+                            ],
+                            'validate' => [
+                                'type' => 'bool'
+                            ]
+                        ]
                     ]
                 ],
                 'files' => [

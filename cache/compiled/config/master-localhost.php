@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1473353145,
-    'checksum' => 'cda9fd080a29d63a7d93e653798b8ca6',
+    'timestamp' => 1473353412,
+    'checksum' => '1eb8ab2455ade9b3fe632a628c10cd5a',
     'files' => [
         'user/config' => [
             'media' => [
@@ -47,7 +47,7 @@ return [
         'user/plugins' => [
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1472749578
+                'modified' => 1473353369
             ],
             'plugins/archives' => [
                 'file' => 'user/plugins/archives/archives.yaml',
@@ -59,7 +59,7 @@ return [
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
-                'modified' => 1472749564
+                'modified' => 1473353349
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
@@ -71,11 +71,11 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1472749560
+                'modified' => 1473353339
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
-                'modified' => 1472749567
+                'modified' => 1473353352
             ],
             'plugins/pagination' => [
                 'file' => 'user/plugins/pagination/pagination.yaml',
@@ -83,7 +83,7 @@ return [
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
-                'modified' => 1471162502
+                'modified' => 1473353398
             ],
             'plugins/random' => [
                 'file' => 'user/plugins/random/random.yaml',
@@ -95,7 +95,7 @@ return [
             ],
             'plugins/simplesearch' => [
                 'file' => 'user/plugins/simplesearch/simplesearch.yaml',
-                'modified' => 1471162510
+                'modified' => 1473353412
             ],
             'plugins/sitemap' => [
                 'file' => 'user/plugins/sitemap/sitemap.yaml',
@@ -224,9 +224,14 @@ return [
             ],
             'form' => [
                 'enabled' => true,
+                'built_in_css' => true,
                 'files' => [
                     'multiple' => false,
-                    'destination' => '@self',
+                    'limit' => 10,
+                    'filesize' => 5,
+                    'destination' => 'self@',
+                    'avoid_overwriting' => false,
+                    'random_name' => false,
                     'accept' => [
                         0 => 'image/*'
                     ]

@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-lamuela-dev/user/plugins/simplesearch/blueprints.yaml',
-    'modified' => 1471162510,
+    'modified' => 1473353412,
     'data' => [
         'name' => 'SimpleSearch',
-        'version' => '1.8.0',
+        'version' => '1.9.0',
         'description' => 'Don\'t be fooled, the **SimpleSearch** plugin provides a **fast** and highly **configurable** way to search your content.',
         'icon' => 'search',
         'author' => [
