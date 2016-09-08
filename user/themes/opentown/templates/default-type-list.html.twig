@@ -1,0 +1,18 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+<div class="body-content-list page">
+	<div class="wrapper">
+		<div class="page-content grid pure-g-r">
+			<div class="pure-u-3-3 h-entry">
+				<div class="list-blog-header page-header">
+					<h2 class="p-name">{{ page.title }}</h2>
+					<div class="e-content">
+						{{ page.content }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
