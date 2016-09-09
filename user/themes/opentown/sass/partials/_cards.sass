@@ -16,13 +16,13 @@
         left: 0
         width: 100%
         height: 5px
-        background: $blue
+        background: $sky
 
     &.noticias::after
-        background: $blue
+        background: $sky
 
     &.prensa::after
-        background: $sky
+        background: $yellow
 
     &.lamuela-tv::after
         background: $red
@@ -105,6 +105,7 @@
             opacity: 0.5
 
     &.highlighted
+        $sky: darken($sky, 10%)
         $height: 120px
         border: none
         max-width: 351px
@@ -120,6 +121,7 @@
             text-align: center
             line-height: 50px
             cursor: pointer
+            background: $sky
 
         h3,
         h4
@@ -134,9 +136,8 @@
             font-size: 14px
             text-transform: uppercase
             font-weight: 600
-            color: lighten($blue, 35%)
             color: white
-            background: $blue
+            background: $sky
             display: inline-block
             padding: 2px 6px
             text-shadow: 0 0 0 2px $night
@@ -149,18 +150,18 @@
             margin-left: 5px
             height: $height * 2.2
             &::before
-                @include gradient(transparentize($blue, 0.2), transparentize(darken($blue, 30%), 0.05))
+                @include gradient(transparentize($sky, 0.2), transparentize(darken($sky, 40%), 0.05))
 
         &.prensa
             h4
-                color: lighten($sky, 15%)
+                color: lighten($yellow, 15%)
                 color: white
-                background: $sky
+                background: $yellow
 
             &::after
-                background-color: $sky
+                background-color: $yellow
             .picture::before
-                @include gradient(transparentize($sky, 0.2), transparentize(darken($sky, 40%), 0.05))
+                @include gradient(transparentize($yellow, 0.2), transparentize(darken($yellow, 30%), 0.05))
 
         &.video-gallery
             h4
