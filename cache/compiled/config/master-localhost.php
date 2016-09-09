@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1473369757,
-    'checksum' => '6c2321c513bd82f62923c196ecf7a9ba',
+    'timestamp' => 1473415439,
+    'checksum' => '135a3036c9d6828b641c36b3af590c66',
     'files' => [
         'user/config' => [
             'media' => [
@@ -104,6 +104,10 @@ return [
             'plugins/taxonomylist' => [
                 'file' => 'user/plugins/taxonomylist/taxonomylist.yaml',
                 'modified' => 1471162510
+            ],
+            'plugins/youtube' => [
+                'file' => 'user/plugins/youtube/youtube.yaml',
+                'modified' => 1473415439
             ]
         ]
     ],
@@ -369,6 +373,30 @@ return [
             'taxonomylist' => [
                 'enabled' => true,
                 'route' => '/blog'
+            ],
+            'youtube' => [
+                'enabled' => true,
+                'built_in_css' => true,
+                'add_editor_button' => true,
+                'player_parameters' => [
+                    'autoplay' => 0,
+                    'cc_load_policy' => 0,
+                    'color' => 'red',
+                    'controls' => 1,
+                    'disablekb' => 0,
+                    'enablejsapi' => 0,
+                    'fs' => 1,
+                    'hl' => '',
+                    'iv_load_policy' => 1,
+                    'loop' => 0,
+                    'modestbranding' => 0,
+                    'origin' => '',
+                    'playsinline' => 0,
+                    'rel' => 1,
+                    'showinfo' => 1,
+                    'vq' => 'default'
+                ],
+                'privacy_enhanced_mode' => false
             ]
         ],
         'media' => [
