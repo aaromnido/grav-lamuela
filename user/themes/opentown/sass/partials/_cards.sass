@@ -143,6 +143,7 @@
 
         footer small
             color: $grey-light !important
+            font-weight: 600
 
         .picture
             margin-left: 5px
@@ -160,3 +161,15 @@
                 background-color: $sky
             .picture::before
                 @include gradient(transparentize($sky, 0.2), transparentize(darken($sky, 40%), 0.05))
+
+        &.video-gallery
+            h4
+                background: $red
+            &::after
+                background-color: $red
+            .picture::before
+                @include gradient(transparentize($red, 0.2), transparentize(darken($red, 40%), 0.05))
+
+            iframe
+                width: 50%
+                height: 300px

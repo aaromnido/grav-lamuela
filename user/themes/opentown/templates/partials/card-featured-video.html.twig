@@ -1,0 +1,14 @@
+<article class="card card-new card-new-wide pictured highlighted video-gallery">
+    <a href="{{ featured_video.url }}" target="_blank">
+        <header class="picture video">
+            <iframe src="{{ featured_video.url }}" frameborder="0" allowfullscreen></iframe>
+        </header>
+
+        <h4>La Muela TV</h4>
+        <h3 class="title">{{ featured_video.title }}</h3>
+
+        <footer class="footer">
+            <small class="date">{{ featured_video.date|date("M j, Y") }}</small>
+        </footer>
+    </a>
+</article>

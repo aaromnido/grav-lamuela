@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-lamuela-dev/user/plugins/admin/blueprints/admin/pages/new.yaml',
-    'modified' => 1473353369,
+    'modified' => 1473442788,
     'data' => [
         'rules' => [
             'slug' => [
