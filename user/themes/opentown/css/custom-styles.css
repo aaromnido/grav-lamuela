@@ -472,6 +472,53 @@ p {
   padding: 20px;
 }
 
+.list-videos .card-video::after {
+  background: #FF3A1F;
+}
+
+.list-videos .video-featured {
+  padding: 0 60px;
+  margin-bottom: 20px;
+}
+
+.list-videos .video-featured .footer {
+  padding: 20px;
+}
+
+.list-videos .video-featured .card-video,
+.list-videos .video-featured .video,
+.list-videos .video-featured iframe {
+  min-width: 100%;
+  min-height: 35vw;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 0;
+}
+
+.video-list .video {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.video-list .video iframe {
+  height: 180px;
+  width: 118%;
+}
+
+.video-list .footer {
+  margin-top: 2em;
+}
+
+.video-list .footer h3 {
+  font-size: 20px;
+}
+
+.video-list .video-item:nth-child(1) {
+  display: none;
+}
+
 #body {
   padding-left: 0;
   padding-right: 0;
