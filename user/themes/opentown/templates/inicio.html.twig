@@ -31,14 +31,12 @@
 								</div>
 							{% endfor %}
 						{% endif %}
-
-
 					</div>
 				</div>
 				<div class="pure-u-2-6">
 					<div class="content-wrapper blog-content-list grid pure-g listing-featured">
-						{% set section = '/prensa' %}
-					    {% for page in page.find(section).children.order('date', 'desc').slice(0, 1) %}
+						{% set section = '/noticias' %}
+					    {% for page in page.find(section).children.order('date', 'desc').slice(4, 1) %}
 					        <div id="featured" class="pure-u-6-12-">
 					            {% include 'partials/card-highlighted.html.twig' %}
 					        </div>
@@ -47,8 +45,8 @@
 				</div>
 				<div class="pure-u-2-6">
 					<div class="content-wrapper blog-content-list grid pure-g listing-featured">
-						{% set section = '/noticias' %}
-					    {% for page in page.find(section).children.order('date', 'desc').slice(4, 1) %}
+						{% set section = '/prensa' %}
+					    {% for page in page.find(section).children.order('date', 'desc').slice(0, 1) %}
 					        <div id="featured" class="pure-u-6-12-">
 					            {% include 'partials/card-highlighted.html.twig' %}
 					        </div>
