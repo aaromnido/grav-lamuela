@@ -1,0 +1,367 @@
+<h1 id="v2-0-1">v2.0.1</h1>
+<h2 id="09-07-2016">09/07/2016</h2>
+<ol>
+<li><a href="#bugfix"></a><ul>
+<li>Fixed a backwards compatibility issue with Admin forms</li>
+</ul>
+</li>
+</ol>
+<h1 id="v2-0-0">v2.0.0</h1>
+<h2 id="09-07-2016">09/07/2016</h2>
+<ol>
+<li><a href="#new"></a><ul>
+<li>Forms now supports multiple forms per page!</li>
+<li>Access forms from any other page within the current page</li>
+<li>Instantiate forms directly in page content with Twig processing enabled</li>
+<li>New Twig function to get forms data from any other page</li>
+<li>Ability to use Twig in saved filename</li>
+<li>Reworked the <code>file</code> field. All files get uploaded via Ajax and are stored upon Submit. Fully backward compatible, <code>file</code> field now includes also a <code>limit</code> and <code>filesize</code> option. The former determines how many files are allowed to be uploaded when in combination with <code>multiple: true</code> (default: 10), the latter determines the file size limit (in MB) allowed for each file (default: 5MB)</li>
+</ul>
+</li>
+<li><a href="#improved"></a><ul>
+<li>Added several missing HTML5 form input field types <a href="https://github.com/getgrav/grav-plugin-form/issues/87">#87</a></li>
+<li>Added Support for CSS id in form definition</li>
+</ul>
+</li>
+</ol>
+<h1 id="v1-3-2">v1.3.2</h1>
+<h2 id="08-10-2016">08/10/2016</h2>
+<ol>
+<li><a href="#improved"></a><ul>
+<li>Added Romanian translation</li>
+</ul>
+</li>
+<li><a href="#bugfix"></a><ul>
+<li>Fixed an issue with Recaptcha secret throwing errors <a href="https://github.com/getgrav/grav-plugin-form/pull/84">#84</a></li>
+</ul>
+</li>
+</ol>
+<h1 id="v1-3-1">v1.3.1</h1>
+<h2 id="07-27-2016">07/27/2016</h2>
+<ol>
+<li><a href="#improved"></a><ul>
+<li>Added support for multiple emails in <code>email</code> field (add <code>multiple: true</code> to enable)</li>
+</ul>
+</li>
+<li><a href="#bugfix"></a><ul>
+<li>Fixed backward incompatibility with forms submission and data retrieval <a href="https://github.com/getgrav/grav/issues/933">getgrav/grav#933</a></li>
+</ul>
+</li>
+</ol>
+<h1 id="v1-3-0">v1.3.0</h1>
+<h2 id="07-14-2016">07/14/2016</h2>
+<ol>
+<li><a href="#improved"></a><ul>
+<li>When uploading a file through a form, if the file is already existing prepend the current day and time to the filename instead of overwriting it.</li>
+</ul>
+</li>
+</ol>
+<h1 id="v1-3-0-rc-4">v1.3.0-rc.4</h1>
+<h2 id="06-21-2016">06/21/2016</h2>
+<ol>
+<li><a href="#bugfix"></a><ul>
+<li>Fixed running on Grav 1.0.x</li>
+</ul>
+</li>
+</ol>
+<h1 id="v1-3-0-rc-3">v1.3.0-rc.3</h1>
+<h2 id="06-17-2016">06/17/2016</h2>
+<ol>
+<li><a href="#new"></a><ul>
+<li>Set hints for checkboxes options and allow field descriptions</li>
+</ul>
+</li>
+</ol>
+<h1 id="v1-3-0-rc-2">v1.3.0-rc.2</h1>
+<h2 id="06-08-2016">06/08/2016</h2>
+<ol>
+<li><a href="#new"></a><ul>
+<li>Allow to process Twig in a hidden field, by setting <code>evaluate: true</code></li>
+</ul>
+</li>
+</ol>
+<h1 id="v1-3-0-rc-1">v1.3.0-rc.1</h1>
+<h2 id="06-01-2016">06/01/2016</h2>
+<ol>
+<li><a href="#improved"></a><ul>
+<li>French updated</li>
+</ul>
+</li>
+</ol>
+<h1 id="v1-3-0-beta-6">v1.3.0-beta.6</h1>
+<h2 id="05-23-2016">05/23/2016</h2>
+<ol>
+<li><a href="#new"></a><ul>
+<li>Added support for advanced blueprint functionality in forms</li>
+<li>Added site-wide form options to set Google Captcha site + secret keys <a href="https://github.com/getgrav/grav-plugin-form/pull/34">#34</a></li>
+<li>Session-based &#39;flash&#39; storage of form for redirects <a href="https://github.com/getgrav/grav-plugin-form/issues/48">#48</a></li>
+<li>Added ability to <strong>append</strong> to file if you include a <code>process: save: body:</code> template attribute <a href="https://github.com/getgrav/grav-plugin-form/issues/65">#65</a></li>
+</ul>
+</li>
+<li><a href="#improved"></a><ul>
+<li>Support <code>keyname</code> form format like admin forms</li>
+<li>Added backwards compatibility for Captcha field</li>
+<li>Added &#39;markdown-notices&#39; style output for better errors</li>
+<li>Added <code>Forms::getValue()</code> method to retrieve values programatically</li>
+<li>Changed <code>datetime</code> form field to simply extend <code>text</code> until implemented</li>
+<li>Updated french language</li>
+</ul>
+</li>
+<li><a href="#bugfix"></a><ul>
+<li>Refactored the files upload logic</li>
+<li>Missing Language string</li>
+<li>Fixed errors not getting output</li>
+</ul>
+</li>
+</ol>
+<h1 id="v1-3-0-beta-5">v1.3.0-beta.5</h1>
+<h2 id="05-12-2016">05/12/2016</h2>
+<ol>
+<li><a href="#improved"></a><ul>
+<li>Moved form/field.html.twig file to the default folder, to be more easily extended in themes</li>
+</ul>
+</li>
+</ol>
+<h1 id="v1-3-0-beta-4">v1.3.0-beta.4</h1>
+<h2 id="05-04-2016">05/04/2016</h2>
+<ol>
+<li><a href="#new"></a><ul>
+<li>Added support for <code>prepend</code> and <code>append</code> field attributes for Text input</li>
+</ul>
+</li>
+</ol>
+<h1 id="v1-3-0-beta-3">v1.3.0-beta.3</h1>
+<h2 id="05-03-2016">05/03/2016</h2>
+<ol>
+<li><a href="#bugfix"></a><ul>
+<li>Fix for select field admin translation</li>
+</ul>
+</li>
+</ol>
+<h1 id="v1-3-0-beta-2">v1.3.0-beta.2</h1>
+<h2 id="04-27-2016">04/27/2016</h2>
+<ol>
+<li><a href="#bugfix"></a><ul>
+<li>Fix for autoescape in spacer and display form fields</li>
+<li>Fix issue with form reset action <a href="https://github.com/getgrav/grav-plugin-form/pull/66">#66</a></li>
+</ul>
+</li>
+</ol>
+<h1 id="v1-3-0-beta-1">v1.3.0-beta.1</h1>
+<h2 id="04-20-2016">04/20/2016</h2>
+<ol>
+<li><a href="#new"></a><ul>
+<li>Added the HTML5 <code>range</code> input field with <code>min</code> and <code>max</code> parameters</li>
+</ul>
+</li>
+<li><a href="#improved"></a><ul>
+<li>Allow to override classes in Form definition for the form element</li>
+<li>Add more blocks in the Form twig template, so classes can be overridden more easily in themes</li>
+<li>Reworked some fields to fit the new Admin</li>
+<li>Use <code>scope</code> for form fields to allow fields to be excluded from the data by adding <code>input@: false</code> to their definition</li>
+<li>Added german translation</li>
+<li>Allow to add inline Twig to the form message definition</li>
+</ul>
+</li>
+<li><a href="#bugfix"></a><ul>
+<li>Fixed the form action URL for home page forms</li>
+<li>Fix stopping form events propagation, correctly stop when one event is stopped</li>
+<li>Allow to translate the fields placeholders and the form message</li>
+<li>Fix captcha javascript function ordering. Also, render it in the site active language</li>
+<li>Support attribute <code>for=&quot;id&quot;</code> on label for checkbox</li>
+<li>Fix select fields with the multiple option enabled</li>
+<li>Fixed select options escaping with autoescape on - <a href="https://github.com/getgrav/grav-plugin-admin/issues/502">#502</a></li>
+</ul>
+</li>
+</ol>
+<h1 id="v1-2-2">v1.2.2</h1>
+<h2 id="02-11-2016">02/11/2016</h2>
+<ol>
+<li><a href="#bugfix"></a><ul>
+<li>Fixed case issue when including form file.</li>
+</ul>
+</li>
+</ol>
+<h1 id="v1-2-1">v1.2.1</h1>
+<h2 id="02-11-2016">02/11/2016</h2>
+<ol>
+<li><a href="#new"></a><ul>
+<li>Allow placeholder for <strong>select</strong> field</li>
+</ul>
+</li>
+<li><a href="#improved"></a><ul>
+<li>Use common language strings in blueprints</li>
+<li>Use <code>for</code> attribute in labels</li>
+<li>Improved <code>README.md</code></li>
+<li>Code lint</li>
+</ul>
+</li>
+<li><a href="#bugfix"></a><ul>
+<li>Moved <code>nl2br</code> to correct place or will break for arrays</li>
+</ul>
+</li>
+</ol>
+<h1 id="v1-2-0">v1.2.0</h1>
+<h2 id="01-06-2016">01/06/2016</h2>
+<ol>
+<li><a href="#bugfix"></a><ul>
+<li>Correctly merge the file field configuration</li>
+<li>restore full file information save</li>
+</ul>
+</li>
+</ol>
+<h1 id="v1-1-0">v1.1.0</h1>
+<h2 id="12-18-2015">12/18/2015</h2>
+<ol>
+<li><a href="#new"></a><ul>
+<li>Croatian translation</li>
+<li>Added id, style, and disabled options to select fields</li>
+</ul>
+</li>
+<li><a href="#improved"></a><ul>
+<li>Allow adding form labels and help text as lang strings</li>
+<li>Allow translating field content</li>
+<li>Allow translating button and checkbox labels</li>
+<li>Allow adding classes to the form field container with <code>field.outerclasses</code></li>
+<li>Updated French translation</li>
+</ul>
+</li>
+<li><a href="#bugfix"></a><ul>
+<li>Fixed error message on file upload</li>
+<li>Fixed overriding defaults for the file type in forms</li>
+</ul>
+</li>
+</ol>
+<h1 id="v1-0-3">v1.0.3</h1>
+<h2 id="12-11-2015">12/11/2015</h2>
+<ol>
+<li><a href="#improved"></a><ul>
+<li>Updated languages</li>
+<li>Allow an action to stop processing</li>
+</ul>
+</li>
+<li><a href="#bugfix"></a><ul>
+<li>Fix captcha validation</li>
+<li>Fix issue where Form was unsetting valid page</li>
+</ul>
+</li>
+</ol>
+<h1 id="v1-0-2">v1.0.2</h1>
+<h2 id="12-01-2015">12/01/2015</h2>
+<ol>
+<li><a href="#bugfix"></a><ul>
+<li>Fixed merge of defaults settings</li>
+<li>Support for arrays in <code>data.txt.twig</code></li>
+<li>Fixed blueprint for admin</li>
+</ul>
+</li>
+</ol>
+<h1 id="v1-0-1">v1.0.1</h1>
+<h2 id="12-01-2015">12/01/2015</h2>
+<ol>
+<li><a href="#new"></a><ul>
+<li>New <strong>file upload</strong> field</li>
+<li>Added modular form template</li>
+<li>Spanish translation</li>
+<li>Hungarian translation</li>
+<li>Italian translation</li>
+</ul>
+</li>
+</ol>
+<h1 id="v1-0-0">v1.0.0</h1>
+<h2 id="11-21-2015">11/21/2015</h2>
+<ol>
+<li><a href="#new"></a><ul>
+<li>Server-side validation of forms #11</li>
+<li>Added french translation</li>
+<li>Added <strong>nonce</strong> form security</li>
+</ul>
+</li>
+<li><a href="#improved"></a><ul>
+<li>Show a more meaningful error when the display page is not found</li>
+<li>Added links to learn site for form examples</li>
+<li>Label can be omitted</li>
+<li>Allow user to set the CSS class for buttons</li>
+</ul>
+</li>
+<li><a href="#bugfix"></a><ul>
+<li>Fixed multi-language forms</li>
+<li>Checkbox is translatable</li>
+<li>Minor fixes</li>
+</ul>
+</li>
+</ol>
+<h1 id="v0-6-0">v0.6.0</h1>
+<h2 id="10-21-2015">10/21/2015</h2>
+<ol>
+<li><a href="#bugfix"></a><ul>
+<li>Fixed for missing attributes in textarea field</li>
+<li>Fixed checkbox inputs</li>
+</ul>
+</li>
+</ol>
+<h1 id="v0-5-0">v0.5.0</h1>
+<h2 id="10-15-2015">10/15/2015</h2>
+<ol>
+<li><a href="#new"></a><ul>
+<li>New <code>operation</code> param to allow different file saving strategies</li>
+<li>Ability to add new file saving strategies</li>
+<li>Now calls a <code>process()</code> method during form processing</li>
+</ul>
+</li>
+<li><a href="#improved"></a><ul>
+<li>Added server-side captcha validation and removed front-end validation</li>
+<li>Allow <code>filename</code> instead of <code>prefix</code>, <code>format</code> + <code>extension</code></li>
+</ul>
+</li>
+<li><a href="#bugfix"></a><ul>
+<li>Fixed radio inputs</li>
+</ul>
+</li>
+</ol>
+<h1 id="v0-4-0">v0.4.0</h1>
+<h2 id="9-16-2015">9/16/2015</h2>
+<ol>
+<li><a href="#new"></a><ul>
+<li>PHP server-side form validation</li>
+<li>Added new Google Catpcha field with front-end validation</li>
+</ul>
+</li>
+<li><a href="#improved"></a><ul>
+<li>Add defaults for forms, moved from the themes to the Form plugin</li>
+<li>Store multi-line fields with line endings converted to HTML</li>
+</ul>
+</li>
+</ol>
+<h1 id="v0-3-0">v0.3.0</h1>
+<h2 id="9-11-2015">9/11/2015</h2>
+<ol>
+<li><a href="#improved"></a><ul>
+<li>Refactored all the forms fields</li>
+</ul>
+</li>
+</ol>
+<h1 id="v0-2-1">v0.2.1</h1>
+<h2 id="08-24-2015">08/24/2015</h2>
+<ol>
+<li><a href="#improved"></a><ul>
+<li>Translated tooltips</li>
+</ul>
+</li>
+</ol>
+<h1 id="v0-2-0">v0.2.0</h1>
+<h2 id="08-11-2015">08/11/2015</h2>
+<ol>
+<li><a href="#improved"></a><ul>
+<li>Disable <code>enable</code> in admin</li>
+</ul>
+</li>
+</ol>
+<h1 id="v0-1-0">v0.1.0</h1>
+<h2 id="08-04-2015">08/04/2015</h2>
+<ol>
+<li><a href="#new"></a><ul>
+<li>ChangeLog started...</li>
+</ul>
+</li>
+</ol>

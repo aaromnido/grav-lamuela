@@ -1,139 +1,139 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledLanguages',
-    'timestamp' => 1472801686,
-    'checksum' => '473e33892be50ec81d2ddc2dd52a959b',
+    'timestamp' => 1473369206,
+    'checksum' => '9784ca76c7990eda77d82ffc08ecf757',
     'files' => [
         'system/languages' => [
             'ar' => [
                 'file' => 'system/languages/ar.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ],
             'ca' => [
                 'file' => 'system/languages/ca.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ],
             'cs' => [
                 'file' => 'system/languages/cs.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ],
             'da' => [
                 'file' => 'system/languages/da.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ],
             'de' => [
                 'file' => 'system/languages/de.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ],
             'el' => [
                 'file' => 'system/languages/el.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ],
             'en' => [
                 'file' => 'system/languages/en.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ],
             'es' => [
                 'file' => 'system/languages/es.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ],
             'fi' => [
                 'file' => 'system/languages/fi.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ],
             'fr' => [
                 'file' => 'system/languages/fr.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ],
             'hr' => [
                 'file' => 'system/languages/hr.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ],
             'hu' => [
                 'file' => 'system/languages/hu.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ],
             'it' => [
                 'file' => 'system/languages/it.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ],
             'ja' => [
                 'file' => 'system/languages/ja.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ],
             'lt' => [
                 'file' => 'system/languages/lt.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ],
             'nb' => [
                 'file' => 'system/languages/nb.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ],
             'nl' => [
                 'file' => 'system/languages/nl.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ],
             'no' => [
                 'file' => 'system/languages/no.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ],
             'pl' => [
                 'file' => 'system/languages/pl.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ],
             'pt' => [
                 'file' => 'system/languages/pt.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ],
             'ro' => [
                 'file' => 'system/languages/ro.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ],
             'ru' => [
                 'file' => 'system/languages/ru.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ],
             'sk' => [
                 'file' => 'system/languages/sk.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ],
             'sv' => [
                 'file' => 'system/languages/sv.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ],
             'th' => [
                 'file' => 'system/languages/th.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ],
             'tr' => [
                 'file' => 'system/languages/tr.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ],
             'uk' => [
                 'file' => 'system/languages/uk.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ],
             'vi' => [
                 'file' => 'system/languages/vi.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ]
         ],
         'user/plugins' => [
             'plugins/email' => [
                 'file' => 'user/plugins/email/languages.yaml',
-                'modified' => 1472749564
+                'modified' => 1473353349
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/languages.yaml',
-                'modified' => 1471162500
+                'modified' => 1473369201
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/languages.yaml',
-                'modified' => 1472749560
+                'modified' => 1473353339
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/languages.yaml',
-                'modified' => 1472749567
+                'modified' => 1473353352
             ],
             'plugins/relatedpages' => [
                 'file' => 'user/plugins/relatedpages/languages.yaml',
@@ -141,133 +141,133 @@ return [
             ],
             'plugins/simplesearch' => [
                 'file' => 'user/plugins/simplesearch/languages.yaml',
-                'modified' => 1471162510
+                'modified' => 1473353412
             ]
         ],
         'user/plugins/admin/languages' => [
             'ar' => [
                 'file' => 'user/plugins/admin/languages/ar.yaml',
-                'modified' => 1472749578
+                'modified' => 1473353369
             ],
             'ca' => [
                 'file' => 'user/plugins/admin/languages/ca.yaml',
-                'modified' => 1472749578
+                'modified' => 1473353369
             ],
             'cs' => [
                 'file' => 'user/plugins/admin/languages/cs.yaml',
-                'modified' => 1472749578
+                'modified' => 1473353369
             ],
             'cy' => [
                 'file' => 'user/plugins/admin/languages/cy.yaml',
-                'modified' => 1472749578
+                'modified' => 1473353369
             ],
             'da' => [
                 'file' => 'user/plugins/admin/languages/da.yaml',
-                'modified' => 1472749578
+                'modified' => 1473353369
             ],
             'de' => [
                 'file' => 'user/plugins/admin/languages/de.yaml',
-                'modified' => 1472749578
+                'modified' => 1473353369
             ],
             'el' => [
                 'file' => 'user/plugins/admin/languages/el.yaml',
-                'modified' => 1472749578
+                'modified' => 1473353369
             ],
             'en' => [
                 'file' => 'user/plugins/admin/languages/en.yaml',
-                'modified' => 1472749578
+                'modified' => 1473353369
             ],
             'es' => [
                 'file' => 'user/plugins/admin/languages/es.yaml',
-                'modified' => 1472749578
+                'modified' => 1473353369
             ],
             'fa' => [
                 'file' => 'user/plugins/admin/languages/fa.yaml',
-                'modified' => 1472749578
+                'modified' => 1473353369
             ],
             'fi' => [
                 'file' => 'user/plugins/admin/languages/fi.yaml',
-                'modified' => 1472749578
+                'modified' => 1473353369
             ],
             'fr' => [
                 'file' => 'user/plugins/admin/languages/fr.yaml',
-                'modified' => 1472749578
+                'modified' => 1473353369
             ],
             'hr' => [
                 'file' => 'user/plugins/admin/languages/hr.yaml',
-                'modified' => 1472749578
+                'modified' => 1473353369
             ],
             'hu' => [
                 'file' => 'user/plugins/admin/languages/hu.yaml',
-                'modified' => 1472749578
+                'modified' => 1473353369
             ],
             'it' => [
                 'file' => 'user/plugins/admin/languages/it.yaml',
-                'modified' => 1472749578
+                'modified' => 1473353369
             ],
             'ja' => [
                 'file' => 'user/plugins/admin/languages/ja.yaml',
-                'modified' => 1472749578
+                'modified' => 1473353369
             ],
             'ko' => [
                 'file' => 'user/plugins/admin/languages/ko.yaml',
-                'modified' => 1472749578
+                'modified' => 1473353369
             ],
             'lt' => [
                 'file' => 'user/plugins/admin/languages/lt.yaml',
-                'modified' => 1472749578
+                'modified' => 1473353369
             ],
             'nl' => [
                 'file' => 'user/plugins/admin/languages/nl.yaml',
-                'modified' => 1472749578
+                'modified' => 1473353369
             ],
             'no' => [
                 'file' => 'user/plugins/admin/languages/no.yaml',
-                'modified' => 1472749578
+                'modified' => 1473353369
             ],
             'pl' => [
                 'file' => 'user/plugins/admin/languages/pl.yaml',
-                'modified' => 1472749578
+                'modified' => 1473353369
             ],
             'pt' => [
                 'file' => 'user/plugins/admin/languages/pt.yaml',
-                'modified' => 1472749578
+                'modified' => 1473353369
             ],
             'ro' => [
                 'file' => 'user/plugins/admin/languages/ro.yaml',
-                'modified' => 1472749578
+                'modified' => 1473353369
             ],
             'ru' => [
                 'file' => 'user/plugins/admin/languages/ru.yaml',
-                'modified' => 1472749578
+                'modified' => 1473353369
             ],
             'sk' => [
                 'file' => 'user/plugins/admin/languages/sk.yaml',
-                'modified' => 1472749578
+                'modified' => 1473353369
             ],
             'sv' => [
                 'file' => 'user/plugins/admin/languages/sv.yaml',
-                'modified' => 1472749578
+                'modified' => 1473353369
             ],
             'th' => [
                 'file' => 'user/plugins/admin/languages/th.yaml',
-                'modified' => 1472749578
+                'modified' => 1473353369
             ],
             'tlh' => [
                 'file' => 'user/plugins/admin/languages/tlh.yaml',
-                'modified' => 1472749578
+                'modified' => 1473353369
             ],
             'tr' => [
                 'file' => 'user/plugins/admin/languages/tr.yaml',
-                'modified' => 1472749578
+                'modified' => 1473353369
             ],
             'uk' => [
                 'file' => 'user/plugins/admin/languages/uk.yaml',
-                'modified' => 1472749578
+                'modified' => 1473353369
             ],
             'zh' => [
                 'file' => 'user/plugins/admin/languages/zh.yaml',
-                'modified' => 1472749578
+                'modified' => 1473353369
             ]
         ]
     ],
@@ -3019,6 +3019,7 @@ Sti: `%2$s`
                 'FILE_EXTENSION' => 'Dateiendung'
             ],
             'PLUGIN_EMAIL' => [
+                'EMAIL_NOT_CONFIGURED' => 'E-Mail ist nicht konfiguriert',
                 'PLEASE_CONFIGURE_A_TO_ADDRESS' => 'Bitte konfigurieren sie eine \'An\' (\'to\') Adresse in den Email-Plugin-Einstellungen oder im Formular.',
                 'PLEASE_CONFIGURE_A_FROM_ADDRESS' => 'Bitte konfigurieren sie eine \'Von\' (\'from\') Adresse in den Email-Plugin-Einstellungen oder im Formular.'
             ],
@@ -3055,7 +3056,6 @@ Sti: `%2$s`
                 'ROUTE' => 'Anmeldepfad',
                 'ROUTE_REGISTER' => 'Registrierungspfad',
                 'USERNAME_NOT_AVAILABLE' => 'Der Nutzername %s existiert bereits, bitte wähle einen Anderen',
-                'EMAIL_NOT_CONFIGURED' => 'E-Mail ist nicht konfiguriert',
                 'USER_NEEDS_EMAIL_FIELD' => 'Der Nutzer benötigt ein E-Mail Feld',
                 'EMAIL_SENDING_FAILURE' => 'Ein Fehler ist beim senden der E-Mail aufgetreten',
                 'ACTIVATION_EMAIL_SUBJECT' => 'Aktiviere dein Account auf %s',
@@ -3673,6 +3673,7 @@ Pfad: `%2$s`
                 'CLEAR_CACHE_ASSETS_ONLY' => 'Assets Only',
                 'CLEAR_CACHE_IMAGES_ONLY' => 'Images Only',
                 'CLEAR_CACHE_CACHE_ONLY' => 'Cache Only',
+                'CLEAR_CACHE_TMP_ONLY' => 'Tmp Only',
                 'DASHBOARD' => 'Dashboard',
                 'UPDATES_AVAILABLE' => 'Updates Available',
                 'DAYS' => 'Days',
@@ -4178,15 +4179,36 @@ Pfad: `%2$s`
                 'RESOURCE_FILTER' => 'Filter...',
                 'FORCE_SSL' => 'Force SSL',
                 'FORCE_SSL_HELP' => 'Globally force SSL, if enabled when the site is reached through HTTP, Grav sends a redirect to the HTTPS page',
-                'NEWS_FEED' => 'News Feed'
+                'NEWS_FEED' => 'News Feed',
+                'EXTERNAL_URL' => 'External URL',
+                'SESSION_PATH' => 'The session path',
+                'SESSION_PATH_HELP' => 'Use only if you choose a custom base URL (you rewrite the site domain / subfolder)',
+                'CUSTOM_BASE_URL' => 'Custom base URL',
+                'CUSTOM_BASE_URL_HELP' => 'Use if you want to rewrite the site domain or use a different subfolder than the one used by Grav. Example: http://localhost',
+                'FILEUPLOAD_PREVENT_SELF' => 'Cannot use "%s" outside of pages.',
+                'FILEUPLOAD_UNABLE_TO_UPLOAD' => 'Unable to upload file %s: %s',
+                'FILEUPLOAD_UNABLE_TO_MOVE' => 'Unable to move file %s to "%s"',
+                'DROPZONE_CANCEL_UPLOAD' => 'Cancel upload',
+                'DROPZONE_CANCEL_UPLOAD_CONFIRMATION' => 'Are you sure you want to cancel this upload?',
+                'DROPZONE_DEFAULT_MESSAGE' => 'Drop your files here or <strong>click in this area</strong>',
+                'DROPZONE_FALLBACK_MESSAGE' => 'Your browser does not support drag and drop file uploads.',
+                'DROPZONE_FALLBACK_TEXT' => 'Please use the fallback form below to upload your files like in the olden days.',
+                'DROPZONE_FILE_TOO_BIG' => 'File is too big ({{filesize}}MiB). Max filesize: {{maxFilesize}}MiB.',
+                'DROPZONE_INVALID_FILE_TYPE' => 'You can\'t upload files of this type.',
+                'DROPZONE_MAX_FILES_EXCEEDED' => 'You can not upload any more files.',
+                'DROPZONE_REMOVE_FILE' => 'Remove file',
+                'DROPZONE_RESPONSE_ERROR' => 'Server responded with {{statusCode}} code.'
             ],
             'PLUGIN_EMAIL' => [
+                'EMAIL_NOT_CONFIGURED' => 'Email not configured',
                 'PLEASE_CONFIGURE_A_TO_ADDRESS' => 'Please configure a \'to\' address in the Email Plugin settings, or in the form',
-                'PLEASE_CONFIGURE_A_FROM_ADDRESS' => 'Please configure a \'from\' address in the Email Plugin settings, or in the form'
+                'PLEASE_CONFIGURE_A_FROM_ADDRESS' => 'Please configure a \'from\' address in the Email Plugin settings, or in the form',
+                'TEST_EMAIL_BODY' => '<h1>Testing Email</h1><p>This test email has been sent based on the following configuration:</p>  <p><pre>%1$s</pre></p>',
+                'EMAIL_FOOTER' => 'GetGrav.org'
             ],
             'PLUGIN_ERROR' => [
                 'ERROR' => 'Error',
-                'ERROR_MESSAGE' => 'Woops. Looks like this page doesn\'t exist.'
+                'ERROR_MESSAGE' => 'Lo siento, parece que esa página no existe'
             ],
             'PLUGIN_FORM' => [
                 'NOT_VALIDATED' => 'Form not validated. One or more required fields are missing.',
@@ -4205,7 +4227,23 @@ Pfad: `%2$s`
                 'RECAPTCHA_SITE_KEY' => 'Site key',
                 'RECAPTCHA_SITE_KEY_HELP' => 'For more info visit https://developers.google.com/recaptcha',
                 'RECAPTCHA_SECRET_KEY' => 'Secret key',
-                'RECAPTCHA_SECRET_KEY_HELP' => 'For more info visit https://developers.google.com/recaptcha'
+                'RECAPTCHA_SECRET_KEY_HELP' => 'For more info visit https://developers.google.com/recaptcha',
+                'GENERAL' => 'General',
+                'USE_BUILT_IN_CSS' => 'Use built-in CSS',
+                'FILEUPLOAD_PREVENT_SELF' => 'Cannot use "%s" outside of pages.',
+                'FILEUPLOAD_UNABLE_TO_UPLOAD' => 'Unable to upload file %s: %s',
+                'FILEUPLOAD_UNABLE_TO_MOVE' => 'Unable to move file %s to "%s"',
+                'DROPZONE_CANCEL_UPLOAD' => 'Cancel upload',
+                'DROPZONE_CANCEL_UPLOAD_CONFIRMATION' => 'Are you sure you want to cancel this upload?',
+                'DROPZONE_DEFAULT_MESSAGE' => 'Drop your files here or <strong>click in this area</strong>',
+                'DROPZONE_FALLBACK_MESSAGE' => 'Your browser does not support drag and drop file uploads.',
+                'DROPZONE_FALLBACK_TEXT' => 'Please use the fallback form below to upload your files like in the olden days.',
+                'DROPZONE_FILE_TOO_BIG' => 'File is too big ({{filesize}}MiB). Max filesize: {{maxFilesize}}MiB.',
+                'DROPZONE_INVALID_FILE_TYPE' => 'You can\'t upload files of this type.',
+                'DROPZONE_MAX_FILES_EXCEEDED' => 'You can not upload any more files.',
+                'DROPZONE_REMOVE_FILE' => 'Remove file',
+                'DROPZONE_REMOVE_FILE_CONFIRMATION' => 'Are you sure you want to delete this file?',
+                'DROPZONE_RESPONSE_ERROR' => 'Server responded with {{statusCode}} code.'
             ],
             'PLUGIN_LOGIN' => [
                 'USERNAME' => 'Username',
@@ -4228,7 +4266,7 @@ Pfad: `%2$s`
                 'FORGOT_USERNAME_DOES_NOT_EXIST' => 'User with username <b>%s</b> does not exist',
                 'FORGOT_EMAIL_NOT_CONFIGURED' => 'Cannot reset password. This site is not configured to send emails',
                 'FORGOT_EMAIL_SUBJECT' => '%s Password Reset Request',
-                'FORGOT_EMAIL_BODY' => '<h1>Password Reset</h1><p>Dear %1$s,</p><p>A request was made on <b>%4$s</b> to reset your password.</p><p><br /><a href="%2$s" class="btn-primary">Click this to reset your password</a><br /><br /></p><p>Alternatively, copy the following URL into your browser\'s address bar:</p> <p>%2$s</p><p><br />Kind regards,<br /><br />%3$s</p>',
+                'FORGOT_EMAIL_BODY' => '<h1>Password Reset</h1><p>Dear %1$s,</p><p>A request was made on <b>%4$s</b> to reset your password.</p><p><br /><a href="%2$s" class="btn-primary">Click this to reset your password</a><br /><br /></p><p>Alternatively, copy the following URL into your browser\'s address bar:</p> <p class="word-break"><a href="%2$s">%2$s</a></p> <p><br />Kind regards,<br /><br />%3$s</p>',
                 'SESSION' => '&ldquo;Remember Me&rdquo;-Session',
                 'REMEMBER_ME' => 'Remember Me',
                 'REMEMBER_ME_HELP' => 'Sets a persistent cookie on your browser to allow persistent-login authentication between sessions.',
@@ -4243,7 +4281,6 @@ Pfad: `%2$s`
                 'USERNAME_NOT_AVAILABLE' => 'Username %s already exists, please pick another username',
                 'PASSWORD_NOT_VALID' => 'Password must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters',
                 'PASSWORDS_DO_NOT_MATCH' => 'Passwords do not match. Double-check you entered the same password twice',
-                'EMAIL_NOT_CONFIGURED' => 'Email not configured',
                 'USER_NEEDS_EMAIL_FIELD' => 'The user needs an email field',
                 'EMAIL_SENDING_FAILURE' => 'An error occurred while sending the email',
                 'ACTIVATION_EMAIL_SUBJECT' => 'Activate your account on %s',
@@ -5045,6 +5082,10 @@ Path: `%2$s`
             'PLUGIN_EMAIL' => [
                 'PLEASE_CONFIGURE_A_TO_ADDRESS' => 'Por favor configura una dirección de \'remitente\' en la configuración del Plugin de Email o en el formulario',
                 'PLEASE_CONFIGURE_A_FROM_ADDRESS' => 'Por favor configura una dirección de \'destinatario\' en la configuración del Plugin de Email o en el formulario'
+            ],
+            'PLUGIN_ERROR' => [
+                'ERROR' => 'Error',
+                'ERROR_MESSAGE' => 'Woops. Looks like this page doesn\'t exist.'
             ],
             'PLUGIN_FORM' => [
                 'NOT_VALIDATED' => 'Falló la validación del formulario. Uno o más campos obligatorios no fueron cubiertos.',
@@ -6301,8 +6342,11 @@ Ruta: `%2$s`
                 'TO' => 'à'
             ],
             'PLUGIN_EMAIL' => [
+                'EMAIL_NOT_CONFIGURED' => 'L’e-mail n’est pas configuré',
                 'PLEASE_CONFIGURE_A_TO_ADDRESS' => 'Veuillez configurer une adresse de \'destinataire\' dans les paramètres du Plugin ou dans le formulaire.',
-                'PLEASE_CONFIGURE_A_FROM_ADDRESS' => 'Veuillez configurer une adresse \'d\'expéditeur\' dans les paramètres du Plugin ou dans le formulaire.'
+                'PLEASE_CONFIGURE_A_FROM_ADDRESS' => 'Veuillez configurer une adresse \'d\'expéditeur\' dans les paramètres du Plugin ou dans le formulaire.',
+                'TEST_EMAIL_BODY' => '<h1>E-mail de test</h1><p>Cet e-mail de test est basé sur la configuration suivante :</p>  <p><pre>%1$s</pre></p>',
+                'EMAIL_FOOTER' => 'GetGrav.org'
             ],
             'PLUGIN_ERROR' => [
                 'ERROR' => 'Erreur',
@@ -6348,7 +6392,7 @@ Ruta: `%2$s`
                 'FORGOT_USERNAME_DOES_NOT_EXIST' => 'L’utilisateur avec le nom d’utilisateur <b>%s</b> n’existe pas',
                 'FORGOT_EMAIL_NOT_CONFIGURED' => 'Impossible de réinitialiser le mot de passe. Ce site n’est pas configuré pour envoyer des e-mails',
                 'FORGOT_EMAIL_SUBJECT' => 'Demande de réinitialisation de mot de passe %s',
-                'FORGOT_EMAIL_BODY' => '<h1>Réinitialisation de mot de passe</h1><p>%1$s,</p><p>Une demande a été faite sur <b>%4$s</b> pour la réinitialisation de votre mot de passe.</p><p><br /><a href="%2$s" class="btn-primary">Cliquez ici pour réinitialiser votre mot de passe</a><br /><br /></p><p>Vous pouvez également copier l’URL suivante dans la barre d’adresse de votre navigateur :</p> <p>%2$s</p><p><br />Cordialement,<br /><br />%3$s</p>',
+                'FORGOT_EMAIL_BODY' => '<h1>Réinitialisation de mot de passe</h1><p>%1$s,</p><p>Une demande a été faite sur <b>%4$s</b> pour la réinitialisation de votre mot de passe.</p><p><br /><a href="%2$s" class="btn-primary">Cliquez ici pour réinitialiser votre mot de passe</a><br /><br /></p><p>Vous pouvez également copier l’URL suivante dans la barre d’adresse de votre navigateur :</p> <p class="word-break"><a href="%2$s">%2$s</a></p> <p><br />Cordialement,<br /><br />%3$s</p>',
                 'SESSION' => 'Session - &ldquo;Se souvenir de moi&rdquo;',
                 'REMEMBER_ME' => 'Se souvenir de moi',
                 'REMEMBER_ME_HELP' => 'Définit un cookie persistant sur votre navigateur autorisant l’authentification par connexion persistante entre les sessions.',
@@ -6363,7 +6407,6 @@ Ruta: `%2$s`
                 'USERNAME_NOT_AVAILABLE' => 'Le nom d’utilisateur %s existe déjà, veuillez en choisir un autre.',
                 'PASSWORD_NOT_VALID' => 'Le mot de passe doit contenir au moins un chiffre, une majuscule et une minuscule et être composé d’au moins 8 caractères',
                 'PASSWORDS_DO_NOT_MATCH' => 'Les mots de passe sont différents. Réessayez de saisir le même mot de passe deux fois.',
-                'EMAIL_NOT_CONFIGURED' => 'L’e-mail n’est pas configuré',
                 'USER_NEEDS_EMAIL_FIELD' => 'L’utilisateur a besoin d’un champ pour e-mail',
                 'EMAIL_SENDING_FAILURE' => 'Une erreur est survenue lors de l’envoi de l’e-mail.',
                 'ACTIVATION_EMAIL_SUBJECT' => 'Activer votre compte sur %s',
@@ -6372,7 +6415,6 @@ Ruta: `%2$s`
                 'WELCOME_EMAIL_BODY' => 'Bonjour %s, bienvenue sur %s!',
                 'NOTIFICATION_EMAIL_SUBJECT' => 'Nouvel utilisateur sur %s',
                 'NOTIFICATION_EMAIL_BODY' => 'Bonjour, un nouvel utilisateur s’est inscrit sur %s. Nom d’utilisateur : %s, e-mail : %s',
-                'EMAIL_FOOTER' => 'GetGrav.org',
                 'ACTIVATION_LINK_EXPIRED' => 'Le lien d’activation a expiré',
                 'USER_ACTIVATED_SUCCESSFULLY' => 'Utilisateur activé avec succès',
                 'INVALID_REQUEST' => 'Requête invalide',
@@ -7136,6 +7178,7 @@ Path: `%2$s`
                 'FILE_EXTENSION' => 'Nastavak datoteke'
             ],
             'PLUGIN_EMAIL' => [
+                'EMAIL_NOT_CONFIGURED' => 'Email nije konfiguriran',
                 'PLEASE_CONFIGURE_A_TO_ADDRESS' => 'Konfigurirajte \'za\' (\'to\') adresu u postavkama Email dodatka ili u obrascu',
                 'PLEASE_CONFIGURE_A_FROM_ADDRESS' => 'Konfigurirajte \'od\' (\'from\') adresu u postavkama Email dodatka ili u obrascu'
             ],
@@ -7166,10 +7209,8 @@ Path: `%2$s`
                 'USERNAME_NOT_AVAILABLE' => 'Korisničko ime %s već postoji, odaberi neko drugo',
                 'PASSWORD_NOT_VALID' => 'Lozinka mora sadržavati bar jedan broj i jedno veliko i malo slovo, i bar još 8 ili više znakova',
                 'PASSWORDS_DO_NOT_MATCH' => 'Lozinke se ne slažu. Poonovo provjeri da li si unio istu lozinku dva puta',
-                'EMAIL_NOT_CONFIGURED' => 'Email nije konfiguriran',
                 'USER_NEEDS_EMAIL_FIELD' => 'Korisnik treba email polje',
                 'EMAIL_SENDING_FAILURE' => 'Došlo je do greške pri slanju emaila',
-                'EMAIL_FOOTER' => 'GetGrav.org',
                 'ACTIVATION_LINK_EXPIRED' => 'Aktivacijski link je istekao',
                 'USER_ACTIVATED_SUCCESSFULLY' => 'Korisnik je uspješno aktiviran',
                 'INVALID_REQUEST' => 'Nevaljani zahtjev',
@@ -7193,6 +7234,12 @@ Path: `%2$s`
                 'REGISTRATION_FIELDS_HELP' => 'Add the fields that will be added to the user yaml file. Fields not listed here will not be added even if present in the registration form',
                 'REGISTRATION_FIELD_KEY' => 'Ime polja',
                 'OPTIONS' => 'Opcije'
+            ],
+            'PLUGIN_SIMPLESEARCH' => [
+                'SEARCH_PLACEHOLDER' => 'Traži...',
+                'SEARCH_RESULTS' => 'Rezultati pretrage',
+                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Upit: <strong>%s</strong> je pronašao jedan rezultat',
+                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Upit: <strong>%s</strong> je pronašao %s rezultata'
             ],
             'INFLECTOR_UNCOUNTABLE' => [
                 0 => 'oprema',
@@ -12039,6 +12086,7 @@ Caminho: `%2$s`
                 'TO' => 'către'
             ],
             'PLUGIN_EMAIL' => [
+                'EMAIL_NOT_CONFIGURED' => 'Adresa de email nu este configurată',
                 'PLEASE_CONFIGURE_A_TO_ADDRESS' => 'Vă rugam setați o adresă \'către\' în setările modulului Email sau în formular',
                 'PLEASE_CONFIGURE_A_FROM_ADDRESS' => 'Vă rugam setați o adresă \'de la\' în setările modulului Email sau în formular'
             ],
@@ -12086,7 +12134,7 @@ Caminho: `%2$s`
                 'FORGOT_USERNAME_DOES_NOT_EXIST' => 'Utilizatorul cu numele <b>%s</b> nu există',
                 'FORGOT_EMAIL_NOT_CONFIGURED' => 'Parola nu poate fi resetată. Acest site nu este configurat pentru a trimite email-uri.',
                 'FORGOT_EMAIL_SUBJECT' => '%s Cerere de resetare a parolei',
-                'FORGOT_EMAIL_BODY' => '<h1>Resetare parolă</h1><p> Dragă %1$s,</p><p>O cerere de resetare a parolei a fost făcută în data de <b>%4$s</b>.</p><p><br /><a href="%2$s" class="btn-primary">Apasă aici pentru a reseta parola</a><br /><br /></p><p>Alternativ, copiază URL de mai jos în bara de adrese a browser-ului favorit:</p> <p>%2$s</p><p><br />Cu respect,<br /><br />%3$s</p>',
+                'FORGOT_EMAIL_BODY' => '<h1>Resetare parolă</h1><p> Dragă %1$s,</p><p>O cerere de resetare a parolei a fost făcută în data de <b>%4$s</b>.</p><p><br /><a href="%2$s" class="btn-primary">Apasă aici pentru a reseta parola</a><br /><br /></p><p>Alternativ, copiază URL de mai jos în bara de adrese a browser-ului favorit:</p> <p class="word-break"><a href="%2$s">%2$s</a></p> <p><br />Cu respect,<br /><br />%3$s</p>',
                 'SESSION' => '&ldquo;Ține-mă minte&rdquo;-Sesiune',
                 'REMEMBER_ME' => 'Ține-mă minte',
                 'REMEMBER_ME_HELP' => 'Setează o cookie în browserul Dvs. ce permite menținerea datelor de logare între sesiuni.',
@@ -12101,7 +12149,6 @@ Caminho: `%2$s`
                 'USERNAME_NOT_AVAILABLE' => 'Utilizatorul  %s există deja, vă rugăm alegeți un alt nume de utilizator ',
                 'PASSWORD_NOT_VALID' => ' Parola trebuie să conțină cel puțin 1 număr și o literă de tipar și o literă mică; și să aibă minim 8 caractere',
                 'PASSWORDS_DO_NOT_MATCH' => ' Parolele nu sunt identice. Vă rugăm verificați că ași scris aceeiași parolă de două ori.',
-                'EMAIL_NOT_CONFIGURED' => 'Adresa de email nu este configurată',
                 'USER_NEEDS_EMAIL_FIELD' => 'Utilizatorul trebuie să aibă adresa de email completată',
                 'EMAIL_SENDING_FAILURE' => 'A apărut o eroare la trimirea email-ului',
                 'ACTIVATION_EMAIL_SUBJECT' => 'Activați-vă contrul pentru %s',
@@ -12110,7 +12157,6 @@ Caminho: `%2$s`
                 'WELCOME_EMAIL_BODY' => 'Salut %s, bine ai venit la %s!',
                 'NOTIFICATION_EMAIL_SUBJECT' => 'Utilizator nou pe %s',
                 'NOTIFICATION_EMAIL_BODY' => 'Salut, un nou utilizator s-a înregistrat pe  %s. Nume de utilizator: %s, adresă de email: %s',
-                'EMAIL_FOOTER' => 'GetGrav.org',
                 'ACTIVATION_LINK_EXPIRED' => 'Link-ul pentru activare este expirat',
                 'USER_ACTIVATED_SUCCESSFULLY' => 'Utilizator activat cu succes',
                 'INVALID_REQUEST' => 'Cerere invalidă ',
@@ -12884,6 +12930,12 @@ Calea: `%2$s`
             'PLUGIN_ERROR' => [
                 'ERROR' => 'Ошибка',
                 'ERROR_MESSAGE' => 'Упс. Похоже, эта страница не существует.'
+            ],
+            'PLUGIN_SIMPLESEARCH' => [
+                'SEARCH_PLACEHOLDER' => 'Найти...',
+                'SEARCH_RESULTS' => 'Результат поиска',
+                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'По запросу: <strong>%s</strong> результатов найдено 1',
+                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'По запросу: <strong>%s</strong> результатов найдено %s'
             ],
             'FRONTMATTER_ERROR_PAGE' => '---
 title: %1$s
@@ -15532,6 +15584,6 @@ Path: `%2$s`
                 6 => 'Chủ Nhật'
             ]
         ],
-        'checksum' => '473e33892be50ec81d2ddc2dd52a959b'
+        'checksum' => '9784ca76c7990eda77d82ffc08ecf757'
     ]
 ];

@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-lamuela-dev/user/plugins/admin/languages/tlh.yaml',
-    'modified' => 1472749578,
+    'modified' => 1473353369,
     'data' => [
         'PLUGIN_ADMIN' => [
             'LOGIN_BTN_FORGOT' => 'lIj',

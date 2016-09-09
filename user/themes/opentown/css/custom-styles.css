@@ -1,3 +1,526 @@
-body {
-  color: black;
+@charset "UTF-8";
+@import 'https://fonts.googleapis.com/css?family=Lato:100,300,400,700|Lora:400,700';
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: Lato;
+  color: #304255;
+}
+
+p, ul, li, ol, dd, dt {
+  font-family: Lora;
+  color: #304255;
+}
+
+p {
+  font-size: 18px;
+  color: #304255;
+}
+
+.header {
+  width: 100%;
+}
+
+.header .logo,
+.header .navbar,
+.header .navigation {
+  width: 100%;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.header .wrapper {
+  background: rgba(255, 255, 255, 0.9) url(../images/header-top-bg.png) top center no-repeat;
+  border: 1px solid transparent;
+  margin-top: -1px;
+  background-size: 100%;
+}
+
+.header .navigation {
+  display: flex !important;
+  justify-content: space-between;
+  border-bottom: 5px solid transparent;
+  transition: all 0.8s;
+  margin-bottom: 0;
+  padding-bottom: calc(1rem - 3px);
+}
+
+.header .navigation li {
+  list-style: none;
+}
+
+.header .navigation a {
+  color: #304255;
+  font-family: Lato;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding-bottom: 1rem;
+  transition: all 0.4s ease-in;
+}
+
+.header .navigation a:hover,
+.header .navigation li.active a {
+  border-bottom: 6px solid #304255;
+  color: #9DA9B3;
+}
+
+.header .navigation li:nth-child(2) a {
+  border-color: #227FBB;
+}
+
+.header .navigation li:nth-child(3) a {
+  border-color: #4ECBFA;
+}
+
+.header .navigation li:nth-child(4) a {
+  border-color: #FF3A1F;
+}
+
+.header .navigation li:nth-child(5) a {
+  border-color: #37BA72;
+}
+
+.header .navigation li:nth-child(6) a {
+  border-color: #F59D00;
+}
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .logo {
+  margin-top: 55px;
+  margin-bottom: 40px;
+}
+
+.header .logo a {
+  display: inline-block;
+  width: 140px;
+  height: 53px;
+  background: url(../images/logo-main.png) center no-repeat;
+  background-size: cover;
+  text-indent: -9999px;
+  transition: all 0.4 ease-in;
+}
+
+.header .logo a:hover {
+  opacity: 0.85;
+}
+
+.body-content-list {
+  background: url(../images/list-bg.png) top center repeat-x;
+}
+
+.body-content-list .p-name {
+  font-weight: 300;
+  padding: 0;
+  line-height: 1em;
+  margin: 80px 0 0.5rem 0;
+}
+
+.body-content-list .e-content p {
+  font-size: 16px;
+  font-family: Lato;
+  color: #80909d;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.body-content-list .listing-featured #featured {
+  max-width: 50%;
+}
+
+.body-content-list .listing-featured .card .title {
+  min-height: 2.4em;
+}
+
+.body-content-list .listing {
+  margin: 0 auto 20px auto;
+}
+
+.body-content {
+  background-repeat: no-repeat;
+  padding-top: 290px;
+  background-size: 100%;
+  position: relative;
+}
+
+.body-content .body-content-picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(48, 66, 85, 0.5);
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,ffffff+100 */
+  background: rgba(255, 255, 255, 0.01);
+  /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.01) 0%, #2e3f52 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.01) 0%, #2e3f52 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 0%, #2e3f52 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  overflow: hidden;
+}
+
+.body-content .body-content-picture img {
+  width: 100%;
+}
+
+.body-content .body-content-picture::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(48, 66, 85, 0.5);
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,ffffff+100 */
+  background: rgba(255, 255, 255, 0.01);
+  /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.01) 0%, #2e3f52 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.01) 0%, #2e3f52 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 0%, #2e3f52 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.body-content .wrapper {
+  position: relative;
+}
+
+.blog-content-header {
+  text-align: center;
+}
+
+.blog-content-header h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin-bottom: 1.5em;
+  text-shadow: 0 2px 0 #304255;
+  letter-spacing: 0.02rem;
+}
+
+.blog-content-item {
+  background: white;
+  padding: 60px 180px;
+}
+
+.blog-content-item h2 {
+  font-size: 38px;
+  color: #0F1B26;
+  line-height: 1.2em;
+  font-weight: 700;
+  letter-spacing: 0.01rem;
+}
+
+.blog-content-item .list-blog-date {
+  border-top: 1px solid #EFF1F3;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  text-align: left;
+}
+
+.blog-content-item .list-blog-date span {
+  font-size: 14px;
+  font-weight: 700;
+  color: #9DA9B3;
+}
+
+.wrapper {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.card {
+  border: 1px solid #d8dde2;
+  background: white;
+  overflow: hidden;
+  padding: 30px 20px;
+  margin-bottom: 20px;
+  margin-right: -1px;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  max-width: 700px;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: #227FBB;
+}
+
+.card.noticias::after {
+  background: #227FBB;
+}
+
+.card.prensa::after {
+  background: #4ECBFA;
+}
+
+.card.lamuela-tv::after {
+  background: #FF3A1F;
+}
+
+.card.el-municipio::after {
+  background: #37BA72;
+}
+
+.card.el-ayuntamiento::after {
+  background: #F59D00;
+}
+
+.card:hover {
+  box-shadow: 0 0 15px #98e1fc;
+  border: 1px solid #4ECBFA;
+}
+
+.card .picture {
+  display: none;
+}
+
+.card .title,
+.card .summary,
+.card .footer {
+  position: relative;
+}
+
+.card .title {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.2em;
+  text-transform: none;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+  position: relative;
+  min-height: 2.5em;
+}
+
+.card .summary {
+  margin: 0.5em 0 0.5em 0;
+  min-height: 4.1em;
+}
+
+.card .summary em {
+  font-style: normal;
+}
+
+.card .summary p {
+  font-size: 16px;
+  line-height: 1.4rem;
+  color: #80909d;
+  margin-top: 0;
+}
+
+.card .footer .date {
+  color: #80909d;
+}
+
+.card.pictured {
+  padding-top: 170px;
+}
+
+.card.pictured .picture {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -5px;
+  height: 150px;
+  width: calc(100% + 10px);
+  width: 800px;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.card.pictured .picture::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(48, 66, 85, 0.5);
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,ffffff+100 */
+  background: rgba(255, 255, 255, 0.01);
+  /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.01) 0%, rgba(39, 53, 69, 0.6) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.01) 0%, rgba(39, 53, 69, 0.6) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 0%, rgba(39, 53, 69, 0.6) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card:hover {
+  opacity: 0.9;
+}
+
+.card:hover .picture::before {
+  opacity: 0.5;
+}
+
+.card.highlighted {
+  border: none;
+  max-width: 351px;
+  padding-top: 60px;
+  min-height: 306px;
+  background: #4ECBFA;
+}
+
+.card.highlighted::after {
+  content: "VER MÁS";
+  height: 50px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.card.highlighted h3,
+.card.highlighted h4 {
+  position: relative;
+  color: white;
+  font-size: 22px;
+}
+
+.card.highlighted h3 {
+  min-height: 3.6em;
+}
+
+.card.highlighted h4 {
+  opacity: 0.8;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #a2d0ee;
+  color: white;
+  background: #227FBB;
+  display: inline-block;
+  padding: 2px 6px;
+  text-shadow: 0 0 0 2px #304255;
+}
+
+.card.highlighted footer small {
+  color: #EFF1F3 !important;
+}
+
+.card.highlighted .picture {
+  margin-left: 5px;
+  height: 264px;
+}
+
+.card.highlighted .picture::before {
+  background: rgba(48, 66, 85, 0.5);
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,ffffff+100 */
+  background: rgba(34, 127, 187, 0.8);
+  /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(34, 127, 187, 0.8) 0%, rgba(10, 39, 58, 0.95) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(34, 127, 187, 0.8) 0%, rgba(10, 39, 58, 0.95) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(34, 127, 187, 0.8) 0%, rgba(10, 39, 58, 0.95) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.card.highlighted.prensa h4 {
+  color: #98e1fc;
+  color: white;
+  background: #4ECBFA;
+}
+
+.card.highlighted.prensa::after {
+  background-color: #4ECBFA;
+}
+
+.card.highlighted.prensa .picture::before {
+  background: rgba(48, 66, 85, 0.5);
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,ffffff+100 */
+  background: rgba(78, 203, 250, 0.8);
+  /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(78, 203, 250, 0.8) 0%, rgba(3, 89, 121, 0.95) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(78, 203, 250, 0.8) 0%, rgba(3, 89, 121, 0.95) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(78, 203, 250, 0.8) 0%, rgba(3, 89, 121, 0.95) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.page {
+  min-height: 60vh;
+}
+
+.home h1 {
+  margin: 0;
+}
+
+.home .claim h2 {
+  color: #9DA9B3;
+  font-size: 28px;
+  margin-top: 0;
+  letter-spacing: 0.01rem;
+}
+
+.home .blog-content-item {
+  padding: 20px;
+}
+
+.list-videos .card-video::after {
+  background: #FF3A1F;
+}
+
+.list-videos .video-featured {
+  padding: 0 60px;
+  margin-bottom: 20px;
+}
+
+.list-videos .video-featured .footer {
+  padding: 20px;
+}
+
+.list-videos .video-featured .card-video,
+.list-videos .video-featured .video,
+.list-videos .video-featured iframe {
+  min-width: 100%;
+  min-height: 35vw;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 0;
+}
+
+.video-list .video {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.video-list .video iframe {
+  height: 180px;
+  width: 118%;
+}
+
+.video-list .footer {
+  margin-top: 2em;
+}
+
+.video-list .footer h3 {
+  font-size: 20px;
+}
+
+.video-list .video-item:nth-child(1) {
+  display: none;
+}
+
+#body {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
 }

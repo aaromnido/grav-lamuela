@@ -1,0 +1,78 @@
+.card {
+  border: 1px solid grey;
+  background: white;
+  overflow: hidden;
+  padding: 45px 30px;
+  margin-bottom: 30px;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: blue;
+}
+
+.card.noticias::after {
+  background: cyan;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px cyan;
+  border: 1px solid cyan;
+}
+
+.card .picture {
+  display: none;
+}
+
+.card .title,
+.card .summary,
+.card .footer {
+  position: relative;
+}
+
+.card .title {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.2em;
+  text-transform: none;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+  position: relative;
+}
+
+.card .summary {
+  margin: 0.5em 0 0.5em 0;
+}
+
+.card .summary p {
+  font-size: 16px;
+  line-height: 1.4rem;
+  color: #676767;
+}
+
+.card .footer .date {
+  color: #676767;
+}
+
+.card.pictured {
+  padding-top: 180px;
+}
+
+.card.pictured .picture {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -5px;
+  height: 150px;
+  width: calc(100% + 10px);
+  z-index: 0;
+  overflow: hidden;
+}

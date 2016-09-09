@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-lamuela-dev/user/plugins/admin/languages/hr.yaml',
-    'modified' => 1472749578,
+    'modified' => 1473353369,
     'data' => [
         'PLUGIN_ADMIN' => [
             'ADMIN_BETA_MSG' => 'Ovo je Beta izdanje! Koristite u produkciji na vlastiti rizik...',

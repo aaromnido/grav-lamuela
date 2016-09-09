@@ -1,0 +1,100 @@
+<h1 id="v1-3-3">v1.3.3</h1>
+<h2 id="xx-xx-2016">XX/XX/2016</h2>
+<ol>
+<li><a href="#improved"></a><ul>
+<li>Allow calls without parameter in UniformResourceLocator::getPaths()</li>
+<li>Add support for BlueprintSchema::getPropertyName() and getProperty()</li>
+</ul>
+</li>
+</ol>
+<h1 id="v1-3-2">v1.3.2</h1>
+<h2 id="05-24-2016">05/24/2016</h2>
+<ol>
+<li><a href="#new"></a><ul>
+<li>Added a new function BlueprintForm::getFilename()</li>
+</ul>
+</li>
+<li><a href="#bugfix"></a><ul>
+<li>BlueprintsForm: Detect if user really meant to extend parent blueprint, not another one</li>
+</ul>
+</li>
+</ol>
+<h1 id="v1-3-1">v1.3.1</h1>
+<h2 id="04-25-2016">04/25/2016</h2>
+<ol>
+<li><a href="#new"></a><ul>
+<li>Add new function File::rename()</li>
+<li>Add new function UniformResourceLocator::fillCache()</li>
+</ul>
+</li>
+<li><a href="#bugfix"></a><ul>
+<li>Fix collections support in BluprintSchema::extra()</li>
+<li>Fix exception in stream wrapper when scheme is not defined in locator </li>
+<li>Prevent UniformResourceLocator from resolving paths outside of defined scheme paths (#8)</li>
+<li>Fix breaking YAML files which start with three dashes (#5) </li>
+</ul>
+</li>
+</ol>
+<h1 id="v1-3-0">v1.3.0</h1>
+<h2 id="03-07-2016">03/07/2016</h2>
+<ol>
+<li><a href="#new"></a><ul>
+<li>Add new function UniformResourceLocator::isStream()</li>
+<li>Add new class BlueprintForm</li>
+<li>Renamed Blueprints class into BlueprintSchema</li>
+<li>Add new function BlueprintSchema::extra() to return data fields which haven&#39;t been defined in blueprints</li>
+<li>Add support to unset and replace blueprint fields and properties</li>
+<li>Allow arbitrary dynamic fields in Blueprints (property@)</li>
+<li>Add default properties support for form field types</li>
+<li>Remove dependency on ircmaxell/password-compat</li>
+<li>Add support for Symfony 3</li>
+<li>Add a few unit tests</li>
+</ul>
+</li>
+<li><a href="#improved"></a><ul>
+<li>UniformResourceLocator::addPath(): Add option to add path after existing one (falls back to be last if path is not found)</li>
+</ul>
+</li>
+<li><a href="#bugfix"></a><ul>
+<li>Fix blueprint without a form</li>
+<li>Fix merging data with empty blueprint</li>
+</ul>
+</li>
+</ol>
+<h1 id="v1-2-0">v1.2.0</h1>
+<h2 id="10-24-2015">10/24/2015</h2>
+<ol>
+<li><a href="#new"></a><ul>
+<li><strong>Backwards compatibility break</strong>: Blueprints class needs to be initialized with <code>init()</code> if blueprints contain <code>@data-*</code> fields </li>
+<li>Renamed NestedArrayAccess::remove() into NestedArrayAccess::undef() to avoid name clashes</li>
+</ul>
+</li>
+</ol>
+<h1 id="v1-1-4">v1.1.4</h1>
+<h2 id="10-15-2015">10/15/2015</h2>
+<ol>
+<li><a href="#new"></a><ul>
+<li>Add support for native YAML parsing option to Markdown and YAML file classes</li>
+</ul>
+</li>
+</ol>
+<h1 id="v1-1-3">v1.1.3</h1>
+<h2 id="09-14-2015">09/14/2015</h2>
+<ol>
+<li><a href="#bugfix"></a><ul>
+<li>Fix regression: Default values for collections were broken</li>
+<li>Fix Argument 1 passed to <code>RocketTheme\Toolbox\Blueprints\Blueprints::mergeArrays()</code> must be of the type array</li>
+<li>Add exception on Blueprint collection merging; only overridden value should be used</li>
+<li>File locking truncates contents of the file</li>
+<li>Stop duplicate Messages getting added to the queue</li>
+</ul>
+</li>
+</ol>
+<h1 id="v1-1-2">v1.1.2</h1>
+<h2 id="08-27-2015">08/27/2015</h2>
+<ol>
+<li><a href="#new"></a><ul>
+<li>Creation of Changelog</li>
+</ul>
+</li>
+</ol>

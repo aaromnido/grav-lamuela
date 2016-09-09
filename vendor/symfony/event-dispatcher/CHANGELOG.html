@@ -1,0 +1,20 @@
+<h1 id="changelog">CHANGELOG</h1>
+<h2 id="2-5-0">2.5.0</h2>
+<ul>
+<li>added Debug\TraceableEventDispatcher (originally in HttpKernel)</li>
+<li>changed Debug\TraceableEventDispatcherInterface to extend EventDispatcherInterface</li>
+<li>added RegisterListenersPass (originally in HttpKernel)</li>
+</ul>
+<h2 id="2-1-0">2.1.0</h2>
+<ul>
+<li>added TraceableEventDispatcherInterface</li>
+<li>added ContainerAwareEventDispatcher</li>
+<li>added a reference to the EventDispatcher on the Event</li>
+<li>added a reference to the Event name on the event</li>
+<li>added fluid interface to the dispatch() method which now returns the Event
+object</li>
+<li>added GenericEvent event class</li>
+<li>added the possibility for subscribers to subscribe several times for the
+same event</li>
+<li>added ImmutableEventDispatcher</li>
+</ul>

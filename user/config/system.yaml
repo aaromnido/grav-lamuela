@@ -5,15 +5,17 @@ wrapped_site: false
 reverse_proxy_setup: false
 force_ssl: false
 languages:
-  include_default_lang: true
+  supported:
+    - es
+  include_default_lang: false
   translations: true
   translations_fallback: true
   session_store_active: false
   http_accept_language: false
   override_locale: false
 home:
-  alias: /blog
-  hide_in_urls: false
+  alias: /inicio
+  hide_in_urls: true
 pages:
   theme: opentown
   order:

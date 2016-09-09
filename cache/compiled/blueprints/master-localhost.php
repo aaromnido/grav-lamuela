@@ -1,31 +1,37 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1472801686,
-    'checksum' => 'fb6b739356d02384d8c23a4f1ee676e8',
+    'timestamp' => 1473415618,
+    'checksum' => '9c8179b039711aab454c4e956e81bb17',
     'files' => [
+        'user/plugins/admin/blueprints/config' => [
+            'media' => [
+                'file' => 'user/plugins/admin/blueprints/config/media.yaml',
+                'modified' => 1473353369
+            ]
+        ],
         'system/blueprints/config' => [
             'media' => [
                 'file' => 'system/blueprints/config/media.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ],
             'site' => [
                 'file' => 'system/blueprints/config/site.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ],
             'streams' => [
                 'file' => 'system/blueprints/config/streams.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ],
             'system' => [
                 'file' => 'system/blueprints/config/system.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ]
         ],
         'user/plugins' => [
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/blueprints.yaml',
-                'modified' => 1472749578
+                'modified' => 1473353369
             ],
             'plugins/archives' => [
                 'file' => 'user/plugins/archives/blueprints.yaml',
@@ -37,7 +43,7 @@ return [
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/blueprints.yaml',
-                'modified' => 1472749564
+                'modified' => 1473353349
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/blueprints.yaml',
@@ -49,11 +55,11 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/blueprints.yaml',
-                'modified' => 1472749560
+                'modified' => 1473353339
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/blueprints.yaml',
-                'modified' => 1472749567
+                'modified' => 1473353352
             ],
             'plugins/pagination' => [
                 'file' => 'user/plugins/pagination/blueprints.yaml',
@@ -61,7 +67,7 @@ return [
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/blueprints.yaml',
-                'modified' => 1471162502
+                'modified' => 1473353398
             ],
             'plugins/random' => [
                 'file' => 'user/plugins/random/blueprints.yaml',
@@ -73,7 +79,7 @@ return [
             ],
             'plugins/simplesearch' => [
                 'file' => 'user/plugins/simplesearch/blueprints.yaml',
-                'modified' => 1471162510
+                'modified' => 1473353412
             ],
             'plugins/sitemap' => [
                 'file' => 'user/plugins/sitemap/blueprints.yaml',
@@ -82,6 +88,10 @@ return [
             'plugins/taxonomylist' => [
                 'file' => 'user/plugins/taxonomylist/blueprints.yaml',
                 'modified' => 1471162510
+            ],
+            'plugins/youtube' => [
+                'file' => 'user/plugins/youtube/blueprints.yaml',
+                'modified' => 1473415439
             ]
         ]
     ],
@@ -93,6 +103,50 @@ return [
                 ],
                 'type' => '_root',
                 'form_field' => false
+            ],
+            'media.types' => [
+                'name' => 'media.types',
+                'type' => 'list',
+                'label' => 'PLUGIN_ADMIN.MEDIA_TYPES',
+                'style' => 'vertical',
+                'key' => 'extension',
+                'controls' => 'both',
+                'collapsed' => true,
+                'validation' => 'loose',
+                'array' => true
+            ],
+            'media.types.*' => [
+                'type' => '_parent',
+                'name' => 'media.types.*',
+                'form_field' => false
+            ],
+            'media.types.*.type' => [
+                'type' => 'text',
+                'label' => 'PLUGIN_ADMIN.TYPE',
+                'name' => 'media.types.*.type',
+                'validation' => 'loose'
+            ],
+            'media.types.*.thumb' => [
+                'type' => 'text',
+                'label' => 'PLUGIN_ADMIN.THUMB',
+                'name' => 'media.types.*.thumb',
+                'validation' => 'loose'
+            ],
+            'media.types.*.mime' => [
+                'type' => 'text',
+                'label' => 'PLUGIN_ADMIN.MIME_TYPE',
+                'name' => 'media.types.*.mime',
+                'validation' => 'loose'
+            ],
+            'media.types.*.image' => [
+                'type' => 'textarea',
+                'yaml' => true,
+                'label' => 'PLUGIN_ADMIN.IMAGE_OPTIONS',
+                'validate' => [
+                    'type' => 'yaml'
+                ],
+                'name' => 'media.types.*.image',
+                'validation' => 'loose'
             ],
             'site' => [
                 'form' => [
@@ -141,17 +195,10 @@ return [
                 'name' => 'site.taxonomies',
                 'validation' => 'loose'
             ],
-            'site.content' => [
-                'type' => 'section',
-                'underline' => true,
-                'name' => 'site.content',
-                'validation' => 'loose'
-            ],
             'site.summary' => [
-                'type' => 'section',
-                'underline' => true,
+                'type' => '_parent',
                 'name' => 'site.summary',
-                'validation' => 'loose'
+                'form_field' => false
             ],
             'site.summary.enabled' => [
                 'type' => 'toggle',
@@ -200,8 +247,8 @@ return [
                 'validation' => 'loose'
             ],
             'site.metadata' => [
-                'type' => 'section',
-                'underline' => true,
+                'type' => 'array',
+                'label' => 'PLUGIN_ADMIN.METADATA',
                 'name' => 'site.metadata',
                 'validation' => 'loose'
             ],
@@ -212,8 +259,8 @@ return [
                 'validation' => 'loose'
             ],
             'site.routes' => [
-                'type' => 'section',
-                'underline' => true,
+                'type' => 'array',
+                'label' => 'PLUGIN_ADMIN.CUSTOM_ROUTES',
                 'name' => 'site.routes',
                 'validation' => 'loose'
             ],
@@ -476,8 +523,9 @@ return [
                 'label' => 'PLUGIN_ADMIN.REDIRECT_DEFAULT_CODE',
                 'options' => [
                     301 => '301 - Permanent',
+                    302 => '302 - Found',
                     303 => '303 - Other',
-                    307 => '307 - Temporary'
+                    304 => '304 - Not Modified'
                 ],
                 'name' => 'system.pages.redirect_default_code',
                 'validation' => 'loose'
@@ -590,17 +638,10 @@ return [
                 'name' => 'system.pages.frontmatter.ignore_fields',
                 'validation' => 'loose'
             ],
-            'system.content' => [
-                'type' => 'section',
-                'underline' => true,
-                'name' => 'system.content',
-                'validation' => 'loose'
-            ],
             'system.languages' => [
-                'type' => 'section',
-                'underline' => true,
+                'type' => '_parent',
                 'name' => 'system.languages',
-                'validation' => 'loose'
+                'form_field' => false
             ],
             'system.languages.supported' => [
                 'type' => 'selectize',
@@ -751,12 +792,6 @@ return [
                 'name' => 'system.pages.vary_accept_encoding',
                 'validation' => 'loose'
             ],
-            'system.http_headers' => [
-                'type' => 'section',
-                'underline' => true,
-                'name' => 'system.http_headers',
-                'validation' => 'loose'
-            ],
             'system.pages.markdown' => [
                 'type' => '_parent',
                 'name' => 'system.pages.markdown',
@@ -816,12 +851,6 @@ return [
                     'type' => 'bool'
                 ],
                 'name' => 'system.pages.markdown.escape_markup',
-                'validation' => 'loose'
-            ],
-            'system.markdown' => [
-                'type' => 'section',
-                'underline' => true,
-                'name' => 'system.markdown',
                 'validation' => 'loose'
             ],
             'system.cache' => [
@@ -969,17 +998,10 @@ return [
                 'name' => 'system.cache.gzip',
                 'validation' => 'loose'
             ],
-            'system.caching' => [
-                'type' => 'section',
-                'underline' => true,
-                'name' => 'system.caching',
-                'validation' => 'loose'
-            ],
             'system.twig' => [
-                'type' => 'section',
-                'underline' => true,
+                'type' => '_parent',
                 'name' => 'system.twig',
-                'validation' => 'loose'
+                'form_field' => false
             ],
             'system.twig.cache' => [
                 'type' => 'toggle',
@@ -1052,10 +1074,9 @@ return [
                 'validation' => 'loose'
             ],
             'system.assets' => [
-                'type' => 'section',
-                'underline' => true,
+                'type' => '_parent',
                 'name' => 'system.assets',
-                'validation' => 'loose'
+                'form_field' => false
             ],
             'system.assets.css_pipeline' => [
                 'type' => 'toggle',
@@ -1218,10 +1239,9 @@ return [
                 'validation' => 'loose'
             ],
             'system.errors' => [
-                'type' => 'section',
-                'underline' => true,
+                'type' => '_parent',
                 'name' => 'system.errors',
-                'validation' => 'loose'
+                'form_field' => false
             ],
             'system.errors.display' => [
                 'type' => 'toggle',
@@ -1252,10 +1272,9 @@ return [
                 'validation' => 'loose'
             ],
             'system.debugger' => [
-                'type' => 'section',
-                'underline' => true,
+                'type' => '_parent',
                 'name' => 'system.debugger',
-                'validation' => 'loose'
+                'form_field' => false
             ],
             'system.debugger.enabled' => [
                 'type' => 'toggle',
@@ -1349,10 +1368,9 @@ return [
                 'validation' => 'loose'
             ],
             'system.media' => [
-                'type' => 'section',
-                'underline' => true,
+                'type' => '_parent',
                 'name' => 'system.media',
-                'validation' => 'loose'
+                'form_field' => false
             ],
             'system.media.upload_limit' => [
                 'type' => 'text',
@@ -1402,10 +1420,9 @@ return [
                 'validation' => 'loose'
             ],
             'system.session' => [
-                'type' => 'section',
-                'underline' => true,
+                'type' => '_parent',
                 'name' => 'system.session',
-                'validation' => 'loose'
+                'form_field' => false
             ],
             'system.session.enabled' => [
                 'type' => 'hidden',
@@ -1469,6 +1486,13 @@ return [
                     'type' => 'bool'
                 ],
                 'name' => 'system.session.httponly',
+                'validation' => 'loose'
+            ],
+            'system.session.path' => [
+                'type' => 'text',
+                'size' => 'small',
+                'label' => 'PLUGIN_ADMIN.SESSION_PATH',
+                'name' => 'system.session.path',
                 'validation' => 'loose'
             ],
             'system.gpm' => [
@@ -1563,10 +1587,11 @@ return [
                 'name' => 'system.force_ssl',
                 'validation' => 'loose'
             ],
-            'system.advanced' => [
-                'type' => 'section',
-                'underline' => true,
-                'name' => 'system.advanced',
+            'system.custom_base_url' => [
+                'type' => 'text',
+                'size' => 'medium',
+                'label' => 'PLUGIN_ADMIN.CUSTOM_BASE_URL',
+                'name' => 'system.custom_base_url',
                 'validation' => 'loose'
             ],
             'plugins.admin' => [
@@ -1580,12 +1605,6 @@ return [
                 'type' => '_parent',
                 'name' => 'plugins',
                 'form_field' => false
-            ],
-            'plugins.admin.Basics' => [
-                'type' => 'section',
-                'underline' => false,
-                'name' => 'plugins.admin.Basics',
-                'validation' => 'loose'
             ],
             'plugins.admin.enabled' => [
                 'type' => 'hidden',
@@ -1771,12 +1790,6 @@ return [
                 'name' => 'plugins.admin.warnings.delete_page',
                 'validation' => 'loose'
             ],
-            'plugins.admin.Dashboard' => [
-                'type' => 'section',
-                'underline' => true,
-                'name' => 'plugins.admin.Dashboard',
-                'validation' => 'loose'
-            ],
             'plugins.admin.widgets' => [
                 'type' => '_parent',
                 'name' => 'plugins.admin.widgets',
@@ -1857,12 +1870,6 @@ return [
                 'name' => 'plugins.admin.widgets.dashboard-pages',
                 'validation' => 'loose'
             ],
-            'plugins.admin.Notifications' => [
-                'type' => 'section',
-                'underline' => true,
-                'name' => 'plugins.admin.Notifications',
-                'validation' => 'loose'
-            ],
             'plugins.admin.notifications' => [
                 'type' => '_parent',
                 'name' => 'plugins.admin.notifications',
@@ -1911,12 +1918,6 @@ return [
                     'type' => 'bool'
                 ],
                 'name' => 'plugins.admin.notifications.themes',
-                'validation' => 'loose'
-            ],
-            'plugins.admin.Popularity' => [
-                'type' => 'section',
-                'underline' => true,
-                'name' => 'plugins.admin.Popularity',
                 'validation' => 'loose'
             ],
             'plugins.admin.popularity' => [
@@ -2512,10 +2513,25 @@ return [
                 'name' => 'plugins.form.enabled',
                 'validation' => 'strict'
             ],
-            'plugins.form.files' => [
-                'type' => 'section',
-                'name' => 'plugins.form.files',
+            'plugins.form.built_in_css' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_FORM.USE_BUILT_IN_CSS',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.form.built_in_css',
                 'validation' => 'strict'
+            ],
+            'plugins.form.files' => [
+                'type' => '_parent',
+                'name' => 'plugins.form.files',
+                'form_field' => false
             ],
             'plugins.form.files.multiple' => [
                 'type' => 'toggle',
@@ -2554,9 +2570,9 @@ return [
                 'validation' => 'strict'
             ],
             'plugins.form.recaptcha' => [
-                'type' => 'section',
+                'type' => '_parent',
                 'name' => 'plugins.form.recaptcha',
-                'validation' => 'strict'
+                'form_field' => false
             ],
             'plugins.form.recaptcha.site_key' => [
                 'type' => 'text',
@@ -2653,9 +2669,9 @@ return [
                 'validation' => 'loose'
             ],
             'plugins.login.rememberme' => [
-                'type' => 'section',
+                'type' => '_parent',
                 'name' => 'plugins.login.rememberme',
-                'validation' => 'loose'
+                'form_field' => false
             ],
             'plugins.login.rememberme.enabled' => [
                 'type' => 'toggle',
@@ -2688,11 +2704,6 @@ return [
                 'size' => 'small',
                 'label' => 'PLUGIN_ADMIN.NAME',
                 'name' => 'plugins.login.rememberme.name',
-                'validation' => 'loose'
-            ],
-            'plugins.login.login' => [
-                'type' => 'tab',
-                'name' => 'plugins.login.login',
                 'validation' => 'loose'
             ],
             'plugins.login.user_registration' => [
@@ -2746,11 +2757,6 @@ return [
                 'name' => 'plugins.login.user_registration.default_values',
                 'validation' => 'loose'
             ],
-            'plugins.login.registration_fields' => [
-                'type' => 'section',
-                'name' => 'plugins.login.registration_fields',
-                'validation' => 'loose'
-            ],
             'plugins.login.user_registration.groups' => [
                 'type' => 'selectize',
                 'size' => 'large',
@@ -2776,12 +2782,6 @@ return [
                     'type' => 'array'
                 ],
                 'name' => 'plugins.login.user_registration.access.site',
-                'validation' => 'loose'
-            ],
-            'plugins.login.access_levels' => [
-                'type' => 'section',
-                'security' => 'admin.super',
-                'name' => 'plugins.login.access_levels',
                 'validation' => 'loose'
             ],
             'plugins.login.user_registration.options' => [
@@ -2869,23 +2869,6 @@ return [
                 ],
                 'validate' => NULL,
                 'name' => 'plugins.login.user_registration.options.send_welcome_email',
-                'validation' => 'loose'
-            ],
-            'plugins.login.options' => [
-                'type' => 'section',
-                'name' => 'plugins.login.options',
-                'validation' => 'loose'
-            ],
-            'plugins.login.registration' => [
-                'type' => 'tab',
-                'name' => 'plugins.login.registration',
-                'validation' => 'loose'
-            ],
-            'plugins.login.tabs' => [
-                'type' => 'tabs',
-                'active' => 1,
-                'class' => 'subtle',
-                'name' => 'plugins.login.tabs',
                 'validation' => 'loose'
             ],
             'plugins.pagination' => [
@@ -3068,12 +3051,6 @@ return [
                 'name' => 'plugins.relatedpages.enabled',
                 'validation' => 'loose'
             ],
-            'plugins.relatedpages.basics_title' => [
-                'type' => 'section',
-                'underline' => true,
-                'name' => 'plugins.relatedpages.basics_title',
-                'validation' => 'loose'
-            ],
             'plugins.relatedpages.limit' => [
                 'type' => 'text',
                 'size' => 'x-small',
@@ -3190,12 +3167,6 @@ return [
                 'name' => 'plugins.relatedpages.explicit_pages.score',
                 'validation' => 'loose'
             ],
-            'plugins.relatedpages.taxonomy_title' => [
-                'type' => 'section',
-                'underline' => true,
-                'name' => 'plugins.relatedpages.taxonomy_title',
-                'validation' => 'loose'
-            ],
             'plugins.relatedpages.taxonomy_match' => [
                 'type' => '_parent',
                 'name' => 'plugins.relatedpages.taxonomy_match',
@@ -3251,12 +3222,6 @@ return [
                 'name' => 'plugins.relatedpages.taxonomy_match.taxonomy_content.process',
                 'validation' => 'loose'
             ],
-            'plugins.relatedpages.content_title' => [
-                'type' => 'section',
-                'underline' => true,
-                'name' => 'plugins.relatedpages.content_title',
-                'validation' => 'loose'
-            ],
             'plugins.relatedpages.content_match' => [
                 'type' => '_parent',
                 'name' => 'plugins.relatedpages.content_match',
@@ -3275,12 +3240,6 @@ return [
                     'type' => 'bool'
                 ],
                 'name' => 'plugins.relatedpages.content_match.process',
-                'validation' => 'loose'
-            ],
-            'plugins.relatedpages.advanced_title' => [
-                'type' => 'section',
-                'underline' => true,
-                'name' => 'plugins.relatedpages.advanced_title',
                 'validation' => 'loose'
             ],
             'plugins.relatedpages.taxonomy_match.taxonomy_taxonomy.score_scale' => [
@@ -3514,15 +3473,330 @@ return [
                 ],
                 'name' => 'plugins.taxonomylist.route',
                 'validation' => 'strict'
+            ],
+            'plugins.youtube' => [
+                'form' => [
+                    'validation' => 'strict'
+                ],
+                'type' => '_root',
+                'form_field' => false
+            ],
+            'plugins.youtube.enabled' => [
+                'type' => 'toggle',
+                'label' => 'Plugin status',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.youtube.enabled',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.built_in_css' => [
+                'type' => 'toggle',
+                'label' => 'Use built in CSS',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.youtube.built_in_css',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.add_editor_button' => [
+                'type' => 'toggle',
+                'label' => 'Add editor button',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.youtube.add_editor_button',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.privacy_enhanced_mode' => [
+                'type' => 'toggle',
+                'label' => 'Privacy-enhanced mode',
+                'highlight' => 0,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.youtube.privacy_enhanced_mode',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.player_parameters' => [
+                'type' => '_parent',
+                'name' => 'plugins.youtube.player_parameters',
+                'form_field' => false
+            ],
+            'plugins.youtube.player_parameters.vq' => [
+                'type' => 'select',
+                'size' => 'medium',
+                'label' => 'Preferred video quality',
+                'default' => 'default',
+                'options' => [
+                    'default' => 'Default',
+                    'small' => 'Small',
+                    'medium' => 'Medium',
+                    'large' => 'Large',
+                    'highres' => 'High resolution',
+                    'hd1080' => 'High definition (1080)',
+                    'hd720' => 'High definition (720)'
+                ],
+                'validate' => [
+                    'type' => 'string'
+                ],
+                'name' => 'plugins.youtube.player_parameters.vq',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.player_parameters.autoplay' => [
+                'type' => 'toggle',
+                'label' => 'Autoplay',
+                'highlight' => 0,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'int'
+                ],
+                'name' => 'plugins.youtube.player_parameters.autoplay',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.player_parameters.loop' => [
+                'type' => 'toggle',
+                'label' => 'Loop',
+                'highlight' => 0,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'int'
+                ],
+                'name' => 'plugins.youtube.player_parameters.loop',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.player_parameters.showinfo' => [
+                'type' => 'toggle',
+                'label' => 'Show information',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'int'
+                ],
+                'name' => 'plugins.youtube.player_parameters.showinfo',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.player_parameters.rel' => [
+                'type' => 'toggle',
+                'label' => 'Related videos',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'int'
+                ],
+                'name' => 'plugins.youtube.player_parameters.rel',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.player_parameters.modestbranding' => [
+                'type' => 'toggle',
+                'label' => 'Modest branding',
+                'highlight' => 0,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'int'
+                ],
+                'name' => 'plugins.youtube.player_parameters.modestbranding',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.player_parameters.color' => [
+                'type' => 'select',
+                'size' => 'medium',
+                'label' => 'Color',
+                'default' => 'red',
+                'options' => [
+                    'red' => 'Red',
+                    'white' => 'White'
+                ],
+                'validate' => [
+                    'type' => 'string'
+                ],
+                'name' => 'plugins.youtube.player_parameters.color',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.player_parameters.cc_load_policy' => [
+                'type' => 'toggle',
+                'label' => 'Show closed captions by default',
+                'highlight' => 0,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'int'
+                ],
+                'name' => 'plugins.youtube.player_parameters.cc_load_policy',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.player_parameters.iv_load_policy' => [
+                'type' => 'select',
+                'size' => 'medium',
+                'label' => 'Video annotations',
+                'default' => 1,
+                'options' => [
+                    1 => 'Displayed by default',
+                    3 => 'Hidden by default'
+                ],
+                'validate' => [
+                    'type' => 'int'
+                ],
+                'name' => 'plugins.youtube.player_parameters.iv_load_policy',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.player_parameters.controls' => [
+                'type' => 'toggle',
+                'label' => 'Controls',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'int'
+                ],
+                'name' => 'plugins.youtube.player_parameters.controls',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.player_parameters.disablekb' => [
+                'type' => 'toggle',
+                'label' => 'Keyboard controls',
+                'highlight' => 0,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'int'
+                ],
+                'name' => 'plugins.youtube.player_parameters.disablekb',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.player_parameters.fs' => [
+                'type' => 'toggle',
+                'label' => 'Fullscreen button',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'int'
+                ],
+                'name' => 'plugins.youtube.player_parameters.fs',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.player_parameters.hl' => [
+                'type' => 'text',
+                'label' => 'Language',
+                'default' => '',
+                'validate' => [
+                    'type' => 'string'
+                ],
+                'name' => 'plugins.youtube.player_parameters.hl',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.player_parameters.enablejsapi' => [
+                'type' => 'toggle',
+                'label' => 'JavaScript API',
+                'highlight' => 0,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'int'
+                ],
+                'name' => 'plugins.youtube.player_parameters.enablejsapi',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.player_parameters.origin' => [
+                'type' => 'text',
+                'label' => 'Origin',
+                'default' => '',
+                'validate' => [
+                    'type' => 'string'
+                ],
+                'name' => 'plugins.youtube.player_parameters.origin',
+                'validation' => 'strict'
+            ],
+            'plugins.youtube.player_parameters.playsinline' => [
+                'type' => 'toggle',
+                'label' => 'iOS playback behavior',
+                'highlight' => 0,
+                'default' => 0,
+                'options' => [
+                    0 => 'Fullscreen',
+                    1 => 'Inline'
+                ],
+                'validate' => [
+                    'type' => 'int'
+                ],
+                'name' => 'plugins.youtube.player_parameters.playsinline',
+                'validation' => 'strict'
             ]
         ],
         'rules' => [
             
         ],
         'nested' => [
-            'media' => 'media',
+            'media' => [
+                'types' => [
+                    '*' => [
+                        'type' => 'media.types.*.type',
+                        'thumb' => 'media.types.*.thumb',
+                        'mime' => 'media.types.*.mime',
+                        'image' => 'media.types.*.image'
+                    ]
+                ]
+            ],
             'site' => [
-                'content' => 'site.content',
                 'title' => 'site.title',
                 'author' => [
                     'name' => 'site.author.name',
@@ -3536,8 +3810,8 @@ return [
                     'delimiter' => 'site.summary.delimiter'
                 ],
                 'metadata' => 'site.metadata',
-                'routes' => 'site.routes',
-                'redirects' => 'site.redirects'
+                'redirects' => 'site.redirects',
+                'routes' => 'site.routes'
             ],
             'streams' => [
                 'schemes' => [
@@ -3545,7 +3819,6 @@ return [
                 ]
             ],
             'system' => [
-                'content' => 'system.content',
                 'home' => [
                     'alias' => 'system.home.alias',
                     'hide_in_urls' => 'system.home.hide_in_urls'
@@ -3601,9 +3874,6 @@ return [
                     'http_accept_language' => 'system.languages.http_accept_language',
                     'override_locale' => 'system.languages.override_locale'
                 ],
-                'http_headers' => 'system.http_headers',
-                'markdown' => 'system.markdown',
-                'caching' => 'system.caching',
                 'cache' => [
                     'enabled' => 'system.cache.enabled',
                     'check' => [
@@ -3657,26 +3927,26 @@ return [
                         'close_connection' => 'system.debugger.shutdown.close_connection'
                     ]
                 ],
-                'media' => [
-                    'upload_limit' => 'system.media.upload_limit',
-                    'enable_media_timestamp' => 'system.media.enable_media_timestamp',
-                    'allowed_fallback_types' => 'system.media.allowed_fallback_types',
-                    'unsupported_inline_types' => 'system.media.unsupported_inline_types'
-                ],
                 'images' => [
                     'default_image_quality' => 'system.images.default_image_quality',
                     'cache_all' => 'system.images.cache_all',
                     'cache_perms' => 'system.images.cache_perms',
                     'debug' => 'system.images.debug'
                 ],
+                'media' => [
+                    'upload_limit' => 'system.media.upload_limit',
+                    'enable_media_timestamp' => 'system.media.enable_media_timestamp',
+                    'allowed_fallback_types' => 'system.media.allowed_fallback_types',
+                    'unsupported_inline_types' => 'system.media.unsupported_inline_types'
+                ],
                 'session' => [
                     'enabled' => 'system.session.enabled',
                     'timeout' => 'system.session.timeout',
                     'name' => 'system.session.name',
                     'secure' => 'system.session.secure',
-                    'httponly' => 'system.session.httponly'
+                    'httponly' => 'system.session.httponly',
+                    'path' => 'system.session.path'
                 ],
-                'advanced' => 'system.advanced',
                 'gpm' => [
                     'releases' => 'system.gpm.releases',
                     'proxy_url' => 'system.gpm.proxy_url'
@@ -3685,11 +3955,11 @@ return [
                 'wrapped_site' => 'system.wrapped_site',
                 'absolute_urls' => 'system.absolute_urls',
                 'param_sep' => 'system.param_sep',
-                'force_ssl' => 'system.force_ssl'
+                'force_ssl' => 'system.force_ssl',
+                'custom_base_url' => 'system.custom_base_url'
             ],
             'plugins' => [
                 'admin' => [
-                    'Basics' => 'plugins.admin.Basics',
                     'enabled' => 'plugins.admin.enabled',
                     'route' => 'plugins.admin.route',
                     'logo_text' => 'plugins.admin.logo_text',
@@ -3711,7 +3981,6 @@ return [
                     'warnings' => [
                         'delete_page' => 'plugins.admin.warnings.delete_page'
                     ],
-                    'Dashboard' => 'plugins.admin.Dashboard',
                     'widgets' => [
                         'dashboard-maintenance' => 'plugins.admin.widgets.dashboard-maintenance',
                         'dashboard-statistics' => 'plugins.admin.widgets.dashboard-statistics',
@@ -3719,13 +3988,11 @@ return [
                         'dashboard-feed' => 'plugins.admin.widgets.dashboard-feed',
                         'dashboard-pages' => 'plugins.admin.widgets.dashboard-pages'
                     ],
-                    'Notifications' => 'plugins.admin.Notifications',
                     'notifications' => [
                         'dashboard' => 'plugins.admin.notifications.dashboard',
                         'plugins' => 'plugins.admin.notifications.plugins',
                         'themes' => 'plugins.admin.notifications.themes'
                     ],
-                    'Popularity' => 'plugins.admin.Popularity',
                     'popularity' => [
                         'enabled' => 'plugins.admin.popularity.enabled',
                         'ignore' => 'plugins.admin.popularity.ignore',
@@ -3800,6 +4067,7 @@ return [
                 ],
                 'form' => [
                     'enabled' => 'plugins.form.enabled',
+                    'built_in_css' => 'plugins.form.built_in_css',
                     'files' => [
                         'multiple' => 'plugins.form.files.multiple',
                         'destination' => 'plugins.form.files.destination',
@@ -3811,8 +4079,6 @@ return [
                     ]
                 ],
                 'login' => [
-                    'tabs' => 'plugins.login.tabs',
-                    'login' => 'plugins.login.login',
                     'enabled' => 'plugins.login.enabled',
                     'built_in_css' => 'plugins.login.built_in_css',
                     'route' => 'plugins.login.route',
@@ -3824,7 +4090,6 @@ return [
                         'timeout' => 'plugins.login.rememberme.timeout',
                         'name' => 'plugins.login.rememberme.name'
                     ],
-                    'registration' => 'plugins.login.registration',
                     'user_registration' => [
                         'enabled' => 'plugins.login.user_registration.enabled',
                         'redirect_after_registration' => 'plugins.login.user_registration.redirect_after_registration',
@@ -3844,10 +4109,7 @@ return [
                             'send_welcome_email' => 'plugins.login.user_registration.options.send_welcome_email'
                         ]
                     ],
-                    'route_register' => 'plugins.login.route_register',
-                    'registration_fields' => 'plugins.login.registration_fields',
-                    'access_levels' => 'plugins.login.access_levels',
-                    'options' => 'plugins.login.options'
+                    'route_register' => 'plugins.login.route_register'
                 ],
                 'pagination' => [
                     'enabled' => 'plugins.pagination.enabled',
@@ -3869,7 +4131,6 @@ return [
                 ],
                 'relatedpages' => [
                     'enabled' => 'plugins.relatedpages.enabled',
-                    'basics_title' => 'plugins.relatedpages.basics_title',
                     'limit' => 'plugins.relatedpages.limit',
                     'show_score' => 'plugins.relatedpages.show_score',
                     'filter' => [
@@ -3884,7 +4145,6 @@ return [
                         'process' => 'plugins.relatedpages.explicit_pages.process',
                         'score' => 'plugins.relatedpages.explicit_pages.score'
                     ],
-                    'taxonomy_title' => 'plugins.relatedpages.taxonomy_title',
                     'taxonomy_match' => [
                         'taxonomy' => 'plugins.relatedpages.taxonomy_match.taxonomy',
                         'taxonomy_taxonomy' => [
@@ -3896,11 +4156,9 @@ return [
                             'score_scale' => 'plugins.relatedpages.taxonomy_match.taxonomy_content.score_scale'
                         ]
                     ],
-                    'content_title' => 'plugins.relatedpages.content_title',
                     'content_match' => [
                         'process' => 'plugins.relatedpages.content_match.process'
-                    ],
-                    'advanced_title' => 'plugins.relatedpages.advanced_title'
+                    ]
                 ],
                 'simplesearch' => [
                     'enabled' => 'plugins.simplesearch.enabled',
@@ -3926,6 +4184,30 @@ return [
                 'taxonomylist' => [
                     'enabled' => 'plugins.taxonomylist.enabled',
                     'route' => 'plugins.taxonomylist.route'
+                ],
+                'youtube' => [
+                    'enabled' => 'plugins.youtube.enabled',
+                    'built_in_css' => 'plugins.youtube.built_in_css',
+                    'add_editor_button' => 'plugins.youtube.add_editor_button',
+                    'privacy_enhanced_mode' => 'plugins.youtube.privacy_enhanced_mode',
+                    'player_parameters' => [
+                        'vq' => 'plugins.youtube.player_parameters.vq',
+                        'autoplay' => 'plugins.youtube.player_parameters.autoplay',
+                        'loop' => 'plugins.youtube.player_parameters.loop',
+                        'showinfo' => 'plugins.youtube.player_parameters.showinfo',
+                        'rel' => 'plugins.youtube.player_parameters.rel',
+                        'modestbranding' => 'plugins.youtube.player_parameters.modestbranding',
+                        'color' => 'plugins.youtube.player_parameters.color',
+                        'cc_load_policy' => 'plugins.youtube.player_parameters.cc_load_policy',
+                        'iv_load_policy' => 'plugins.youtube.player_parameters.iv_load_policy',
+                        'controls' => 'plugins.youtube.player_parameters.controls',
+                        'disablekb' => 'plugins.youtube.player_parameters.disablekb',
+                        'fs' => 'plugins.youtube.player_parameters.fs',
+                        'hl' => 'plugins.youtube.player_parameters.hl',
+                        'enablejsapi' => 'plugins.youtube.player_parameters.enablejsapi',
+                        'origin' => 'plugins.youtube.player_parameters.origin',
+                        'playsinline' => 'plugins.youtube.player_parameters.playsinline'
+                    ]
                 ]
             ]
         ],

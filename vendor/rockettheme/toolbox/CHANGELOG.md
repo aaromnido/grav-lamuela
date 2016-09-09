@@ -1,9 +1,16 @@
+# v1.3.3
+## XX/XX/2016
+
+2. [](#improved)
+    * Allow calls without parameter in UniformResourceLocator::getPaths()
+    * Add support for BlueprintSchema::getPropertyName() and getProperty()
+
 # v1.3.2
 ## 05/24/2016
 
 1. [](#new)
     * Added a new function BlueprintForm::getFilename()
-1. [](#bugfix)
+3. [](#bugfix)
     * BlueprintsForm: Detect if user really meant to extend parent blueprint, not another one
 
 # v1.3.1

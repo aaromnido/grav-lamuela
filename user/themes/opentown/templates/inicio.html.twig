@@ -1,0 +1,102 @@
+{% embed 'partials/base.html.twig' %}
+
+	{% block content %}
+	<div class="body-content home">
+
+		<div class="body-content-picture">
+			<img src="{{ url('theme://images/image-inicio-bg.jpg') }}" alt="{{ page.title }}" />
+		</div>
+
+		<div class="wrapper">
+			<header class="blog-content-header">
+				<h1 class="p-name">{{ page.title }}</h1>
+				<div class="claim">
+					{{ page.content }}
+				</div>
+			</header>
+
+			<section class="blog-content-item grid pure-g featured-1">
+				<div class="pure-u-2-6">
+					<div class="content-wrapper blog-content-list grid pure-g listing-featured">
+						{% set section = '/noticias' %}
+					    {% for page in page.find(section).children.order('date', 'desc').slice(0, 1) %}
+					        <div id="featured" class="pure-u-6-12-">
+					            {% include 'partials/card-highlighted.html.twig' %}
+					        </div>
+					    {% endfor %}
+					</div>
+				</div>
+				<div class="pure-u-2-6">
+					<div class="content-wrapper blog-content-list grid pure-g listing-featured">
+						{% set section = '/prensa' %}
+					    {% for page in page.find(section).children.order('date', 'desc').slice(0, 1) %}
+					        <div id="featured" class="pure-u-6-12-">
+					            {% include 'partials/card-highlighted.html.twig' %}
+					        </div>
+					    {% endfor %}
+					</div>
+				</div>
+				<div class="pure-u-2-6">
+					<div class="content-wrapper blog-content-list grid pure-g listing-featured">
+						{% set section = '/noticias' %}
+					    {% for page in page.find(section).children.order('date', 'desc').slice(4, 1) %}
+					        <div id="featured" class="pure-u-6-12-">
+					            {% include 'partials/card-highlighted.html.twig' %}
+					        </div>
+					    {% endfor %}
+					</div>
+				</div>
+			</section><!-- / featured-1 -->
+
+			<section class="blog-content-item grid pure-g featured-2">
+				<div class="pure-u-3-6">
+					<div class="content-wrapper blog-content-list grid pure-g listing-featured">
+						{% set section = '/prensa' %}
+					    {% for page in page.find(section).children.order('date', 'desc').slice(1, 1) %}
+					        <div id="featured" class="pure-u-6-12-">
+					            {% include 'partials/card.html.twig' %}
+					        </div>
+					    {% endfor %}
+					</div>
+				</div>
+				<div class="pure-u-3-6">
+					<div class="content-wrapper blog-content-list grid pure-g listing-featured">
+						{% set section = '/noticias' %}
+					    {% for page in page.find(section).children.order('date', 'desc').slice(1, 1) %}
+					        <div id="featured" class="pure-u-6-12-">
+					            {% include 'partials/card.html.twig' %}
+					        </div>
+					    {% endfor %}
+					</div>
+				</div>
+			</section><!-- / featured-2 -->
+
+			<section class="blog-content-item grid pure-g featured-3">
+				<div class="pure-u-3-6">
+					<div class="content-wrapper blog-content-list grid pure-g listing-featured">
+						{% set section = '/noticias' %}
+					    {% for page in page.find(section).children.order('date', 'desc').slice(2, 1) %}
+					        <div id="featured" class="pure-u-6-12-">
+					            {% include 'partials/card.html.twig' %}
+					        </div>
+					    {% endfor %}
+					</div>
+				</div>
+				<div class="pure-u-3-6">
+					<div class="content-wrapper blog-content-list grid pure-g listing-featured">
+						{% set section = '/prensa' %}
+					    {% for page in page.find(section).children.order('date', 'desc').slice(2, 1) %}
+					        <div id="featured" class="pure-u-6-12-">
+					            {% include 'partials/card.html.twig' %}
+					        </div>
+					    {% endfor %}
+					</div>
+				</div>
+			</section><!-- / featured-3 -->
+
+
+		</div>
+	</div>
+	{% endblock %}
+
+{% endembed %}

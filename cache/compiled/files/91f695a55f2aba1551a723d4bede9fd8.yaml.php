@@ -2,12 +2,12 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-lamuela-dev/user/plugins/error/languages.yaml',
-    'modified' => 1471162500,
+    'modified' => 1473369201,
     'data' => [
         'en' => [
             'PLUGIN_ERROR' => [
                 'ERROR' => 'Error',
-                'ERROR_MESSAGE' => 'Woops. Looks like this page doesn\'t exist.'
+                'ERROR_MESSAGE' => 'Lo siento, parece que esa página no existe'
             ]
         ],
         'de' => [
@@ -50,6 +50,12 @@ return [
             'PLUGIN_ERROR' => [
                 'ERROR' => '错误',
                 'ERROR_MESSAGE' => '呃，似乎这个页面不存在。'
+            ]
+        ],
+        'es' => [
+            'PLUGIN_ERROR' => [
+                'ERROR' => 'Error',
+                'ERROR_MESSAGE' => 'Woops. Looks like this page doesn\'t exist.'
             ]
         ]
     ]

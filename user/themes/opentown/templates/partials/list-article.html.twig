@@ -1,0 +1,20 @@
+<div class="content-wrapper blog-content-list grid pure-g listing-featured">
+    {% set section = ['/', page.title|underscorize]|join('') %}
+
+    {% for page in page.find(section).children.order('date', 'desc').slice(0, 2) %}
+        <div id="featured" class="pure-u-6-12-">
+            {% include 'partials/card.html.twig' %}
+        </div>
+    {% endfor %}
+</div>
+
+<div class="content-wrapper blog-content-list grid pure-g">
+    <div id="listing" class="pure-u-4-5 listing">
+        {% set collection = page.find(section).children.order('date', 'desc').slice(2, 10) %}
+        {% for page in collection %}
+            {% include 'partials/card.html.twig' %}
+        {% endfor %}
+
+        {% include 'partials/pagination.html.twig' with {'base_url':page.url, 'pagination':collection.params.pagination} %}
+    </div>
+</div>

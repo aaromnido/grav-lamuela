@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-lamuela-dev/user/config/system.yaml',
-    'modified' => 1472801685,
+    'modified' => 1473369757,
     'data' => [
         'absolute_urls' => false,
         'timezone' => 'Europe/Madrid',
@@ -11,7 +11,10 @@ return [
         'reverse_proxy_setup' => false,
         'force_ssl' => false,
         'languages' => [
-            'include_default_lang' => true,
+            'supported' => [
+                0 => 'es'
+            ],
+            'include_default_lang' => false,
             'translations' => true,
             'translations_fallback' => true,
             'session_store_active' => false,
@@ -19,8 +22,8 @@ return [
             'override_locale' => false
         ],
         'home' => [
-            'alias' => '/blog',
-            'hide_in_urls' => false
+            'alias' => '/inicio',
+            'hide_in_urls' => true
         ],
         'pages' => [
             'theme' => 'opentown',

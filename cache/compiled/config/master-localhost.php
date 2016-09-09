@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1472801686,
-    'checksum' => '9a9ecb5d929f789f443ccc91349ce735',
+    'timestamp' => 1473415439,
+    'checksum' => '135a3036c9d6828b641c36b3af590c66',
     'files' => [
         'user/config' => [
             'media' => [
@@ -23,31 +23,31 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1472801685
+                'modified' => 1473369757
             ]
         ],
         'system/config' => [
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1471162498
+                'modified' => 1473353123
             ]
         ],
         'user/plugins' => [
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1472749578
+                'modified' => 1473353369
             ],
             'plugins/archives' => [
                 'file' => 'user/plugins/archives/archives.yaml',
@@ -59,7 +59,7 @@ return [
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
-                'modified' => 1472749564
+                'modified' => 1473353349
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
@@ -71,11 +71,11 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1472749560
+                'modified' => 1473353339
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
-                'modified' => 1472749567
+                'modified' => 1473353352
             ],
             'plugins/pagination' => [
                 'file' => 'user/plugins/pagination/pagination.yaml',
@@ -83,7 +83,7 @@ return [
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
-                'modified' => 1471162502
+                'modified' => 1473353398
             ],
             'plugins/random' => [
                 'file' => 'user/plugins/random/random.yaml',
@@ -95,7 +95,7 @@ return [
             ],
             'plugins/simplesearch' => [
                 'file' => 'user/plugins/simplesearch/simplesearch.yaml',
-                'modified' => 1471162510
+                'modified' => 1473353412
             ],
             'plugins/sitemap' => [
                 'file' => 'user/plugins/sitemap/sitemap.yaml',
@@ -104,6 +104,10 @@ return [
             'plugins/taxonomylist' => [
                 'file' => 'user/plugins/taxonomylist/taxonomylist.yaml',
                 'modified' => 1471162510
+            ],
+            'plugins/youtube' => [
+                'file' => 'user/plugins/youtube/youtube.yaml',
+                'modified' => 1473415439
             ]
         ]
     ],
@@ -224,9 +228,14 @@ return [
             ],
             'form' => [
                 'enabled' => true,
+                'built_in_css' => true,
                 'files' => [
                     'multiple' => false,
-                    'destination' => '@self',
+                    'limit' => 10,
+                    'filesize' => 5,
+                    'destination' => 'self@',
+                    'avoid_overwriting' => false,
+                    'random_name' => false,
                     'accept' => [
                         0 => 'image/*'
                     ]
@@ -364,6 +373,30 @@ return [
             'taxonomylist' => [
                 'enabled' => true,
                 'route' => '/blog'
+            ],
+            'youtube' => [
+                'enabled' => true,
+                'built_in_css' => true,
+                'add_editor_button' => true,
+                'player_parameters' => [
+                    'autoplay' => 0,
+                    'cc_load_policy' => 0,
+                    'color' => 'red',
+                    'controls' => 1,
+                    'disablekb' => 0,
+                    'enablejsapi' => 0,
+                    'fs' => 1,
+                    'hl' => '',
+                    'iv_load_policy' => 1,
+                    'loop' => 0,
+                    'modestbranding' => 0,
+                    'origin' => '',
+                    'playsinline' => 0,
+                    'rel' => 1,
+                    'showinfo' => 1,
+                    'vq' => 'default'
+                ],
+                'privacy_enhanced_mode' => false
             ]
         ],
         'media' => [
@@ -684,9 +717,9 @@ return [
             'force_ssl' => false,
             'languages' => [
                 'supported' => [
-                    
+                    0 => 'es'
                 ],
-                'include_default_lang' => true,
+                'include_default_lang' => false,
                 'translations' => true,
                 'translations_fallback' => true,
                 'session_store_active' => false,
@@ -694,8 +727,8 @@ return [
                 'override_locale' => false
             ],
             'home' => [
-                'alias' => '/blog',
-                'hide_in_urls' => false
+                'alias' => '/inicio',
+                'hide_in_urls' => true
             ],
             'pages' => [
                 'theme' => 'opentown',
@@ -831,12 +864,14 @@ return [
                 'timeout' => 1800,
                 'name' => 'grav-site',
                 'secure' => false,
-                'httponly' => true
+                'httponly' => true,
+                'path' => NULL
             ],
             'gpm' => [
                 'releases' => 'stable',
                 'proxy_url' => NULL
-            ]
+            ],
+            'custom_base_url' => ''
         ],
         'security' => [
             'salt' => 'UmxlIEABCSok9W'

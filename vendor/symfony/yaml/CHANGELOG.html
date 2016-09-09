@@ -1,0 +1,20 @@
+<h1 id="changelog">CHANGELOG</h1>
+<h2 id="2-8-0">2.8.0</h2>
+<ul>
+<li>Deprecated usage of a colon in an unquoted mapping value</li>
+<li>Deprecated usage of @, `, | and &gt; at the beginning of an unquoted string</li>
+<li><p>When surrounding strings with double-quotes, you must now escape <code>\</code> characters. Not
+escaping those characters (when surrounded by double-quotes) is deprecated.</p>
+<p>Before:</p>
+<pre><code class="lang-yml">class: &quot;Foo\Var&quot;
+</code></pre>
+<p>After:</p>
+<pre><code class="lang-yml">class: &quot;Foo\\Var&quot;
+</code></pre>
+</li>
+</ul>
+<h2 id="2-1-0">2.1.0</h2>
+<ul>
+<li>Yaml::parse() does not evaluate loaded files as PHP files by default
+anymore (call Yaml::enablePhpParsing() to get back the old behavior)</li>
+</ul>

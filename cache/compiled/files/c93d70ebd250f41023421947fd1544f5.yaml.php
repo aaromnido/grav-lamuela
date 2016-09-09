@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-lamuela-dev/user/plugins/simplesearch/languages.yaml',
-    'modified' => 1471162510,
+    'modified' => 1473353412,
     'data' => [
         'en' => [
             'PLUGIN_SIMPLESEARCH' => [
@@ -58,6 +58,22 @@ return [
                 'SEARCH_RESULTS' => 'Zoek resultaat',
                 'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Query: <strong>%s</strong> is 1 keer gevonden',
                 'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Query: <strong>%s</strong> is %s keer gevonden'
+            ]
+        ],
+        'hr' => [
+            'PLUGIN_SIMPLESEARCH' => [
+                'SEARCH_PLACEHOLDER' => 'Traži...',
+                'SEARCH_RESULTS' => 'Rezultati pretrage',
+                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Upit: <strong>%s</strong> je pronašao jedan rezultat',
+                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Upit: <strong>%s</strong> je pronašao %s rezultata'
+            ]
+        ],
+        'ru' => [
+            'PLUGIN_SIMPLESEARCH' => [
+                'SEARCH_PLACEHOLDER' => 'Найти...',
+                'SEARCH_RESULTS' => 'Результат поиска',
+                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'По запросу: <strong>%s</strong> результатов найдено 1',
+                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'По запросу: <strong>%s</strong> результатов найдено %s'
             ]
         ]
     ]
