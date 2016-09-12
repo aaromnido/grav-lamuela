@@ -16,7 +16,7 @@
             {% set section = '/el-ayuntamiento/bandos' %}
             {% for page in page.find(section).children.order('date', 'desc') %}
                 <p>
-                    <small><span>{{ page.date|date("d") }}-{{ page.date|date("m") }}-{{ page.date|date("y") }}</span></small> | <a href="{{ page.url }}">{{ page.title }}</a>
+                    <small class="date"><span>{{ page.date|date("d") }}-{{ page.date|date("m") }}-{{ page.date|date("y") }}</span></small> <a href="{{ page.url }}">{{ page.title }}</a>
                 </p>
             {% endfor %}
         </div>

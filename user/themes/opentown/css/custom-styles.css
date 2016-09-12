@@ -602,3 +602,13 @@ p {
 .equipo-de-gobierno .blog-content-header {
   opacity: 0;
 }
+
+.content-footer .icon {
+  font-size: 32px;
+}
+
+.bandos .date {
+  color: #9DA9B3;
+  display: inline-block;
+  min-width: 4.4em;
+}

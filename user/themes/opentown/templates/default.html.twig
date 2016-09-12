@@ -28,6 +28,7 @@
 
 		<div class="blog-content-item grid pure-g-r">
 			<div id="item" class="block pure-u-2-3 h-entry">
+
 				{% set current_page = page.title|hyphenize %}
 
 				{% if current_page == "bandos" %}
@@ -36,6 +37,20 @@
 					{{current_page}}
 					{% include 'partials/blog_item-fullwidth.html.twig' with {'blog':page.parent, 'truncate':false} %}
 				{% endif %}
+
+
+				{% set files = page.media.files %}
+				{% if files %}
+					<footer class="content-footer">
+						{% for file in files %}
+							<a href="{{ file.url }}" class="icon pdf" target="_blank">
+								<small>Descargar PDF adjunto:</small>
+								<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+							</a>
+						{% endfor %}
+					</footer>
+				{% endif %}
+
 			</div>
 		</div>
 	</div>
