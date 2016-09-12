@@ -1,3 +1,19 @@
+<h1 id="v1-1-5">v1.1.5</h1>
+<h2 id="09-09-2016">09/09/2016</h2>
+<ol>
+<li><a href="#improved"></a><ul>
+<li>Refactored <code>onPageNotFound</code> event to fire after <code>onPageInitialized</code></li>
+<li>Follow symlinks in <code>Folder::all()</code></li>
+<li>Twig variable <code>base_url</code> now supports multi-site by path feature</li>
+<li>Improved <code>bin/plugin</code> to list plugins with commands faster by limiting the depth of recursion</li>
+</ul>
+</li>
+<li><a href="#bugfix"></a><ul>
+<li>Quietly skip missing streams in <code>Cache::clearCache()</code></li>
+<li>Fix issue in calling page.summary when no content is present in a page</li>
+</ul>
+</li>
+</ol>
 <h1 id="v1-1-4">v1.1.4</h1>
 <h2 id="09-07-2016">09/07/2016</h2>
 <ol>

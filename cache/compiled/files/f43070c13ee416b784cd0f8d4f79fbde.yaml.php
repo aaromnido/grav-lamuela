@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-lamuela-dev/system/config/system.yaml',
-    'modified' => 1473353123,
+    'modified' => 1473675180,
     'data' => [
         'absolute_urls' => false,
         'timezone' => '',
@@ -11,6 +11,7 @@ return [
         'wrapped_site' => false,
         'reverse_proxy_setup' => false,
         'force_ssl' => false,
+        'custom_base_url' => '',
         'languages' => [
             'supported' => [
                 
@@ -166,7 +167,6 @@ return [
         'gpm' => [
             'releases' => 'stable',
             'proxy_url' => NULL
-        ],
-        'custom_base_url' => ''
+        ]
     ]
 ];

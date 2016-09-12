@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-lamuela-dev/system/languages/el.yaml',
-    'modified' => 1473353123,
+    'modified' => 1473675180,
     'data' => [
         'MONTHS_OF_THE_YEAR' => [
             0 => 'Ιανουάριος',
