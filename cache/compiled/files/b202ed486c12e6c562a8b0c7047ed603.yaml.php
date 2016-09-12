@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-lamuela-dev/system/languages/fi.yaml',
-    'modified' => 1473353123,
+    'modified' => 1473675180,
     'data' => [
         'NICETIME' => [
             'NO_DATE_PROVIDED' => 'Päivämäärää ei annettu',

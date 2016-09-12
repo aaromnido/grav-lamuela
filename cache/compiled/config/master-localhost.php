@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1473443075,
-    'checksum' => '41e8a6039f35ec455cf623086792beea',
+    'timestamp' => 1473675183,
+    'checksum' => 'bce0274f8a741d27c9ca5370ce03304f',
     'files' => [
         'user/config' => [
             'media' => [
@@ -29,19 +29,19 @@ return [
         'system/config' => [
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1473353123
+                'modified' => 1473675180
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1473353123
+                'modified' => 1473675180
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1473353123
+                'modified' => 1473675180
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1473353123
+                'modified' => 1473675180
             ]
         ],
         'user/plugins' => [
@@ -71,11 +71,11 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1473353339
+                'modified' => 1473675103
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
-                'modified' => 1473353352
+                'modified' => 1473675155
             ],
             'plugins/pagination' => [
                 'file' => 'user/plugins/pagination/pagination.yaml',
@@ -715,6 +715,7 @@ return [
             'wrapped_site' => false,
             'reverse_proxy_setup' => false,
             'force_ssl' => false,
+            'custom_base_url' => '',
             'languages' => [
                 'supported' => [
                     0 => 'es'
@@ -870,8 +871,7 @@ return [
             'gpm' => [
                 'releases' => 'stable',
                 'proxy_url' => NULL
-            ],
-            'custom_base_url' => ''
+            ]
         ],
         'security' => [
             'salt' => 'UmxlIEABCSok9W'

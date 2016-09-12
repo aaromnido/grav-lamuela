@@ -1,121 +1,121 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledLanguages',
-    'timestamp' => 1473443075,
-    'checksum' => '093da96c482a019b1eb9216a4d1b434a',
+    'timestamp' => 1473675183,
+    'checksum' => 'e8cb933013d5e0e81634aafc36403668',
     'files' => [
         'system/languages' => [
             'ar' => [
                 'file' => 'system/languages/ar.yaml',
-                'modified' => 1473353123
+                'modified' => 1473675180
             ],
             'ca' => [
                 'file' => 'system/languages/ca.yaml',
-                'modified' => 1473353123
+                'modified' => 1473675180
             ],
             'cs' => [
                 'file' => 'system/languages/cs.yaml',
-                'modified' => 1473353123
+                'modified' => 1473675180
             ],
             'da' => [
                 'file' => 'system/languages/da.yaml',
-                'modified' => 1473353123
+                'modified' => 1473675180
             ],
             'de' => [
                 'file' => 'system/languages/de.yaml',
-                'modified' => 1473353123
+                'modified' => 1473675180
             ],
             'el' => [
                 'file' => 'system/languages/el.yaml',
-                'modified' => 1473353123
+                'modified' => 1473675180
             ],
             'en' => [
                 'file' => 'system/languages/en.yaml',
-                'modified' => 1473353123
+                'modified' => 1473675180
             ],
             'es' => [
                 'file' => 'system/languages/es.yaml',
-                'modified' => 1473353123
+                'modified' => 1473675180
             ],
             'fi' => [
                 'file' => 'system/languages/fi.yaml',
-                'modified' => 1473353123
+                'modified' => 1473675180
             ],
             'fr' => [
                 'file' => 'system/languages/fr.yaml',
-                'modified' => 1473353123
+                'modified' => 1473675180
             ],
             'hr' => [
                 'file' => 'system/languages/hr.yaml',
-                'modified' => 1473353123
+                'modified' => 1473675180
             ],
             'hu' => [
                 'file' => 'system/languages/hu.yaml',
-                'modified' => 1473353123
+                'modified' => 1473675180
             ],
             'it' => [
                 'file' => 'system/languages/it.yaml',
-                'modified' => 1473353123
+                'modified' => 1473675180
             ],
             'ja' => [
                 'file' => 'system/languages/ja.yaml',
-                'modified' => 1473353123
+                'modified' => 1473675180
             ],
             'lt' => [
                 'file' => 'system/languages/lt.yaml',
-                'modified' => 1473353123
+                'modified' => 1473675180
             ],
             'nb' => [
                 'file' => 'system/languages/nb.yaml',
-                'modified' => 1473353123
+                'modified' => 1473675180
             ],
             'nl' => [
                 'file' => 'system/languages/nl.yaml',
-                'modified' => 1473353123
+                'modified' => 1473675180
             ],
             'no' => [
                 'file' => 'system/languages/no.yaml',
-                'modified' => 1473353123
+                'modified' => 1473675180
             ],
             'pl' => [
                 'file' => 'system/languages/pl.yaml',
-                'modified' => 1473353123
+                'modified' => 1473675180
             ],
             'pt' => [
                 'file' => 'system/languages/pt.yaml',
-                'modified' => 1473353123
+                'modified' => 1473675180
             ],
             'ro' => [
                 'file' => 'system/languages/ro.yaml',
-                'modified' => 1473353123
+                'modified' => 1473675180
             ],
             'ru' => [
                 'file' => 'system/languages/ru.yaml',
-                'modified' => 1473353123
+                'modified' => 1473675180
             ],
             'sk' => [
                 'file' => 'system/languages/sk.yaml',
-                'modified' => 1473353123
+                'modified' => 1473675180
             ],
             'sv' => [
                 'file' => 'system/languages/sv.yaml',
-                'modified' => 1473353123
+                'modified' => 1473675180
             ],
             'th' => [
                 'file' => 'system/languages/th.yaml',
-                'modified' => 1473353123
+                'modified' => 1473675180
             ],
             'tr' => [
                 'file' => 'system/languages/tr.yaml',
-                'modified' => 1473353123
+                'modified' => 1473675180
             ],
             'uk' => [
                 'file' => 'system/languages/uk.yaml',
-                'modified' => 1473353123
+                'modified' => 1473675180
             ],
             'vi' => [
                 'file' => 'system/languages/vi.yaml',
-                'modified' => 1473353123
+                'modified' => 1473675180
             ]
         ],
         'user/plugins' => [
@@ -129,11 +129,11 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/languages.yaml',
-                'modified' => 1473353339
+                'modified' => 1473675103
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/languages.yaml',
-                'modified' => 1473353352
+                'modified' => 1473675155
             ],
             'plugins/relatedpages' => [
                 'file' => 'user/plugins/relatedpages/languages.yaml',
@@ -6369,7 +6369,23 @@ Ruta: `%2$s`
                 'RECAPTCHA_SITE_KEY' => 'Clé du site',
                 'RECAPTCHA_SITE_KEY_HELP' => 'Pour plus d\'informations veuillez vous rendre sur https://developers.google.com/recaptcha',
                 'RECAPTCHA_SECRET_KEY' => 'Clé secrète',
-                'RECAPTCHA_SECRET_KEY_HELP' => 'Pour plus d\'informations veuillez vous rendre sur https://developers.google.com/recaptcha'
+                'RECAPTCHA_SECRET_KEY_HELP' => 'Pour plus d\'informations veuillez vous rendre sur https://developers.google.com/recaptcha',
+                'GENERAL' => 'Général',
+                'USE_BUILT_IN_CSS' => 'Utiliser les CSS natifs',
+                'FILEUPLOAD_PREVENT_SELF' => 'Impossible d\'utiliser \'%s\' en dehors des pages.',
+                'FILEUPLOAD_UNABLE_TO_UPLOAD' => 'Impossible de charger le fichier %s: %s',
+                'FILEUPLOAD_UNABLE_TO_MOVE' => 'Impossible de déplacer le fichier %s vers "%s"',
+                'DROPZONE_CANCEL_UPLOAD' => 'Annuler le chargement',
+                'DROPZONE_CANCEL_UPLOAD_CONFIRMATION' => 'Êtes-vous certain de vouloir annuler ce téléchargement ?',
+                'DROPZONE_DEFAULT_MESSAGE' => 'Glissez vos fichiers ici ou <strong>cliquez dans cette zone</strong>',
+                'DROPZONE_FALLBACK_MESSAGE' => 'Votre navigateur ne prend pas en charge les téléchargements par glissé-déposé.',
+                'DROPZONE_FALLBACK_TEXT' => 'Veuillez utiliser le formulaire de secours ci-dessous pour transférer vos fichiers.',
+                'DROPZONE_FILE_TOO_BIG' => 'Le fichier est trop volumineux ({{filesize}}MiB). Taille maximale de fichier : {{maxFilesize}}MiB.',
+                'DROPZONE_INVALID_FILE_TYPE' => 'Vous ne pouvez pas charger des fichiers de ce type.',
+                'DROPZONE_MAX_FILES_EXCEEDED' => 'Vous ne pouvez plus télécharger de fichiers.',
+                'DROPZONE_REMOVE_FILE' => 'Supprimer le fichier',
+                'DROPZONE_REMOVE_FILE_CONFIRMATION' => 'Êtes-vous sûr de vouloir supprimer ce fichier ?',
+                'DROPZONE_RESPONSE_ERROR' => 'Le serveur a répondu avec le code {{statusCode}}.'
             ],
             'PLUGIN_LOGIN' => [
                 'USERNAME' => 'Nom d’utilisateur',
@@ -15584,6 +15600,6 @@ Path: `%2$s`
                 6 => 'Chủ Nhật'
             ]
         ],
-        'checksum' => '093da96c482a019b1eb9216a4d1b434a'
+        'checksum' => 'e8cb933013d5e0e81634aafc36403668'
     ]
 ];
