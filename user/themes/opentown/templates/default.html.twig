@@ -4,13 +4,20 @@
 <div class="body-content">
 	<div class="body-content-picture">
 		{% set images = page.media.images %}
+		{% set section = page.parent.title %}
 
 		{% if images %}
 			{% for image in images %}
 				{{ image.cropZoom(1440, 740).html }}
 			{% endfor %}
 		{% else %}
-			<img src="{{ url('theme://images/image-item-dummy.jpg') }}" alt="{{ page.title }}" />
+			{% if section != "Pages" %}
+				<img src="{{ url('theme://images/seccion-el-ayuntamiento.jpg') }}" alt="{{ page.title }}" />
+			{% elseif section == "El Ayuntamiento" %}
+				<img src="{{ url('theme://images/image-item-dummy.jpg') }}" alt="{{ page.title }}" />
+			{% elseif section == "El Municipio" %}
+					<img src="{{ url('theme://images/image-item-dummy.jpg') }}" alt="{{ page.title }}" />
+			{% endif %}
 		{% endif %}
 	</div>
 
@@ -21,7 +28,14 @@
 
 		<div class="blog-content-item grid pure-g-r">
 			<div id="item" class="block pure-u-2-3 h-entry">
-				{% include 'partials/blog_item-fullwidth.html.twig' with {'blog':page.parent, 'truncate':false} %}
+				{% set current_page = page.title|hyphenize %}
+
+				{% if current_page == "bandos" %}
+					{% include 'partials/bandos-list.html.twig' %}
+				{% else %}
+					{{current_page}}
+					{% include 'partials/blog_item-fullwidth.html.twig' with {'blog':page.parent, 'truncate':false} %}
+				{% endif %}
 			</div>
 		</div>
 	</div>

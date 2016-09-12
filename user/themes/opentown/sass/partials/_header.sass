@@ -24,14 +24,46 @@
 
         li
             list-style: none
+            position: relative
+            transition: all 0.4 ease-in-out
+
+            &.has-children
+                ul
+                    opacity: 0
+            &.has-children:hover
+                ul
+                    opacity: 1
+
+            ul
+                position: absolute
+                z-index: 20
+                padding: 1em 0 0 0
+
+                ul
+                    display: none
+
+                a
+                    display: block
+                    min-width: 230px
+                    background: transparentize($grey-light, 0.05)
+                    border-top: none
+                    border-bottom: none !important
+                    padding: 0.2em 0.6em
+                    font-size: 14px
+                    text-align: left
+
+                a:hover
+                    background: white
+                    color: darken($grey, 10%)
 
         a
             color: $night
             font-family: Lato
             text-transform: uppercase
             font-size: 16px
-            padding-bottom: 1rem
+            padding-bottom: 1.1rem
             transition: all 0.4s ease-in
+            cursor: pointer
 
         a:hover,
         li.active a
