@@ -4,13 +4,20 @@
 <div class="body-content">
 	<div class="body-content-picture">
 		{% set images = page.media.images %}
+		{% set section = page.parent.title %}
 
 		{% if images %}
 			{% for image in images %}
 				{{ image.cropZoom(1440, 740).html }}
 			{% endfor %}
 		{% else %}
-			<img src="{{ url('theme://images/image-item-dummy.jpg') }}" alt="{{ page.title }}" />
+			{% if section != "Pages" %}
+				<img src="{{ url('theme://images/seccion-el-ayuntamiento.jpg') }}" alt="{{ page.title }}" />
+			{% elseif section == "El Ayuntamiento" %}
+				<img src="{{ url('theme://images/image-item-dummy.jpg') }}" alt="{{ page.title }}" />
+			{% elseif section == "El Municipio" %}
+					<img src="{{ url('theme://images/image-item-dummy.jpg') }}" alt="{{ page.title }}" />
+			{% endif %}
 		{% endif %}
 	</div>
 
