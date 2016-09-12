@@ -45,6 +45,38 @@ p {
 
 .header .navigation li {
   list-style: none;
+  position: relative;
+  transition: all 0.4 ease-in-out;
+}
+
+.header .navigation li.has-children ul {
+  opacity: 0;
+}
+
+.header .navigation li.has-children:hover ul {
+  opacity: 1;
+}
+
+.header .navigation li ul {
+  position: absolute;
+  z-index: 20;
+  padding: 0;
+}
+
+.header .navigation li ul a {
+  display: block;
+  min-width: 230px;
+  background: rgba(239, 241, 243, 0.95);
+  border-top: none;
+  border-bottom: none !important;
+  padding: 0.2em 0.6em;
+  font-size: 14px;
+  text-align: left;
+}
+
+.header .navigation li ul a:hover {
+  background: white;
+  color: #80909d;
 }
 
 .header .navigation a {
@@ -52,8 +84,9 @@ p {
   font-family: Lato;
   text-transform: uppercase;
   font-size: 16px;
-  padding-bottom: 1rem;
+  padding-bottom: 1.1rem;
   transition: all 0.4s ease-in;
+  cursor: pointer;
 }
 
 .header .navigation a:hover,
@@ -550,4 +583,14 @@ p {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
+}
+
+.convocatoria-junta .e-content {
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.convocatoria-junta .e-content p {
+  margin: 0 0 1em;
 }

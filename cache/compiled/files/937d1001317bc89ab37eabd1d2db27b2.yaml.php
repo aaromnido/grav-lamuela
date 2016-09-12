@@ -2,11 +2,11 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'themes://opentown/opentown.yaml',
-    'modified' => 1472654220,
+    'modified' => 1473678911,
     'data' => [
         'enabled' => true,
         'dropdown' => [
-            'enabled' => false
+            'enabled' => true
         ]
     ]
 ];

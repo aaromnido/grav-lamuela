@@ -1,5 +1,6 @@
 ---
 title: 'El Ayuntamiento'
+child_type: default
 ---
 
 Sección que engloba todas aquellas páginas que muestran información institucional:
