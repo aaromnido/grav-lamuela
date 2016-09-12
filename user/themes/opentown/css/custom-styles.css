@@ -63,6 +63,10 @@ p {
   padding: 1em 0 0 0;
 }
 
+.header .navigation li ul ul {
+  display: none;
+}
+
 .header .navigation li ul a {
   display: block;
   min-width: 230px;
@@ -593,4 +597,8 @@ p {
 
 .convocatoria-junta .e-content p {
   margin: 0 0 1em;
+}
+
+.equipo-de-gobierno .blog-content-header {
+  opacity: 0;
 }
