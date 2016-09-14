@@ -44,9 +44,17 @@
 						{% endfor %}
 					</footer>
 				{% endif %}
-
 			</div>
 		</div>
 	</div>
+	{% if page.title == "Contacto" %}
+		<section class="contact-form">
+			<div class="wrapper">
+				<article class="form-content-item grid pure-g-r">
+				{% include "forms/form.html.twig" %}
+				</article>
+			</div>
+		</section>
+	{% endif %}
 </div>
 {% endblock %}

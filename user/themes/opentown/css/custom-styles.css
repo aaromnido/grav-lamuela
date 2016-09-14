@@ -271,6 +271,89 @@ p {
   margin: 0 auto;
 }
 
+.page-contacto .blog-content-item,
+.page-contacto .list-item {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.page-gracias .contact-form {
+  background: transparent;
+}
+
+.page-gracias .alert-message {
+  margin-top: 100px;
+}
+
+.contact-form {
+  background: rgba(239, 241, 243, 0.5);
+}
+
+.contact-form .form-content-item {
+  padding: 60px 180px;
+}
+
+.contact-form #formulario-de-contacto {
+  width: 100%;
+}
+
+.contact-form label {
+  color: #304255;
+}
+
+.contact-form label .required {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  color: #4ECBFA;
+}
+
+.contact-form input[type="text"],
+.contact-form textarea {
+  border-color: #d2d8dd;
+  border-radius: 2px;
+  padding: 1em;
+}
+
+.contact-form input[type="submit"],
+.contact-form button {
+  background: #4ECBFA;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 0.5em 1.5em;
+  border-radius: 200px;
+  text-transform: uppercase;
+  transition: all 0.4s ease-in-out;
+}
+
+.contact-form input[type="submit"]:hover,
+.contact-form button:hover {
+  background: #227FBB;
+}
+
+.alert-message {
+  background: #4ECBFA;
+  padding: 1em;
+  border-radius: 2px;
+}
+
+.alert-message > * {
+  color: white;
+  font-family: "Lato";
+}
+
+.alert-message p {
+  margin: 0 0 1em 0;
+}
+
+.alert-message p:last-child {
+  margin-bottom: 0;
+}
+
+.alert-message.alert-message--succes {
+  background: #37BA72;
+}
+
 .card {
   border: 1px solid #d8dde2;
   background: white;
@@ -581,6 +664,14 @@ p {
 
 .video-list .video-item:nth-child(1) {
   display: none;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
 }
 
 #body {
