@@ -244,6 +244,12 @@ p {
   padding: 60px 180px;
 }
 
+@media only screen and (max-width: 780px) {
+  .blog-content-item {
+    padding: 40px 60px;
+  }
+}
+
 .blog-content-item h2 {
   font-size: 38px;
   color: #0F1B26;
@@ -291,6 +297,7 @@ p {
 
 .contact-form .form-content-item {
   padding: 60px 180px;
+  flex-direction: column;
 }
 
 .contact-form #formulario-de-contacto {
@@ -393,7 +400,7 @@ p {
 }
 
 .card.el-ayuntamiento::after {
-  background: #F59D00;
+  background: #227FBB;
 }
 
 .card:hover {
@@ -666,6 +673,43 @@ p {
   display: none;
 }
 
+.ordenanzas table,
+.ordenanzas tbody,
+.ordenanzas td,
+.solicitudes table,
+.solicitudes tbody,
+.solicitudes td {
+  border-left: none;
+  border-right: none;
+}
+
+.ordenanzas td,
+.ordenanzas p,
+.ordenanzas a,
+.solicitudes td,
+.solicitudes p,
+.solicitudes a {
+  margin: 0;
+  font-family: "Lato";
+  font-size: 16px;
+  vertical-align: top;
+}
+
+.ordenanzas td,
+.solicitudes td {
+  padding: 0.4em 0.6em;
+}
+
+.ordenanzas a,
+.solicitudes a {
+  font-size: 14px;
+}
+
+.ordenanzas tr > td:first-child,
+.solicitudes tr > td:first-child {
+  width: 22%;
+}
+
 .align-center {
   text-align: center;
 }
@@ -715,4 +759,35 @@ p {
 
 .reverse-order.list-vertical {
   flex-direction: column-reverse;
+}
+
+.list-item {
+  border-bottom: none;
+}
+
+.child-list {
+  margin-top: -60px;
+}
+
+.child-list .card-new {
+  width: 50%;
+  float: left;
+  padding-top: 120px;
+}
+
+.child-list .card-new img {
+  max-width: 50%;
+}
+
+@media only screen and (max-width: 1060px) {
+  .child-list .card-new {
+    width: 100%;
+  }
+  .child-list .card-new img {
+    max-width: 100%;
+  }
+}
+
+.child-list .picture {
+  height: 100px !important;
 }

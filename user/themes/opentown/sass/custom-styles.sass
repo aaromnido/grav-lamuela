@@ -12,13 +12,14 @@
 @import "partials/page"
 @import "partials/home"
 @import "partials/video-gallery"
+@import "partials/virtual-office"
 
 .align-center
     text-align: center
 
 .align-right
     text-align: right
-    
+
 #body
     padding-left: 0
     padding-right: 0
@@ -56,3 +57,25 @@
 
     &.list-vertical
         flex-direction: column-reverse
+
+.list-item
+    border-bottom: none
+
+.child-list
+    margin-top: -60px
+
+    .card-new
+        width: 50%
+        float: left
+        padding-top: 120px
+        img
+            max-width: 50%
+        @media only screen and (max-width: $max-desktop-width)
+            width: 100%
+            img
+                max-width: 100%
+
+
+
+    .picture
+        height: 100px !important

@@ -23,7 +23,13 @@
 
 	<div class="wrapper">
 		<header class="blog-content-header">
-			<h1 class="p-name">{{ page.title }}</h1>
+			{% if section == "Pages" %}
+				<h1 class="p-name">{{ page.title }}</h1>
+			{% elseif section == "Oficina Virtual" %}
+				<h1 class="p-name">El Ayuntamiento | {{ section }}</h1>
+			{% else %}
+				<h1 class="p-name">{{ section }}</h1>
+			{% endif %}
 		</header>
 
 		<div class="blog-content-item grid pure-g-r">
@@ -44,6 +50,10 @@
 						{% endfor %}
 					</footer>
 				{% endif %}
+
+				{% if current_page == "El Ayuntamiento" %}
+					{% include "partials/child-pages-list.html.twig" %}
+				{% endif %}
 			</div>
 		</div>
 	</div>
@@ -51,6 +61,7 @@
 		<section class="contact-form">
 			<div class="wrapper">
 				<article class="form-content-item grid pure-g-r">
+				<h4>Formulario de contacto</h4>
 				{% include "forms/form.html.twig" %}
 				</article>
 			</div>

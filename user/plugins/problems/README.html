@@ -1,0 +1,133 @@
+<h1 id="grav-problems-plugin">Grav Problems Plugin</h1>
+<p><img src="assets/readme_1.png" alt="Problems"></p>
+<p><code>Problems</code> is a <a href="http://github.com/getgrav/grav">Grav</a> Plugin and allows to detect issues.</p>
+<p>This plugin is included in any package distributed that contains Grav. If you decide to clone Grav from GitHub, you will most likely want to install this.</p>
+<h1 id="installation">Installation</h1>
+<p>Installing the Problems plugin can be done in one of two ways. Our GPM (Grav Package Manager) installation method enables you to quickly and easily install the plugin with a simple terminal command, while the manual method enables you to do so via a zip file.</p>
+<h2 id="gpm-installation-preferred-">GPM Installation (Preferred)</h2>
+<p>The simplest way to install this plugin is via the <a href="http://learn.getgrav.org/advanced/grav-gpm">Grav Package Manager (GPM)</a> through your system&#39;s Terminal (also called the command line).  From the root of your Grav install type:</p>
+<pre><code>bin/gpm install problems
+</code></pre><p>This will install the Problems plugin into your <code>/user/plugins</code> directory within Grav. Its files can be found under <code>/your/site/grav/user/plugins/problems</code>.</p>
+<h2 id="manual-installation">Manual Installation</h2>
+<p>To install this plugin, just download the zip version of this repository and unzip it under <code>/your/site/grav/user/plugins</code>. Then, rename the folder to <code>problems</code>. You can find these files either on <a href="https://github.com/getgrav/grav-plugin-problems">GitHub</a> or via <a href="http://getgrav.org/downloads/plugins#extras">GetGrav.org</a>.</p>
+<p>You should now have all the plugin files under</p>
+<pre><code>/your/site/grav/user/plugins/problems
+</code></pre><blockquote>
+<blockquote>
+<p>NOTE: This plugin is a modular component for Grav which requires <a href="http://github.com/getgrav/grav">Grav</a>, the <a href="https://github.com/getgrav/grav-plugin-error">Error</a> and <a href="https://github.com/getgrav/grav-plugin-problems">Problems</a> plugins, and a theme to be installed in order to operate.</p>
+</blockquote>
+</blockquote>
+<h1 id="usage">Usage</h1>
+<p><code>Problems</code> runs in the background and most of the time you will not know it is there. Although as soon as an issue is caught, the plugin will let you know.</p>
+<p><code>Problems</code> checks for the following common issues:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Check</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Apache <code>mod_rewrite</code></td>
+<td style="text-align:left">Checks to ensure <code>mod_rewrite</code> is enabled if you are running an Apache server.</td>
+</tr>
+<tr>
+<td style="text-align:left">PHP Version</td>
+<td style="text-align:left">Checks to make sure the PHP version being run by the server meets or exceeds Grav&#39;s minimum requirements.</td>
+</tr>
+<tr>
+<td style="text-align:left">PHP GD (Image Manipulation Library)</td>
+<td style="text-align:left">Checks to make sure that PHP GD is installed.</td>
+</tr>
+<tr>
+<td style="text-align:left">PHP Curl (Data Transfer Library)</td>
+<td style="text-align:left">Checks to make sure that PHP Curl is installed.</td>
+</tr>
+<tr>
+<td style="text-align:left">PHP OpenSSL (Secure Sockets Library)</td>
+<td style="text-align:left">Checks to make sure that PHP OpenSSL is installed.</td>
+</tr>
+<tr>
+<td style="text-align:left">PHP Mbstring (Multibyte String Library)</td>
+<td style="text-align:left">Checks to make sure that PHP Mbstring is installed.</td>
+</tr>
+<tr>
+<td style="text-align:left">.htaccess</td>
+<td style="text-align:left">Checks to make sure that there is an <code>.htaccess</code> file in Grav&#39;s root directory.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>bin/*</code> executable</td>
+<td style="text-align:left">Checks that all the files in the <code>bin/</code> folder are exectuable.</td>
+</tr>
+<tr>
+<td style="text-align:left">Cache</td>
+<td style="text-align:left">Checks the <code>/cache</code> folder&#39;s existence and verifies that it is writeable.</td>
+</tr>
+<tr>
+<td style="text-align:left">Logs</td>
+<td style="text-align:left">Checks the <code>/logs</code> folder&#39;s existence and verifies that it is writeable.</td>
+</tr>
+<tr>
+<td style="text-align:left">Images</td>
+<td style="text-align:left">Checks the <code>/images</code> folder&#39;s existence and verifies that it is writeable.</td>
+</tr>
+<tr>
+<td style="text-align:left">Assets</td>
+<td style="text-align:left">Checks the <code>/assets</code> folder&#39;s existence and verifies that it is writeable.</td>
+</tr>
+<tr>
+<td style="text-align:left">System</td>
+<td style="text-align:left">Checks the <code>/system</code> folder&#39;s existence.</td>
+</tr>
+<tr>
+<td style="text-align:left">Data</td>
+<td style="text-align:left">Checks the <code>/user/data</code> folder&#39;s existence and verifies that it is writeable.</td>
+</tr>
+<tr>
+<td style="text-align:left">Pages</td>
+<td style="text-align:left">Checks the <code>/user/images</code> folder&#39;s existence.</td>
+</tr>
+<tr>
+<td style="text-align:left">Config</td>
+<td style="text-align:left">Checks the <code>/user/config</code> folder&#39;s existence.</td>
+</tr>
+<tr>
+<td style="text-align:left">Error</td>
+<td style="text-align:left">Checks to make sure the <strong>Error</strong> plugin is installed in <code>/user/plugins/error</code>.</td>
+</tr>
+<tr>
+<td style="text-align:left">Plugins</td>
+<td style="text-align:left">Checks the <code>/user/plugins</code> folder&#39;s existence.</td>
+</tr>
+<tr>
+<td style="text-align:left">Themes</td>
+<td style="text-align:left">Checks the <code>/user/themes</code> folder&#39;s existence.</td>
+</tr>
+<tr>
+<td style="text-align:left">Vendor</td>
+<td style="text-align:left">Checks the <code>/vendor</code> folder&#39;s existence.</td>
+</tr>
+</tbody>
+</table>
+<p>If an issue is discovered, you will be greeted with a page that lists these checks and whether or not your install passed or failed them. Green checks mean it passed, and a red x indicates that the there is something amiss with the item.</p>
+<p>Problems uses the cache as refresh indicator. That means that if nothing has changed anywhere, the plugin will just skip its validation tests altogether.</p>
+<p>If a change is caught and the cache is refreshed, the plugin will loop through its validation tests and making sure nothing is out of place.</p>
+<p><code>Problems</code> gets also triggered if any fatal exception is caught.</p>
+<h1 id="updating">Updating</h1>
+<p>As development for the Problems plugin continues, new versions may become available that add additional features and functionality, improve compatibility with newer Grav releases, and generally provide a better user experience. Updating Problems is easy, and can be done through Grav&#39;s GPM system, as well as manually.</p>
+<h2 id="gpm-update-preferred-">GPM Update (Preferred)</h2>
+<p>The simplest way to update this plugin is via the <a href="http://learn.getgrav.org/advanced/grav-gpm">Grav Package Manager (GPM)</a>. You can do this with this by navigating to the root directory of your Grav install using your system&#39;s Terminal (also called command line) and typing the following:</p>
+<pre><code>bin/gpm update problems
+</code></pre><p>This command will check your Grav install to see if your Problems plugin is due for an update. If a newer release is found, you will be asked whether or not you wish to update. To continue, type <code>y</code> and hit enter. The plugin will automatically update and clear Grav&#39;s cache.</p>
+<h2 id="manual-update">Manual Update</h2>
+<p>Manually updating Problems is pretty simple. Here is what you will need to do to get this done:</p>
+<ul>
+<li>Delete the <code>your/site/user/plugins/problems</code> directory.</li>
+<li>Download the new version of the Problems plugin from either <a href="https://github.com/getgrav/grav-plugin-problems">GitHub</a> or <a href="http://getgrav.org/downloads/plugins#extras">GetGrav.org</a>.</li>
+<li>Unzip the zip file in <code>your/site/user/plugins</code> and rename the resulting folder to <code>problems</code>.</li>
+<li>Clear the Grav cache. The simplest way to do this is by going to the root Grav directory in terminal and typing <code>bin/grav clear-cache</code>.</li>
+</ul>
+<blockquote>
+<p>Note: Any changes you have made to any of the files listed under this directory will also be removed and replaced by the new set. Any files located elsewhere (for example a YAML settings file placed in <code>user/config/plugins</code>) will remain intact.</p>
+</blockquote>
