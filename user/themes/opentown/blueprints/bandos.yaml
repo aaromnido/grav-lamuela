@@ -50,5 +50,4 @@ form:
                                         - .jpg
                                         - .jpeg
                                     validate:
-                                        required: true
                                         type: file

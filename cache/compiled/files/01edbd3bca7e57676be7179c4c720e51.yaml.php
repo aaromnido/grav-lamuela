@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-lamuela-dev/user/themes/opentown/blueprints/bandos.yaml',
-    'modified' => 1473846573,
+    'modified' => 1473863058,
     'data' => [
         'title' => 'Bandos',
         '@extends' => [
@@ -47,7 +47,13 @@ return [
                                             'avoid_overwriting' => true,
                                             'limit' => 1,
                                             'accept' => [
-                                                0 => '.pdf'
+                                                0 => '.pdf',
+                                                1 => '.png',
+                                                2 => '.jpg',
+                                                3 => '.jpeg'
+                                            ],
+                                            'validate' => [
+                                                'type' => 'file'
                                             ]
                                         ]
                                     ]
