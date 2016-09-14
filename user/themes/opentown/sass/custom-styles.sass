@@ -40,3 +40,13 @@
         color: $grey
         display: inline-block
         min-width: 4.4em
+
+.reverse-order
+    display: flex
+    flex-direction: row-reverse
+
+    >*
+        margin: 0 0 1em 0
+
+    &.list-vertical
+        flex-direction: column-reverse

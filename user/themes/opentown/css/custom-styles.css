@@ -612,3 +612,16 @@ p {
   display: inline-block;
   min-width: 4.4em;
 }
+
+.reverse-order {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.reverse-order > * {
+  margin: 0 0 1em 0;
+}
+
+.reverse-order.list-vertical {
+  flex-direction: column-reverse;
+}

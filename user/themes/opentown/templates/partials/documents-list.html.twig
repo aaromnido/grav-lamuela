@@ -1,0 +1,18 @@
+<section class="reverse-order list-vertical list-documents">
+{% for documento in page.header.documentos|sort_by_key('date') %}
+    {% for item in documento.file %}
+    <p>
+        <small class="date">
+            {{ documento.date|date("d") }}-{{ documento.date|date("m") }}-{{ documento.date|date("y") }}
+        </small>
+        <a href="{{ page.url }}/documentos/{{ item.name }}" target="_blank">
+            <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            {{ documento.title }}
+        </a>
+        <small class="date">
+            {{ item.size }} Bytes
+        </small>
+    </p>
+    {% endfor %}
+{% endfor %}
+</section>
