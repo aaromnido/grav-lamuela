@@ -1,0 +1,23 @@
+{% set section = '/' ~ page.slug %}
+
+{% for page in page.find(section).children.order('folder', 'asc') %}
+<section class="child-list">
+    <article class="card card-new card-new-wide pictured el-ayuntamiento">
+        <a href="{{ page.url }}">
+            <header class="picture">
+                {% set images = page.media.images %}
+
+                {% if images %}
+                    {% for image in images %}
+                        {{ image.cropZoom(720, 180).html }}
+                    {% endfor %}
+                {% else %}
+                    <img src="{{ url('theme://images/image-item-dummy.jpg') }}" alt="{{ page.title }}" />
+                {% endif %}
+            </header>
+
+            <h3 class="title">{{ page.title }}</h3>
+        </a>
+    </article>
+</section>
+{% endfor %}

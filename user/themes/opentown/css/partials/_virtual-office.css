@@ -1,0 +1,36 @@
+.ordenanzas table,
+.ordenanzas tbody,
+.ordenanzas td,
+.solicitudes table,
+.solicitudes tbody,
+.solicitudes td {
+  border-left: none;
+  border-right: none;
+}
+
+.ordenanzas td,
+.ordenanzas p,
+.ordenanzas a,
+.solicitudes td,
+.solicitudes p,
+.solicitudes a {
+  margin: 0;
+  font-family: "Lato";
+  font-size: 16px;
+  vertical-align: top;
+}
+
+.ordenanzas td,
+.solicitudes td {
+  padding: 0.4em 0.6em;
+}
+
+.ordenanzas a,
+.solicitudes a {
+  font-size: 14px;
+}
+
+.ordenanzas tr > td:first-child,
+.solicitudes tr > td:first-child {
+  width: 22%;
+}
