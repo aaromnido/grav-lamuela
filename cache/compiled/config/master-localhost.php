@@ -1,13 +1,17 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1473808669,
-    'checksum' => 'f1e918b278c6d598762df54a01e4f39f',
+    'timestamp' => 1473865902,
+    'checksum' => '31d49772edb3254fb39d9dac4d0ea468',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
                 'modified' => 1472749604
+            ],
+            'plugins/email' => [
+                'file' => 'user/config/plugins/email.yaml',
+                'modified' => 1473865902
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
@@ -193,25 +197,25 @@ return [
             ],
             'email' => [
                 'enabled' => true,
-                'from' => NULL,
-                'from_name' => NULL,
-                'to' => NULL,
-                'to_name' => NULL,
+                'from' => 'aaromnido@gmail.com',
+                'from_name' => 'Fernando Val',
+                'to' => 'aaromnido@gmail.com',
+                'to_name' => 'aaromnido@gmail.com',
                 'mailer' => [
                     'engine' => 'mail',
                     'smtp' => [
                         'server' => 'localhost',
                         'port' => 25,
                         'encryption' => 'none',
-                        'user' => '',
-                        'password' => ''
+                        'user' => 'aaromnido@gmail.com',
+                        'password' => 'Aaromnido6969'
                     ],
                     'sendmail' => [
                         'bin' => '/usr/sbin/sendmail'
                     ]
                 ],
                 'content_type' => 'text/html',
-                'debug' => false
+                'debug' => true
             ],
             'error' => [
                 'enabled' => true,
