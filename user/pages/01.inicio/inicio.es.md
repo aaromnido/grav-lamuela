@@ -1,5 +1,5 @@
 ---
-title: 'Ayuntamiento de La Muela'
+title: Inicio
 menu: Inicio
 featured_video:
     -
