@@ -272,6 +272,10 @@ p {
   color: #9DA9B3;
 }
 
+.blog-content-item p {
+  margin-top: 0;
+}
+
 .wrapper {
   max-width: 1060px;
   margin: 0 auto;
@@ -718,6 +722,11 @@ p {
   text-align: right;
 }
 
+body {
+  padding-bottom: 100px;
+  border-bottom: 200px solid #304255;
+}
+
 #body {
   padding-left: 0;
   padding-right: 0;
@@ -790,4 +799,13 @@ p {
 
 .child-list .picture {
   height: 100px !important;
+}
+
+.jobs .featured {
+  padding: 20px;
+}
+
+.grid-2 .item {
+  min-width: 49%;
+  float: left;
 }

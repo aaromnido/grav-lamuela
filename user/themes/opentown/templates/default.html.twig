@@ -57,15 +57,12 @@
 			</div>
 		</div>
 	</div>
+
 	{% if page.title == "Contacto" %}
-		<section class="contact-form">
-			<div class="wrapper">
-				<article class="form-content-item grid pure-g-r">
-				<h4>Formulario de contacto</h4>
-				{% include "forms/form.html.twig" %}
-				</article>
-			</div>
-		</section>
+		{% include "partials/section-contact-form.html.twig" %}
+	{% elseif page.title == "Bolsa de empleo" %}
+		{% include "partials/section-empleo-options.html.twig" %}
 	{% endif %}
+
 </div>
 {% endblock %}

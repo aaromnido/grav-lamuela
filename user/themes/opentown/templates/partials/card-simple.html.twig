@@ -1,0 +1,17 @@
+<article class="card card-new card-new-wide card-simple pictured {{ page.parent.title|underscorize }}">
+    <a href="{{ page.url }}">
+        <header class="picture">
+            {% set images = page.media.images %}
+
+    		{% if images %}
+    			{% for image in images %}
+    				{{ image.cropZoom(870, 250).html }}
+    			{% endfor %}
+    		{% else %}
+    			<img src="{{ url('theme://images/image-item-dummy.jpg') }}" alt="{{ page.title }}" />
+    		{% endif %}
+        </header>
+
+        <h3 class="title">{{ page.title }}</h3>
+    </a>
+</article>
