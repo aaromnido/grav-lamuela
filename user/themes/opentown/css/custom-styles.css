@@ -73,7 +73,7 @@ p {
   background: rgba(239, 241, 243, 0.95);
   border-top: none;
   border-bottom: none !important;
-  padding: 0.2em 0.6em;
+  padding: 0.6em 0.6em;
   font-size: 14px;
   text-align: left;
 }
@@ -611,6 +611,34 @@ p {
   height: 300px;
 }
 
+.card.card-simple h3 {
+  text-align: center;
+  border-bottom: 2px solid #EFF1F3;
+}
+
+.card.card-simple .data p {
+  margin: 0 0 -4px 0;
+}
+
+.card.card-simple .data .data-left,
+.card.card-simple .data .data-right {
+  display: inline-block;
+  padding: 0.8em 0.4em;
+  vertical-align: top;
+  font-size: 14px;
+}
+
+.card.card-simple .data .data-left {
+  background: #EFF1F3;
+  width: 25%;
+  font-weight: 600;
+  text-align: right;
+}
+
+.card.card-simple .data .data-right {
+  width: 70%;
+}
+
 .page {
   min-height: 60vh;
 }
@@ -803,6 +831,15 @@ body {
 
 .jobs .featured {
   padding: 20px;
+}
+
+.grid-1 {
+  padding: 20px;
+  padding-top: 0;
+}
+
+.grid-1 .card-simple {
+  margin: 0 auto 20px auto;
 }
 
 .grid-2 .item {
