@@ -23,3 +23,8 @@ jobs:
 ---
 
 **Si es Vd. solicitante de empleo**, puede enviar esta [solicitud](http://lamuela.org/modules/Bolsa_Empleo/solicitud_empleo.pdf) a través del correo electrónico, fax, o entregarla en persona en el Ayuntamiento.
+
+<div class="alert-message-soft alert-message--succes">
+    <p><strong>Importante:</strong> Para inscribirse en las Ofertas de Empleo, antes debe de haber entregado la <a href="http://lamuela.org/modules/Bolsa_Empleo/solicitud_empleo.pdf" target="_blank">Solicitud de Empleo</a>, y después, mandar un correo electrónico a <a href="mailto:info@lamuela.org"></a>, indicando:</p>
+    <p>Nª de la oferta, Nombre, Apellidos, Teléfono de contacto y correo electrónico</p>
+</div>

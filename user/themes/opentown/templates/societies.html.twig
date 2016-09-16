@@ -1,0 +1,42 @@
+{% extends 'default.html.twig' %}
+
+{% block societies %}
+<div class="wrapper">
+	<section class="grid-1 featured">
+		<h3 class="align-center">Asociaciones por orden alfabético:</h3>
+		{% for society in page.header.societies %}
+				<article id="featured" class="item society">
+					<article class="card card-new card-new-wide card-simple {{ page.parent.title|underscorize }}">
+					    <h3 class="title">{{ society.brand }}</h3>
+						<div class="data">
+							<p>
+								<span class="data-left">Razón social: </span>
+								<span class="data-right">{{ society.name }}</span>
+							</p>
+							<p>
+								<span class="data-left">Actividad: </span>
+								<span class="data-right">{{ society.activity }}</span>
+							</p>
+							<p>
+								<span class="data-left">Descripción: </span>
+								<span class="data-right">{{ society.description }}</span>
+							</p>
+							<p>
+								<span class="data-left">Email: </span>
+								<span class="data-right">
+									<a href="mailto:{{ society.mail }}">{{ society.mail }}</a>
+								</span>
+							</p>
+							<p>
+								<span class="data-left">Web: </span>
+								<span class="data-right">
+									<a href="{{ society.web }}" target="_blank">{{ society.web }}</a>
+								</span>
+							</p>
+						</div>
+					</article>
+				</article>
+		{% endfor %}
+	</section>
+</div>
+{% endblock %}

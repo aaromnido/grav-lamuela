@@ -365,6 +365,17 @@ p {
   background: #37BA72;
 }
 
+.alert-message-soft {
+  background: rgba(78, 203, 250, 0.2);
+  border-left: 5px solid #4ECBFA;
+  border-radius: 2px;
+  padding: 1em;
+}
+
+.alert-message-soft > *:last-child {
+  margin-bottom: 0;
+}
+
 .card {
   border: 1px solid #d8dde2;
   background: white;
