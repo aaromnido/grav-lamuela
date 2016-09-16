@@ -1,0 +1,46 @@
+{% extends 'default.html.twig' %}
+
+{% block jobs %}
+<div class="wrapper">
+	<section class="grid-1 featured">
+		{% for job in page.header.jobs %}
+			{% if job.active == "1" %}
+				<article id="featured" class="item job">
+					<article class="card card-new card-new-wide pictured card-simple {{ page.parent.title|underscorize }}">
+						<header class="picture">
+							{% set images = page.media.images %}
+
+							{% if images %}
+								{% for image in images %}
+									{{ image.cropZoom(800, 250).html }}
+								{% endfor %}
+							{% else %}
+								<img src="{{ url('theme://images/image-item-dummy.jpg') }}" alt="{{ page.title }}" />
+							{% endif %}
+						</header>
+					    <h3 class="title">{{ job.position }}</h3>
+						<div class="data">
+							<p>
+								<span class="data-left">Lugar: </span>
+								<span class="data-right">{{ job.place }}</span>
+							</p>
+							<p>
+								<span class="data-left">Tipo de jornada: </span>
+								<span class="data-right">{{ job.type }}</span>
+							</p>
+							<p>
+								<span class="data-left">Fecha fín de oferta: </span>
+								<span class="data-right">{{ job.date }}</span>
+							</p>
+							<p>
+								<span class="data-left">Detalles: </span>
+								<span class="data-right">{{ job.details }}</span>
+							</p>
+						</div>
+					</article>
+				</article>
+			{% endif %}
+		{% endfor %}
+	</section>
+</div>
+{% endblock %}

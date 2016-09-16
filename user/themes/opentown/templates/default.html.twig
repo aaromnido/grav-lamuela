@@ -54,18 +54,24 @@
 				{% if current_page == "El Ayuntamiento" %}
 					{% include "partials/child-pages-list.html.twig" %}
 				{% endif %}
+
 			</div>
 		</div>
 	</div>
+
 	{% if page.title == "Contacto" %}
-		<section class="contact-form">
-			<div class="wrapper">
-				<article class="form-content-item grid pure-g-r">
-				<h4>Formulario de contacto</h4>
-				{% include "forms/form.html.twig" %}
-				</article>
-			</div>
-		</section>
+		{% include "partials/section-contact-form.html.twig" %}
+	{% elseif page.title == "Bolsa de empleo" %}
+		{% include "partials/section-jobs-options.html.twig" %}
+	{% elseif current_page == "Oficina Virtual"%}
+		{% include "partials/section-virtual-office-options.html.twig" %}
+	{% elseif current_page == "Ordenanzas"%}
+		{% include "partials/section-virtual-office-options.html.twig" %}
+	{% elseif current_page == "Solicitudes"%}
+		{% include "partials/section-virtual-office-options.html.twig" %}
 	{% endif %}
+
+	{% block jobs %}{% endblock %}
+
 </div>
 {% endblock %}

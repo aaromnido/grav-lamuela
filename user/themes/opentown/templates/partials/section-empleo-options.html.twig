@@ -1,0 +1,10 @@
+<div class="wrapper">
+    <section class="grid-2 featured">
+        {% set section = '/el-ayuntamiento/bolsa-de-empleo' %}
+        {% for page in page.find(section).children.order('folder', 'asc').slice(0, 2) %}
+            <article id="featured" class="item">
+                {% include 'partials/card-simple.html.twig' %}
+            </article>
+        {% endfor %}
+    </section>
+</div>
