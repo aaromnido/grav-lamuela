@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1474577674,
-    'checksum' => 'e66c555ebeab350ebaf30d27f2bb2285',
+    'timestamp' => 1474582015,
+    'checksum' => '28190ba10f0b4423ef4565acc9e77ff5',
     'files' => [
         'user/config' => [
             'media' => [
@@ -12,6 +12,10 @@ return [
             'plugins/email' => [
                 'file' => 'user/config/plugins/email.yaml',
                 'modified' => 1473865902
+            ],
+            'plugins/jscomments' => [
+                'file' => 'user/config/plugins/jscomments.yaml',
+                'modified' => 1474582015
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
@@ -76,6 +80,10 @@ return [
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
                 'modified' => 1474029456
+            ],
+            'plugins/jscomments' => [
+                'file' => 'user/plugins/jscomments/jscomments.yaml',
+                'modified' => 1474580164
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
@@ -242,6 +250,47 @@ return [
                     'random_name' => false,
                     'accept' => [
                         0 => 'image/*'
+                    ]
+                ]
+            ],
+            'jscomments' => [
+                'enabled' => true,
+                'active' => true,
+                'provider' => 'facebook',
+                'providers' => [
+                    'discourse' => [
+                        'host' => ''
+                    ],
+                    'disqus' => [
+                        'shortname' => '',
+                        'show_count' => false,
+                        'language' => ''
+                    ],
+                    'facebook' => [
+                        'app_id' => '685770368239427',
+                        'num_posts' => 5,
+                        'colorscheme' => 'light',
+                        'order_by' => 'social',
+                        'language' => 'es_ES',
+                        'width' => '100%'
+                    ],
+                    'googleplus' => [
+                        'show_count' => false,
+                        'language' => '',
+                        'width' => '100%'
+                    ],
+                    'intensedebate' => [
+                        'account_number' => ''
+                    ],
+                    'muut' => [
+                        'forum' => '',
+                        'channel' => 'General',
+                        'widget' => false,
+                        'show_online' => false,
+                        'show_title' => false,
+                        'upload' => false,
+                        'share' => true,
+                        'language' => ''
                     ]
                 ]
             ],

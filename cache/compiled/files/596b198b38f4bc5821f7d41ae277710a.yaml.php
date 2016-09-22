@@ -2,9 +2,9 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-lamuela-dev/user/config/site.yaml',
-    'modified' => 1472798492,
+    'modified' => 1474577674,
     'data' => [
-        'title' => 'La Muela',
+        'title' => 'Ayuntamiento de La Muela',
         'author' => [
             'name' => 'Webmaster',
             'email' => 'aaromnido@gmail.com'

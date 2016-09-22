@@ -1,0 +1,10 @@
+{% if config.plugins.jscomments.enabled %}
+    <section class="contact-form">
+        <div class="wrapper">
+            <article class="form-content-item grid pure-g-r">
+                <h4>Comentarios</h4>
+                {{ jscomments() }}
+            </article>
+        </div>
+    </section>
+{% endif %}
