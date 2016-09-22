@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1474051565,
-    'checksum' => '6a8d5e265478ee46dab9b97f009fba11',
+    'timestamp' => 1474577674,
+    'checksum' => 'e66c555ebeab350ebaf30d27f2bb2285',
     'files' => [
         'user/config' => [
             'media' => [
@@ -19,7 +19,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1472798492
+                'modified' => 1474577674
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -99,7 +99,7 @@ return [
             ],
             'plugins/simplesearch' => [
                 'file' => 'user/plugins/simplesearch/simplesearch.yaml',
-                'modified' => 1473443075
+                'modified' => 1474576253
             ],
             'plugins/sitemap' => [
                 'file' => 'user/plugins/sitemap/sitemap.yaml',
@@ -658,7 +658,7 @@ return [
             ]
         ],
         'site' => [
-            'title' => 'La Muela',
+            'title' => 'Ayuntamiento de La Muela',
             'author' => [
                 'name' => 'Webmaster',
                 'email' => 'aaromnido@gmail.com'
