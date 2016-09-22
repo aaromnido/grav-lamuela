@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-lamuela-dev/user/themes/opentown/languages.yaml',
-    'modified' => 1473357039,
+    'modified' => 1474582337,
     'data' => [
         'en' => [
             'TRANSLATION_TEST' => 'Antimatter!',
@@ -85,8 +85,8 @@ return [
             'BLOG' => [
                 'ITEM' => [
                     'CONTINUE_READING' => 'Continuar leyendo...',
-                    'NEXT_POST' => 'Siguiente Entrada',
-                    'PREV_POST' => 'Entrada Anterior'
+                    'NEXT_POST' => 'Siguiente Artículo',
+                    'PREV_POST' => 'Artículo Anterior'
                 ]
             ],
             'SIDEBAR' => [

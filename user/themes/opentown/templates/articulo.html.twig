@@ -19,12 +19,13 @@
 				<h1 class="p-name">{{ page.title }}</h1>
 			</header>
 
-			<div class="blog-content-item grid pure-g-r">
-				<div id="item" class="block pure-u-2-3 h-entry">
+			<section class="blog-content-item grid pure-g-r">
+				<article id="item" class="block pure-u-2-3 h-entry">
 					{% include 'partials/blog_item-fullwidth.html.twig' with {'blog':page.parent, 'truncate':false} %}
-				</div>
-			</div>
+				</article>
+			</section>
 		</div>
+		{% include 'partials/comments.html.twig' %}
 	</div>
 	{% endblock %}
 

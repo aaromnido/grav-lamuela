@@ -372,8 +372,16 @@ p {
   padding: 1em;
 }
 
+.alert-message-soft > * {
+  color: #304255;
+}
+
 .alert-message-soft > *:last-child {
   margin-bottom: 0;
+}
+
+.comments .alert-message {
+  margin-bottom: 2em;
 }
 
 .card {

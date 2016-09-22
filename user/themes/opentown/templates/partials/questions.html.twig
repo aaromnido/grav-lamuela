@@ -1,0 +1,13 @@
+{% if config.plugins.jscomments.enabled %}
+    <section class="contact-form comments">
+        <div class="wrapper">
+            <article class="form-content-item grid pure-g-r">
+                <h4>Preguntas de la ciudadanía</h4>
+                <div class="alert-message alert-message-soft">
+                    <p><small>Si usted tiene cualquier consulta que realizar a nuestro Equipo de Gobierno, no dude en dejar su comentario.</small></p>
+                </div class="">
+                {{ jscomments() }}
+            </article>
+        </div>
+    </section>
+{% endif %}
