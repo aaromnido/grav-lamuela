@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1474051565,
-    'checksum' => '6a8d5e265478ee46dab9b97f009fba11',
+    'timestamp' => 1474576255,
+    'checksum' => '80ae9713e611c407d1dbcbb045e07474',
     'files' => [
         'user/config' => [
             'media' => [
@@ -99,7 +99,7 @@ return [
             ],
             'plugins/simplesearch' => [
                 'file' => 'user/plugins/simplesearch/simplesearch.yaml',
-                'modified' => 1473443075
+                'modified' => 1474576253
             ],
             'plugins/sitemap' => [
                 'file' => 'user/plugins/sitemap/sitemap.yaml',
