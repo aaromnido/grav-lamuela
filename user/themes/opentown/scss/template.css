@@ -1,5 +1,5 @@
 @import url(//fonts.googleapis.com/css?family=Montserrat:400|Raleway:300,400,600|Inconsolata);
-#header #logo h3, #header #navbar .panel-activation, #footer p {
+#header #logo h3, #header #navbar .panel-activation {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -72,20 +72,20 @@ b, strong, label, th {
   transition: all 0.5s ease;
 }
 
-.padding-horiz, .fullwidth #header, .fullwidth #breadcrumbs, .fullwidth .blog-header, .fullwidth .blog-content-item, .fullwidth .content-wrapper, .fullwidth ul.pagination, .fullwidth #body > .modular-row, #body, #header, #footer {
+.padding-horiz, .fullwidth #header, .fullwidth #breadcrumbs, .fullwidth .blog-header, .fullwidth .blog-content-item, .fullwidth .content-wrapper, .fullwidth ul.pagination, .fullwidth #body > .modular-row, #body, #header {
   padding-left: 7rem;
   padding-right: 7rem;
 }
 
 @media only all and (max-width: 59.938em) {
-  .padding-horiz, .fullwidth #header, .fullwidth #breadcrumbs, .fullwidth .blog-header, .fullwidth .blog-content-item, .fullwidth .content-wrapper, .fullwidth ul.pagination, .fullwidth #body > .modular-row, #body, #header, #footer {
+  .padding-horiz, .fullwidth #header, .fullwidth #breadcrumbs, .fullwidth .blog-header, .fullwidth .blog-content-item, .fullwidth .content-wrapper, .fullwidth ul.pagination, .fullwidth #body > .modular-row, #body, #header {
     padding-left: 4rem;
     padding-right: 4rem;
   }
 }
 
 @media only all and (max-width: 47.938em) {
-  .padding-horiz, .fullwidth #header, .fullwidth #breadcrumbs, .fullwidth .blog-header, .fullwidth .blog-content-item, .fullwidth .content-wrapper, .fullwidth ul.pagination, .fullwidth #body > .modular-row, #body, #header, #footer {
+  .padding-horiz, .fullwidth #header, .fullwidth #breadcrumbs, .fullwidth .blog-header, .fullwidth .blog-content-item, .fullwidth .content-wrapper, .fullwidth ul.pagination, .fullwidth #body > .modular-row, #body, #header {
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -375,48 +375,6 @@ b, strong, label, th {
 
 .header-image #header a:before, .header-image #header a:after {
   background-color: rgba(255, 255, 255, 0.7) !important;
-}
-
-#footer {
-  position: absolute;
-  background: #333;
-  height: 6rem;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  color: #999;
-  text-align: center;
-}
-
-#footer a:hover {
-  color: #fff;
-}
-
-#footer .totop {
-  position: absolute;
-  bottom: 5rem;
-  text-align: center;
-  left: 0;
-  right: 0;
-}
-
-#footer .totop span {
-  font-size: 1.7rem;
-  line-height: 2.5rem;
-  background: #333;
-  width: 3rem;
-  height: 2rem;
-  border-radius: 3px;
-  display: inline-block;
-  text-align: top;
-}
-
-#footer p {
-  margin: 0;
-}
-
-#footer p .fa {
-  color: #fff;
 }
 
 html, body, button, input, select, textarea, .pure-g, .pure-g [class*="pure-u"] {

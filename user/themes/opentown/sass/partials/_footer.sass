@@ -1,0 +1,88 @@
+.footer
+
+    .wrapper
+        background: $night url(../images/header-top-bg.png) bottom center no-repeat
+        background-size: contain
+
+        .pure-g
+
+        .block
+            border-right: 1px solid transparentize($grey, 0.7)
+            padding: 35px 25px 50px 25px
+
+            &:last-child
+                border: 0
+            ul
+                margin: 0
+                padding: 0
+
+            h6
+                color: $grey
+                text-transform: uppercase
+                margin-bottom: 0
+                font-weight: 700
+
+        .footer-logo
+            text-align: center
+
+            img
+                opacity: 0.5
+
+        .footer-nav
+            text-align: left
+
+            a
+                color: $grey
+                font-family: Lato, Arial
+
+                &:hover
+                    color: white !important
+
+        .footer-social
+            text-align: center
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            *
+                color: $grey
+                font-family: Lato, Arial
+
+            .footer-phone
+                font-size: 24px
+
+                a
+                    color: lighten($grey, 10%)
+
+            .footer-address
+                p
+                    font-size: 10px
+
+            .footer-social-nav
+                a
+                    $size: 30px
+                    width: $size
+                    height: $size
+                    overflow: hidden
+                    display: inline-block
+                    margin-right: 10px
+                    text-indent: -9999px
+                    opacity: 0.5
+                    transition: all 0.4s ease-in
+
+                    &:hover
+                        opacity: 1
+
+                    &:last-child
+                        margin: 0
+
+                    &.icon-twitter
+                        background: url(../images/icon-twitter.svg)
+
+                    &.icon-facebook
+                        background: url(../images/icon-facebook.svg)
+
+                    &.icon-pinterest
+                        background: url(../images/icon-pinterest.svg)
+
+                    &.icon-youtube
+                        background: url(../images/icon-youtube.svg)
