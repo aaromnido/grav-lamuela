@@ -1,8 +1,69 @@
 {% block footer %}
-<footer id="footer">
-    <div class="totop">
-        <span><a href="#" id="toTop"><i class="fa fa-arrow-up"></i></a></span>
+<footer class="footer">
+    <div class="wrapper">
+        <div class="pure-g">
+            <div class="block pure-u-1-5 footer-logo">
+                <img src="{{ theme_url }}/images/logo-footer.svg" alt="Ayuntamiento La Muela" />
+            </div>
+            <div class="block pure-u-1-5 footer-nav footer-nav-1">
+                <ul>
+                    <h6>Información</h6>
+                    <li><a href="/noticias">Noticias</a></li>
+                    <li><a href="/prensa">Prensa</a></li>
+                    <li><a href="/la-muela-tv">La Muela TV</a></li>
+                </ul>
+                <ul>
+                    <h6>Otros</h6>
+                    <li><a href="http://www.lamuela.org" target="_blank">Histórico web</a></li>
+                    <li><a href="/aviso-legal">Aviso legal</a></li>
+                    <li><a href="/politica-de-privacidad">Política de privacidad</a></li>
+                    <li><a href="/politica-de-cookies">Política de cookies</a></li>
+                </ul>
+            </div>
+            <div class="block pure-u-1-5 footer-nav footer-nav-2">
+                <ul>
+                    <h6>El Ayuntamiento</h6>
+                    {% set collection = page.find("/el-ayuntamiento").children.visible %}
+                    {% for menu_item in collection %}
+                        <li>
+                            <a href="{{ menu_item.slug }}">{{ menu_item.title }}</a>
+                        </li>
+                    {% endfor %}
+                    <li><a href="/el-ayuntamiento/oficina-virtual">Oficina virtual</a></li>
+                    <li><a href="/el-ayuntamiento/asociacionismo">Asociacionismo</a></li>
+                </ul>
+            </div>
+            <div class="block pure-u-1-5 footer-nav footer-nav-3">
+                <ul>
+                    <h6>El municipio</h6>
+                    {% set collection = page.find("/el-municipio").children.visible %}
+                    {% for menu_item in collection %}
+                        <li>
+                            <a href="{{ menu_item.slug }}">{{ menu_item.title }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="block pure-u-1-5 footer-social">
+                <div class="footer-phone">
+                    <a href="tel:976144002">976 144 002</a>
+                </div>
+                <div class="footer-address">
+                    <p>
+                        © 2016 Ayuntamiento de La Muela<br>
+                        Todos los derechos reservados
+                    </p>
+                </div>
+                <nav>
+                    <div class="footer-social-nav">
+                        <a href="https://twitter.com/AytoLaMuela" class="icon-twitter" target="_blank">Twitter</a>
+                        <a href="https://www.facebook.com/ayuntamientodeLaMuela/" class="icon-facebook" target="_blank">Facebook</a>
+                        <a href="#" class="icon-pinterest" target="_blank">Pinterest</a>
+                        <a href="https://www.youtube.com/channel/UCHR83ICBMBt6RAcHYYEOZKA" class="icon-youtube" target="_blank">Youtube</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
     </div>
-    <p><a href="http://getgrav.org">Grav</a> was <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> by <a href="http://www.rockettheme.com">RocketTheme</a>.</p>
 </footer>
 {% endblock %}
