@@ -7,9 +7,7 @@
 		{% set section = page.parent.title %}
 
 		{% if images %}
-			{% for image in images %}
-				{{ image.cropZoom(1440, 740).html }}
-			{% endfor %}
+			{{ page.media.images|first.cropZoom(1440, 740).html }}
 		{% else %}
 			{% if section != "Pages" %}
 				<img src="{{ url('theme://images/seccion-el-ayuntamiento.jpg') }}" alt="{{ page.title }}" />
@@ -35,6 +33,9 @@
 		<div class="blog-content-item grid pure-g-r">
 			<div id="item" class="block pure-u-2-3 h-entry">
 
+				<code>
+					{{ first_image }}
+				</code>
 				{% set current_page = page.title %}
 
 				{% include 'partials/blog_item-fullwidth.html.twig' with {'blog':page.parent, 'truncate':false} %}
