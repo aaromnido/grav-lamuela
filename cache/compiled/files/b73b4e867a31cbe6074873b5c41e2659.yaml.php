@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-lamuela-dev/user/accounts/admin.yaml',
-    'modified' => 1472798544,
+    'modified' => 1487336413,
     'data' => [
         'email' => 'aaromnido@gmail.com',
         'fullname' => 'Fernando Val',
@@ -10,14 +10,27 @@ return [
         'state' => 'enabled',
         'access' => [
             'admin' => [
+                'super' => 'true',
                 'login' => 'true',
-                'super' => 'true'
+                'cache' => 'true',
+                'configuration' => 'true',
+                'configuration_system' => 'true',
+                'configuration_site' => 'true',
+                'configuration_media' => 'true',
+                'configuration_info' => 'true',
+                'settings' => 'true',
+                'pages' => 'true',
+                'maintenance' => 'true',
+                'statistics' => 'true',
+                'plugins' => 'true',
+                'themes' => 'true',
+                'users' => 'true'
             ],
             'site' => [
                 'login' => 'true'
             ]
         ],
-        'hashed_password' => '$2y$10$s6BpLQt0Y3KCnIcV7XEsUuPuzBsI3MkngLaPB6fQPltjjmMaexqba',
+        'hashed_password' => '$2y$10$eezZOuaWR1NpdfeRX57vzONOJy/Ed9nZmO/dpjsTFMgahV0Gqve26',
         'language' => 'es'
     ]
 ];
