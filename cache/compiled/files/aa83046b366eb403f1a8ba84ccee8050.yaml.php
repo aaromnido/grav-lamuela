@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-lamuela-dev/user/plugins/login/login.yaml',
-    'modified' => 1473675155,
+    'modified' => 1487335832,
     'data' => [
         'enabled' => true,
         'built_in_css' => true,

@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1474582015,
-    'checksum' => '28190ba10f0b4423ef4565acc9e77ff5',
+    'timestamp' => 1487335840,
+    'checksum' => 'b3e0f0e2300c05284bd0e0c0e68e6ae6',
     'files' => [
         'user/config' => [
             'media' => [
@@ -37,25 +37,25 @@ return [
         'system/config' => [
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1473675180
+                'modified' => 1487335832
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1473675180
+                'modified' => 1484153772
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1473675180
+                'modified' => 1484153772
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1473675180
+                'modified' => 1487335832
             ]
         ],
         'user/plugins' => [
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1473442788
+                'modified' => 1487335832
             ],
             'plugins/archives' => [
                 'file' => 'user/plugins/archives/archives.yaml',
@@ -67,11 +67,11 @@ return [
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
-                'modified' => 1473353349
+                'modified' => 1484153834
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
-                'modified' => 1471162500
+                'modified' => 1482494067
             ],
             'plugins/feed' => [
                 'file' => 'user/plugins/feed/feed.yaml',
@@ -79,7 +79,7 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1474029456
+                'modified' => 1482493907
             ],
             'plugins/jscomments' => [
                 'file' => 'user/plugins/jscomments/jscomments.yaml',
@@ -87,7 +87,7 @@ return [
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
-                'modified' => 1473675155
+                'modified' => 1487335832
             ],
             'plugins/pagination' => [
                 'file' => 'user/plugins/pagination/pagination.yaml',
@@ -107,11 +107,11 @@ return [
             ],
             'plugins/simplesearch' => [
                 'file' => 'user/plugins/simplesearch/simplesearch.yaml',
-                'modified' => 1474576253
+                'modified' => 1482494239
             ],
             'plugins/sitemap' => [
                 'file' => 'user/plugins/sitemap/sitemap.yaml',
-                'modified' => 1471162510
+                'modified' => 1482494212
             ],
             'plugins/taxonomylist' => [
                 'file' => 'user/plugins/taxonomylist/taxonomylist.yaml',
@@ -119,7 +119,7 @@ return [
             ],
             'plugins/youtube' => [
                 'file' => 'user/plugins/youtube/youtube.yaml',
-                'modified' => 1473415439
+                'modified' => 1484153929
             ]
         ]
     ],

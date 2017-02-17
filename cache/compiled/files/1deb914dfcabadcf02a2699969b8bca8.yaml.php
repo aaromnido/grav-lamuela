@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-lamuela-dev/system/languages/ja.yaml',
-    'modified' => 1473675180,
+    'modified' => 1484153772,
     'data' => [
         'FRONTMATTER_ERROR_PAGE' => '---
 title: %1$s

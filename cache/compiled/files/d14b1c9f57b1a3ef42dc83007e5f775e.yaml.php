@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-lamuela-dev/system/languages/nl.yaml',
-    'modified' => 1473675180,
+    'modified' => 1484153772,
     'data' => [
         'INFLECTOR_IRREGULAR' => [
             'person' => 'personen',

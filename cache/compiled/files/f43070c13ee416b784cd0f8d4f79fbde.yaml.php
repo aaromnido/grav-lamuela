@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-lamuela-dev/system/config/system.yaml',
-    'modified' => 1473675180,
+    'modified' => 1487335832,
     'data' => [
         'absolute_urls' => false,
         'timezone' => '',

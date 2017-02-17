@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-lamuela-dev/user/plugins/youtube/youtube.yaml',
-    'modified' => 1473415439,
+    'modified' => 1484153929,
     'data' => [
         'enabled' => true,
         'built_in_css' => true,
