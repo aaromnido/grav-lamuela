@@ -70,6 +70,8 @@
             margin-top: 0
 
     .footer
+        margin-top: 3rem
+
         .date
             color: darken($grey, 10%)
 
@@ -106,22 +108,13 @@
 
     &.highlighted
         $sky: darken($sky, 10%)
-        $height: 120px
+        $height: 166px
         border: none
         max-width: 351px
         padding-top: $gutter * 3
-        min-height: $height * 2.55
+        min-height: $height * 2
         background: $sky
 
-        &::after
-            content: "VER MÁS"
-            height: 50px
-            color: white
-            font-weight: 600
-            text-align: center
-            line-height: 50px
-            cursor: pointer
-            background: $sky
 
         h3,
         h4
@@ -142,9 +135,11 @@
             padding: 2px 6px
             text-shadow: 0 0 0 2px $night
 
-        footer small
-            color: $grey-light !important
-            font-weight: 600
+        footer
+            color: transparentize(white, 0.4)
+            small
+                color: $grey-light !important
+                font-weight: 600
 
         .picture
             margin-left: 5px
