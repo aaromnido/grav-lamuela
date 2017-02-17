@@ -199,7 +199,9 @@ p {
     /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 0%, #2e3f52 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    overflow: hidden; }
+    overflow: hidden;
+    max-height: 700px;
+    min-height: 300px; }
     .body-content .body-content-picture img {
       width: 100%; }
     .body-content .body-content-picture::before {
@@ -522,6 +524,12 @@ p {
   .card.card-simple .data .data-right {
     width: 70%; }
 
+.section-virtual-office {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 0;
+  margin-left: 10px; }
+
 .page {
   min-height: 60vh; }
 
@@ -612,7 +620,8 @@ p {
 #body {
   padding-left: 0;
   padding-right: 0;
-  padding-top: 0; }
+  padding-top: 0;
+  padding-bottom: 5rem; }
 
 .convocatoria-junta .e-content {
   border: 1px solid transparent;
