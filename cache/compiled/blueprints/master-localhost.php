@@ -1,31 +1,31 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1487335840,
-    'checksum' => 'ec48d2d78598ac02d034cac31a344930',
+    'timestamp' => 1487336325,
+    'checksum' => 'b2013ecc72543c7e10dbcea9b502e87d',
     'files' => [
         'system/blueprints/config' => [
             'media' => [
                 'file' => 'system/blueprints/config/media.yaml',
-                'modified' => 1484153772
+                'modified' => 1487336148
             ],
             'site' => [
                 'file' => 'system/blueprints/config/site.yaml',
-                'modified' => 1484153772
+                'modified' => 1487336148
             ],
             'streams' => [
                 'file' => 'system/blueprints/config/streams.yaml',
-                'modified' => 1484153772
+                'modified' => 1487336148
             ],
             'system' => [
                 'file' => 'system/blueprints/config/system.yaml',
-                'modified' => 1487335832
+                'modified' => 1487336148
             ]
         ],
         'user/plugins' => [
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/blueprints.yaml',
-                'modified' => 1487335832
+                'modified' => 1487336325
             ],
             'plugins/archives' => [
                 'file' => 'user/plugins/archives/blueprints.yaml',
@@ -37,7 +37,7 @@ return [
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/blueprints.yaml',
-                'modified' => 1487335832
+                'modified' => 1487336310
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/blueprints.yaml',
@@ -49,7 +49,7 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/blueprints.yaml',
-                'modified' => 1487335832
+                'modified' => 1487336305
             ],
             'plugins/jscomments' => [
                 'file' => 'user/plugins/jscomments/blueprints.yaml',
@@ -57,7 +57,7 @@ return [
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/blueprints.yaml',
-                'modified' => 1487335832
+                'modified' => 1487336313
             ],
             'plugins/pagination' => [
                 'file' => 'user/plugins/pagination/blueprints.yaml',
@@ -114,6 +114,13 @@ return [
                 'label' => 'PLUGIN_ADMIN.SITE_TITLE',
                 'size' => 'large',
                 'name' => 'site.title',
+                'validation' => 'loose'
+            ],
+            'site.default_lang' => [
+                'type' => 'text',
+                'label' => 'PLUGIN_ADMIN.SITE_DEFAULT_LANG',
+                'size' => 'vsmall',
+                'name' => 'site.default_lang',
                 'validation' => 'loose'
             ],
             'site.author' => [
@@ -569,6 +576,20 @@ return [
                 'name' => 'system.pages.twig_first',
                 'validation' => 'loose'
             ],
+            'system.pages.never_cache_twig' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_ADMIN.NEVER_CACHE_TWIG',
+                'highlight' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'system.pages.never_cache_twig',
+                'validation' => 'loose'
+            ],
             'system.pages.frontmatter' => [
                 'type' => '_parent',
                 'name' => 'system.pages.frontmatter',
@@ -859,13 +880,14 @@ return [
             ],
             'system.cache.check.method' => [
                 'type' => 'select',
-                'size' => 'small',
+                'size' => 'medium',
                 'classes' => 'fancy',
                 'label' => 'PLUGIN_ADMIN.CACHE_CHECK_METHOD',
                 'options' => [
-                    'file' => 'File',
-                    'folder' => 'Folder',
-                    'none' => 'None'
+                    'file' => 'Markdown + Yaml file timestamps',
+                    'folder' => 'Folder timestamps',
+                    'hash' => 'All files timestamps',
+                    'none' => 'No timestamp checking'
                 ],
                 'name' => 'system.cache.check.method',
                 'validation' => 'loose'
@@ -887,6 +909,66 @@ return [
                     'redis' => 'Redis'
                 ],
                 'name' => 'system.cache.driver',
+                'validation' => 'loose'
+            ],
+            'system.cache.prefix' => [
+                'type' => 'text',
+                'size' => 'x-small',
+                'label' => 'PLUGIN_ADMIN.CACHE_PREFIX',
+                'name' => 'system.cache.prefix',
+                'validation' => 'loose'
+            ],
+            'system.cache.cli_compatibility' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_ADMIN.CLI_COMPATIBILITY',
+                'highlight' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'system.cache.cli_compatibility',
+                'validation' => 'loose'
+            ],
+            'system.cache.lifetime' => [
+                'type' => 'text',
+                'size' => 'small',
+                'append' => 'NICETIME.SECOND_PLURAL',
+                'label' => 'PLUGIN_ADMIN.LIFETIME',
+                'validate' => [
+                    'type' => 'number'
+                ],
+                'name' => 'system.cache.lifetime',
+                'validation' => 'loose'
+            ],
+            'system.cache.gzip' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_ADMIN.GZIP_COMPRESSION',
+                'highlight' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'system.cache.gzip',
+                'validation' => 'loose'
+            ],
+            'system.cache.allow_webserver_gzip' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_ADMIN.ALLOW_WEBSERVER_GZIP',
+                'highlight' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'system.cache.allow_webserver_gzip',
                 'validation' => 'loose'
             ],
             'system.cache.memcache' => [
@@ -932,6 +1014,13 @@ return [
                 'name' => 'system.cache.redis',
                 'form_field' => false
             ],
+            'system.cache.redis.socket' => [
+                'type' => 'text',
+                'size' => 'medium',
+                'label' => 'PLUGIN_ADMIN.REDIS_SOCKET',
+                'name' => 'system.cache.redis.socket',
+                'validation' => 'loose'
+            ],
             'system.cache.redis.server' => [
                 'type' => 'text',
                 'size' => 'medium',
@@ -944,38 +1033,6 @@ return [
                 'size' => 'small',
                 'label' => 'PLUGIN_ADMIN.REDIS_PORT',
                 'name' => 'system.cache.redis.port',
-                'validation' => 'loose'
-            ],
-            'system.cache.prefix' => [
-                'type' => 'text',
-                'size' => 'x-small',
-                'label' => 'PLUGIN_ADMIN.CACHE_PREFIX',
-                'name' => 'system.cache.prefix',
-                'validation' => 'loose'
-            ],
-            'system.cache.lifetime' => [
-                'type' => 'text',
-                'size' => 'small',
-                'append' => 'NICETIME.SECOND_PLURAL',
-                'label' => 'PLUGIN_ADMIN.LIFETIME',
-                'validate' => [
-                    'type' => 'number'
-                ],
-                'name' => 'system.cache.lifetime',
-                'validation' => 'loose'
-            ],
-            'system.cache.gzip' => [
-                'type' => 'toggle',
-                'label' => 'PLUGIN_ADMIN.GZIP_COMPRESSION',
-                'highlight' => 0,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.YES',
-                    0 => 'PLUGIN_ADMIN.NO'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'system.cache.gzip',
                 'validation' => 'loose'
             ],
             'system.caching' => [
@@ -1233,15 +1290,14 @@ return [
                 'validation' => 'loose'
             ],
             'system.errors.display' => [
-                'type' => 'toggle',
+                'type' => 'select',
                 'label' => 'PLUGIN_ADMIN.DISPLAY_ERRORS',
-                'highlight' => 0,
+                'size' => 'medium',
+                'highlight' => 1,
                 'options' => [
-                    1 => 'PLUGIN_ADMIN.YES',
-                    0 => 'PLUGIN_ADMIN.NO'
-                ],
-                'validate' => [
-                    'type' => 'bool'
+                    -1 => 'PLUGIN_ADMIN.ERROR_SYSTEM',
+                    0 => 'PLUGIN_ADMIN.ERROR_SIMPLE',
+                    1 => 'PLUGIN_ADMIN.ERROR_FULL_BACKTRACE'
                 ],
                 'name' => 'system.errors.display',
                 'validation' => 'loose'
@@ -1355,6 +1411,20 @@ return [
                     'type' => 'bool'
                 ],
                 'name' => 'system.images.debug',
+                'validation' => 'loose'
+            ],
+            'system.images.auto_fix_orientation' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_ADMIN.IMAGES_AUTO_FIX_ORIENTATION',
+                'highlight' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'system.images.auto_fix_orientation',
                 'validation' => 'loose'
             ],
             'system.media' => [
@@ -1487,6 +1557,21 @@ return [
                 'name' => 'system.session.path',
                 'validation' => 'loose'
             ],
+            'system.session.split' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_ADMIN.SESSION_SPLIT',
+                'highlight' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
+                ],
+                'default' => true,
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'system.session.split',
+                'validation' => 'loose'
+            ],
             'system.gpm' => [
                 'type' => '_parent',
                 'name' => 'system.gpm',
@@ -1508,6 +1593,32 @@ return [
                 'size' => 'medium',
                 'label' => 'PLUGIN_ADMIN.PROXY_URL',
                 'name' => 'system.gpm.proxy_url',
+                'validation' => 'loose'
+            ],
+            'system.gpm.method' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_ADMIN.GPM_METHOD',
+                'highlight' => 'auto',
+                'options' => [
+                    'auto' => 'PLUGIN_ADMIN.AUTO',
+                    'fopen' => 'PLUGIN_ADMIN.FOPEN',
+                    'curl' => 'PLUGIN_ADMIN.CURL'
+                ],
+                'name' => 'system.gpm.method',
+                'validation' => 'loose'
+            ],
+            'system.gpm.verify_peer' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_ADMIN.GPM_VERIFY_PEER',
+                'highlight' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'system.gpm.verify_peer',
                 'validation' => 'loose'
             ],
             'system.reverse_proxy_setup' => [
@@ -1623,6 +1734,20 @@ return [
                     'type' => 'bool'
                 ],
                 'name' => 'plugins.admin.enabled',
+                'validation' => 'loose'
+            ],
+            'plugins.admin.cache_enabled' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_ADMIN.ADMIN_CACHING',
+                'highlight' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.admin.cache_enabled',
                 'validation' => 'loose'
             ],
             'plugins.admin.route' => [
@@ -4264,6 +4389,7 @@ return [
             'site' => [
                 'content' => 'site.content',
                 'title' => 'site.title',
+                'default_lang' => 'site.default_lang',
                 'author' => [
                     'name' => 'site.author.name',
                     'email' => 'site.author.email'
@@ -4316,6 +4442,7 @@ return [
                     'ignore_folders' => 'system.pages.ignore_folders',
                     'url_taxonomy_filters' => 'system.pages.url_taxonomy_filters',
                     'twig_first' => 'system.pages.twig_first',
+                    'never_cache_twig' => 'system.pages.never_cache_twig',
                     'frontmatter' => [
                         'process_twig' => 'system.pages.frontmatter.process_twig',
                         'ignore_fields' => 'system.pages.frontmatter.ignore_fields'
@@ -4350,6 +4477,11 @@ return [
                         'method' => 'system.cache.check.method'
                     ],
                     'driver' => 'system.cache.driver',
+                    'prefix' => 'system.cache.prefix',
+                    'cli_compatibility' => 'system.cache.cli_compatibility',
+                    'lifetime' => 'system.cache.lifetime',
+                    'gzip' => 'system.cache.gzip',
+                    'allow_webserver_gzip' => 'system.cache.allow_webserver_gzip',
                     'memcache' => [
                         'server' => 'system.cache.memcache.server',
                         'port' => 'system.cache.memcache.port'
@@ -4359,12 +4491,10 @@ return [
                         'port' => 'system.cache.memcached.port'
                     ],
                     'redis' => [
+                        'socket' => 'system.cache.redis.socket',
                         'server' => 'system.cache.redis.server',
                         'port' => 'system.cache.redis.port'
-                    ],
-                    'prefix' => 'system.cache.prefix',
-                    'lifetime' => 'system.cache.lifetime',
-                    'gzip' => 'system.cache.gzip'
+                    ]
                 ],
                 'twig' => [
                     'cache' => 'system.twig.cache',
@@ -4407,7 +4537,8 @@ return [
                     'default_image_quality' => 'system.images.default_image_quality',
                     'cache_all' => 'system.images.cache_all',
                     'cache_perms' => 'system.images.cache_perms',
-                    'debug' => 'system.images.debug'
+                    'debug' => 'system.images.debug',
+                    'auto_fix_orientation' => 'system.images.auto_fix_orientation'
                 ],
                 'session' => [
                     'enabled' => 'system.session.enabled',
@@ -4415,12 +4546,15 @@ return [
                     'name' => 'system.session.name',
                     'secure' => 'system.session.secure',
                     'httponly' => 'system.session.httponly',
-                    'path' => 'system.session.path'
+                    'path' => 'system.session.path',
+                    'split' => 'system.session.split'
                 ],
                 'advanced' => 'system.advanced',
                 'gpm' => [
                     'releases' => 'system.gpm.releases',
-                    'proxy_url' => 'system.gpm.proxy_url'
+                    'proxy_url' => 'system.gpm.proxy_url',
+                    'method' => 'system.gpm.method',
+                    'verify_peer' => 'system.gpm.verify_peer'
                 ],
                 'reverse_proxy_setup' => 'system.reverse_proxy_setup',
                 'wrapped_site' => 'system.wrapped_site',
@@ -4433,6 +4567,7 @@ return [
                 'admin' => [
                     'Basics' => 'plugins.admin.Basics',
                     'enabled' => 'plugins.admin.enabled',
+                    'cache_enabled' => 'plugins.admin.cache_enabled',
                     'route' => 'plugins.admin.route',
                     'logo_text' => 'plugins.admin.logo_text',
                     'body_classes' => 'plugins.admin.body_classes',

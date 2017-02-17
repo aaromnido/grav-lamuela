@@ -2,9 +2,9 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-lamuela-dev/system/blueprints/user/account.yaml',
-    'modified' => 1487335832,
+    'modified' => 1487336148,
     'data' => [
-        'title' => 'Site',
+        'title' => 'Account',
         'form' => [
             'validation' => 'loose',
             'fields' => [
@@ -62,7 +62,7 @@ return [
                     'label' => 'PLUGIN_ADMIN.LANGUAGE',
                     'size' => 'medium',
                     'classes' => 'fancy',
-                    'data-options@' => '\\Grav\\Plugin\\admin::adminLanguages',
+                    'data-options@' => '\\Grav\\Plugin\\Admin\\Admin::adminLanguages',
                     'default' => 'en',
                     'help' => 'PLUGIN_ADMIN.LANGUAGE_HELP'
                 ],
@@ -83,18 +83,10 @@ return [
                                 'type' => 'commalist'
                             ]
                         ],
-                        'access.admin' => [
-                            'type' => 'array',
-                            'label' => 'PLUGIN_ADMIN.ADMIN_ACCESS',
-                            'multiple' => false,
-                            'validate' => [
-                                'type' => 'array'
-                            ]
-                        ],
-                        'access.site' => [
-                            'type' => 'array',
-                            'label' => 'PLUGIN_ADMIN.SITE_ACCESS',
-                            'multiple' => false,
+                        'access' => [
+                            'type' => 'permissions',
+                            'label' => 'PLUGIN_ADMIN.PERMISSIONS',
+                            'ignore_empty' => true,
                             'validate' => [
                                 'type' => 'array'
                             ]

@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1487335840,
-    'checksum' => 'b3e0f0e2300c05284bd0e0c0e68e6ae6',
+    'timestamp' => 1487336325,
+    'checksum' => '5b0472240d7c89c16bf90929024d8b0a',
     'files' => [
         'user/config' => [
             'media' => [
@@ -37,25 +37,25 @@ return [
         'system/config' => [
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1487335832
+                'modified' => 1487336148
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1484153772
+                'modified' => 1487336148
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1484153772
+                'modified' => 1487336148
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1487335832
+                'modified' => 1487336148
             ]
         ],
         'user/plugins' => [
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1487335832
+                'modified' => 1487336325
             ],
             'plugins/archives' => [
                 'file' => 'user/plugins/archives/archives.yaml',
@@ -67,7 +67,7 @@ return [
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
-                'modified' => 1484153834
+                'modified' => 1487336310
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
@@ -79,7 +79,7 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1482493907
+                'modified' => 1487336305
             ],
             'plugins/jscomments' => [
                 'file' => 'user/plugins/jscomments/jscomments.yaml',
@@ -87,7 +87,7 @@ return [
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
-                'modified' => 1487335832
+                'modified' => 1487336313
             ],
             'plugins/pagination' => [
                 'file' => 'user/plugins/pagination/pagination.yaml',
@@ -128,6 +128,7 @@ return [
             'admin' => [
                 'enabled' => true,
                 'route' => '/admin',
+                'cache_enabled' => false,
                 'theme' => 'grav',
                 'logo_text' => '',
                 'body_classes' => '',
@@ -297,7 +298,7 @@ return [
             'login' => [
                 'enabled' => true,
                 'built_in_css' => true,
-                'route' => false,
+                'route' => NULL,
                 'route_register' => false,
                 'route_activate' => '/activate_user',
                 'route_forgot' => '/forgot_password',
@@ -595,6 +596,10 @@ return [
                     'type' => 'file',
                     'mime' => 'application/vnd.ms-excel'
                 ],
+                'xlsm' => [
+                    'type' => 'file',
+                    'mime' => 'application/vnd.ms-excel'
+                ],
                 'xld' => [
                     'type' => 'file',
                     'mime' => 'application/vnd.ms-excel'
@@ -708,6 +713,7 @@ return [
         ],
         'site' => [
             'title' => 'Ayuntamiento de La Muela',
+            'default_lang' => 'en',
             'author' => [
                 'name' => 'Webmaster',
                 'email' => 'aaromnido@gmail.com'
@@ -804,6 +810,7 @@ return [
                     'twig' => false
                 ],
                 'twig_first' => false,
+                'never_cache_twig' => false,
                 'events' => [
                     'page' => true,
                     'twig' => true
@@ -858,8 +865,13 @@ return [
                 ],
                 'driver' => 'auto',
                 'prefix' => 'g',
+                'cli_compatibility' => false,
                 'lifetime' => 604800,
-                'gzip' => false
+                'gzip' => false,
+                'allow_webserver_gzip' => false,
+                'redis' => [
+                    'socket' => false
+                ]
             ],
             'twig' => [
                 'cache' => false,
@@ -901,7 +913,8 @@ return [
                 'default_image_quality' => 85,
                 'cache_all' => false,
                 'cache_perms' => '0755',
-                'debug' => false
+                'debug' => false,
+                'auto_fix_orientation' => false
             ],
             'media' => [
                 'enable_media_timestamp' => false,
@@ -919,11 +932,14 @@ return [
                 'name' => 'grav-site',
                 'secure' => false,
                 'httponly' => true,
+                'split' => true,
                 'path' => NULL
             ],
             'gpm' => [
                 'releases' => 'stable',
-                'proxy_url' => NULL
+                'proxy_url' => NULL,
+                'method' => 'auto',
+                'verify_peer' => true
             ]
         ],
         'security' => [

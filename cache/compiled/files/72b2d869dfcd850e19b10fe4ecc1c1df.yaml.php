@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-lamuela-dev/user/plugins/form/languages.yaml',
-    'modified' => 1487335832,
+    'modified' => 1487336305,
     'data' => [
         'en' => [
             'PLUGIN_FORM' => [
@@ -127,10 +127,10 @@ return [
         'hu' => [
             'PLUGIN_FORM' => [
                 'NOT_VALIDATED' => 'Érvénytelen az űrlap. Egy vagy több kötelező mező nincs kitöltve.',
-                'NONCE_NOT_VALIDATED' => 'Upsz, van egy kis probléma, kérlek nézd át az űrlapot, majd küld el újra.',
+                'NONCE_NOT_VALIDATED' => 'Upsz, van egy kis probléma, kérlek nézd át az űrlapot, majd küldd el újra.',
                 'FILES' => 'Fájlok Feltöltése',
                 'ALLOW_MULTIPLE' => 'Több fájl feltöltése',
-                'ALLOW_MULTIPLE_HELP' => 'Engedélyezi egyszerre több állomány felöltését.',
+                'ALLOW_MULTIPLE_HELP' => 'Engedélyezi egyszerre több állomány feltöltését.',
                 'DESTINATION' => 'Feltöltés Helye',
                 'DESTINATION_HELP' => 'Ide lesznek feltöltve az állományok',
                 'ACCEPT' => 'Engedélyezett MIME-típusok',

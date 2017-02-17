@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-lamuela-dev/system/config/media.yaml',
-    'modified' => 1487335832,
+    'modified' => 1487336148,
     'data' => [
         'types' => [
             'defaults' => [
@@ -143,6 +143,10 @@ return [
                 'mime' => 'application/vnd.ms-excel'
             ],
             'xlm' => [
+                'type' => 'file',
+                'mime' => 'application/vnd.ms-excel'
+            ],
+            'xlsm' => [
                 'type' => 'file',
                 'mime' => 'application/vnd.ms-excel'
             ],

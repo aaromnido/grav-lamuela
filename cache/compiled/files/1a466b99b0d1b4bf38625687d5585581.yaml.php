@@ -2,11 +2,13 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-lamuela-dev/user/plugins/login/languages.yaml',
-    'modified' => 1487335832,
+    'modified' => 1487336313,
     'data' => [
         'en' => [
             'PLUGIN_LOGIN' => [
                 'USERNAME' => 'Username',
+                'EMAIL' => 'Email',
+                'USERNAME_EMAIL' => 'Username/Email',
                 'PASSWORD' => 'Password',
                 'ACCESS_DENIED' => 'Access denied...',
                 'LOGIN_FAILED' => 'Login failed...',
@@ -20,7 +22,7 @@ return [
                 'RESET_LINK_EXPIRED' => 'Reset link has expired, please try again',
                 'RESET_PASSWORD_RESET' => 'Password has been reset',
                 'RESET_INVALID_LINK' => 'Invalid reset link used, please try again',
-                'FORGOT_INSTRUCTIONS_SENT_VIA_EMAIL' => 'Instructions to reset your password have been sent via email to %s',
+                'FORGOT_INSTRUCTIONS_SENT_VIA_EMAIL' => 'Instructions to reset your password have been sent via email',
                 'FORGOT_FAILED_TO_EMAIL' => 'Failed to email instructions, please try again later',
                 'FORGOT_CANNOT_RESET_EMAIL_NO_EMAIL' => 'Cannot reset password for %s, no email address is set',
                 'FORGOT_USERNAME_DOES_NOT_EXIST' => 'User with username <b>%s</b> does not exist',
@@ -144,6 +146,8 @@ return [
         'fr' => [
             'PLUGIN_LOGIN' => [
                 'USERNAME' => 'Nom d’utilisateur',
+                'EMAIL' => 'E-mail',
+                'USERNAME_EMAIL' => 'Nom d’utilisateur/E-mail',
                 'PASSWORD' => 'Mot de passe',
                 'ACCESS_DENIED' => 'Accès refusé...',
                 'LOGIN_FAILED' => 'Échec de la connexion...',
@@ -157,7 +161,7 @@ return [
                 'RESET_LINK_EXPIRED' => 'Le lien de réinitialisation a expiré, veuillez réessayer',
                 'RESET_PASSWORD_RESET' => 'Le mot de passe a été réinitialisé',
                 'RESET_INVALID_LINK' => 'Le lien de réinitialisation utilisé n’est pas valide, veuillez réessayer',
-                'FORGOT_INSTRUCTIONS_SENT_VIA_EMAIL' => 'Les instructions pour la réinitialisation de votre mot de passe ont été envoyées par e-mail à %s',
+                'FORGOT_INSTRUCTIONS_SENT_VIA_EMAIL' => 'Les instructions pour la réinitialisation de votre mot de passe ont été envoyées par e-mail',
                 'FORGOT_FAILED_TO_EMAIL' => 'Impossible d’envoyer les instructions, veuillez réessayer ultérieurement',
                 'FORGOT_CANNOT_RESET_EMAIL_NO_EMAIL' => 'Impossible de réinitialiser le mot de passe pour %s, aucune adresse e-mail n’a été paramétrée',
                 'FORGOT_USERNAME_DOES_NOT_EXIST' => 'L’utilisateur avec le nom d’utilisateur <b>%s</b> n’existe pas',
@@ -185,10 +189,11 @@ return [
                 'WELCOME_EMAIL_SUBJECT' => 'Bienvenue sur %s',
                 'WELCOME_EMAIL_BODY' => 'Bonjour %s, bienvenue sur %s!',
                 'NOTIFICATION_EMAIL_SUBJECT' => 'Nouvel utilisateur sur %s',
+                'EMAIL_FOOTER' => 'GetGrav.org',
                 'NOTIFICATION_EMAIL_BODY' => 'Bonjour, un nouvel utilisateur s’est inscrit sur %s. Nom d’utilisateur : %s, e-mail : %s',
                 'ACTIVATION_LINK_EXPIRED' => 'Le lien d’activation a expiré',
                 'USER_ACTIVATED_SUCCESSFULLY' => 'Utilisateur activé avec succès',
-                'INVALID_REQUEST' => 'Requête invalide',
+                'INVALID_REQUEST' => 'Requête non valide',
                 'USER_REGISTRATION' => 'Inscription de l’utilisateur',
                 'USER_REGISTRATION_ENABLED_HELP' => 'Activer l’inscription des utilisateurs',
                 'VALIDATE_PASSWORD1_AND_PASSWORD2' => 'Valider la double saisie du mot de passe',
@@ -314,7 +319,7 @@ return [
                 'RESET_LINK_EXPIRED' => 'Link-ul pentru resetarea parolei a expirat, vă rugăm încercați din nou ',
                 'RESET_PASSWORD_RESET' => 'Parola a fost modificată',
                 'RESET_INVALID_LINK' => 'Link-ul pentru resetare este invalid, Invalid reset link used, vă rugăm încercați din nou ',
-                'FORGOT_INSTRUCTIONS_SENT_VIA_EMAIL' => 'Instrucțiunile pentru resetarea parolei au fst trimise pe email la %s',
+                'FORGOT_INSTRUCTIONS_SENT_VIA_EMAIL' => 'Instrucțiunile pentru resetarea parolei au fst trimise pe email',
                 'FORGOT_FAILED_TO_EMAIL' => 'Instrucțiunile nu au putut fi trimise pe email, vă rugăm încercați mai târziu ',
                 'FORGOT_CANNOT_RESET_EMAIL_NO_EMAIL' => 'Parola nu poate fi resetată pentru %s, nu este setată nici o adresă de email',
                 'FORGOT_USERNAME_DOES_NOT_EXIST' => 'Utilizatorul cu numele <b>%s</b> nu există',
