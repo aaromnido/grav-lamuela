@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-lamuela-dev/user/plugins/admin/blueprints/admin/pages/new_folder.yaml',
-    'modified' => 1473442788,
+    'modified' => 1487336325,
     'data' => [
         'rules' => [
             'slug' => [
@@ -32,7 +32,7 @@ return [
                     'label' => 'PLUGIN_ADMIN.PARENT_PAGE',
                     'classes' => 'fancy',
                     'data-options@' => '\\Grav\\Common\\Page\\Pages::parentsRawRoutes',
-                    'data-default@' => '\\Grav\\Plugin\\admin::getLastPageRoute',
+                    'data-default@' => '\\Grav\\Plugin\\Admin\\Admin::getLastPageRoute',
                     'options' => [
                         '/' => 'PLUGIN_ADMIN.DEFAULT_OPTION_ROOT'
                     ],

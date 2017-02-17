@@ -2,14 +2,14 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-lamuela-dev/system/blueprints/pages/default.yaml',
-    'modified' => 1473675180,
+    'modified' => 1487337594,
     'data' => [
         'title' => 'PLUGIN_ADMIN.DEFAULT',
         'rules' => [
             'slug' => [
-                'pattern' => '[a-zа-я][a-zа-я0-9_\\-]+',
-                'min' => 2,
-                'max' => 80
+                'pattern' => '[a-zA-Zа-яA-Я0-9_\\-]+',
+                'min' => 1,
+                'max' => 200
             ]
         ],
         'form' => [
@@ -142,7 +142,7 @@ return [
                                                     'type' => 'text',
                                                     'label' => 'PLUGIN_ADMIN.FOLDER_NAME',
                                                     'validate' => [
-                                                        'type' => 'slug'
+                                                        'rule' => 'slug'
                                                     ]
                                                 ],
                                                 'route' => [
@@ -150,7 +150,7 @@ return [
                                                     'label' => 'PLUGIN_ADMIN.PARENT',
                                                     'classes' => 'fancy',
                                                     'data-options@' => '\\Grav\\Common\\Page\\Pages::parentsRawRoutes',
-                                                    'data-default@' => '\\Grav\\Plugin\\admin::rawRoute',
+                                                    'data-default@' => '\\Grav\\Plugin\\Admin\\Admin::rawRoute',
                                                     'options' => [
                                                         '/' => 'PLUGIN_ADMIN.DEFAULT_OPTION_ROOT'
                                                     ]
@@ -242,6 +242,34 @@ return [
                                                 'twig' => 'Twig'
                                             ],
                                             'use' => 'keys'
+                                        ],
+                                        'header.twig_first' => [
+                                            'type' => 'toggle',
+                                            'toggleable' => true,
+                                            'label' => 'PLUGIN_ADMIN.TWIG_FIRST',
+                                            'help' => 'PLUGIN_ADMIN.TWIG_FIRST_HELP',
+                                            'highlight' => 0,
+                                            'options' => [
+                                                1 => 'PLUGIN_ADMIN.YES',
+                                                0 => 'PLUGIN_ADMIN.NO'
+                                            ],
+                                            'validate' => [
+                                                'type' => 'bool'
+                                            ]
+                                        ],
+                                        'header.never_cache_twig' => [
+                                            'type' => 'toggle',
+                                            'toggleable' => true,
+                                            'label' => 'PLUGIN_ADMIN.NEVER_CACHE_TWIG',
+                                            'help' => 'PLUGIN_ADMIN.NEVER_CACHE_TWIG_HELP',
+                                            'highlight' => 0,
+                                            'options' => [
+                                                1 => 'PLUGIN_ADMIN.YES',
+                                                0 => 'PLUGIN_ADMIN.NO'
+                                            ],
+                                            'validate' => [
+                                                'type' => 'bool'
+                                            ]
                                         ],
                                         'header.child_type' => [
                                             'type' => 'select',

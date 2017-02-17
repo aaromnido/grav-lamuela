@@ -4,7 +4,7 @@ en:
     ITEM:
       CONTINUE_READING: Continúar leyendo..
       NEXT_POST: Anterior artículo
-      PREV_POST: Siguiente artículo
+      PREV_POST: Siguiente artículo +
   SIDEBAR:
     SIMPLE_SEARCH:
       HEADLINE: SimpleSearch
@@ -57,8 +57,8 @@ es:
   BLOG:
     ITEM:
       CONTINUE_READING: Continuar leyendo...
-      NEXT_POST: Siguiente Artículo
-      PREV_POST: Artículo Anterior
+      NEXT_POST: Anterior
+      PREV_POST: Siguiente
   SIDEBAR:
     SIMPLE_SEARCH:
       HEADLINE: Buscar
