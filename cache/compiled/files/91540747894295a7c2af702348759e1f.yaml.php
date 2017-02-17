@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-lamuela-dev/user/plugins/simplesearch/blueprints.yaml',
-    'modified' => 1487335832,
+    'modified' => 1487337138,
     'data' => [
         'name' => 'SimpleSearch',
-        'version' => '1.9.2',
+        'version' => '1.10.0',
         'description' => 'Don\'t be fooled, the **SimpleSearch** plugin provides a **fast** and highly **configurable** way to search your content.',
         'icon' => 'search',
         'author' => [
@@ -50,6 +50,20 @@ return [
                 'display_button' => [
                     'type' => 'toggle',
                     'label' => 'Display Search Button',
+                    'highlight' => 0,
+                    'default' => 0,
+                    'options' => [
+                        1 => 'Enabled',
+                        0 => 'Disabled'
+                    ],
+                    'validate' => [
+                        'type' => 'bool'
+                    ]
+                ],
+                'ignore_accented_characters' => [
+                    'type' => 'toggle',
+                    'label' => 'Ignote accented characters',
+                    'help' => 'If enabled, search terms will match accented characters regardless to their diacritics i.e. search results will show up for "cafe" and "café" no matter how you typed it.',
                     'highlight' => 0,
                     'default' => 0,
                     'options' => [

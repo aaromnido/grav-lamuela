@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-lamuela-dev/user/plugins/jscomments/blueprints.yaml',
-    'modified' => 1474580164,
+    'modified' => 1487337122,
     'data' => [
         'name' => 'JSComments',
-        'version' => '2.0.1',
+        'version' => '2.0.2',
         'description' => 'Add comments to your site with Discourse, Disqus, Facebook, Google+, IntenseDebate, and Muut comment systems.',
         'icon' => 'comments-o',
         'author' => [

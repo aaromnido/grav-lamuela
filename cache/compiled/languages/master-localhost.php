@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledLanguages',
-    'timestamp' => 1487336326,
-    'checksum' => '00c715611cfc6e69dc6af2e14639c83b',
+    'timestamp' => 1487337138,
+    'checksum' => 'f6bcffc76c310e251025b18318b25645',
     'files' => [
         'system/languages' => [
             'ar' => [
@@ -125,7 +125,7 @@ return [
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/languages.yaml',
-                'modified' => 1487335832
+                'modified' => 1487336490
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/languages.yaml',
@@ -133,7 +133,7 @@ return [
             ],
             'plugins/jscomments' => [
                 'file' => 'user/plugins/jscomments/languages.yaml',
-                'modified' => 1474580164
+                'modified' => 1487337122
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/languages.yaml',
@@ -145,7 +145,7 @@ return [
             ],
             'plugins/simplesearch' => [
                 'file' => 'user/plugins/simplesearch/languages.yaml',
-                'modified' => 1482494239
+                'modified' => 1487337138
             ]
         ],
         'user/plugins/admin/languages' => [
@@ -5367,7 +5367,7 @@ Pfad: `%2$s`
             ],
             'PLUGIN_ERROR' => [
                 'ERROR' => 'Error',
-                'ERROR_MESSAGE' => 'Lo siento, parece que esa página no existe'
+                'ERROR_MESSAGE' => 'Woops. Looks like this page doesn\'t exist.'
             ],
             'PLUGIN_FORM' => [
                 'NOT_VALIDATED' => 'Form not validated. One or more required fields are missing.',
@@ -6421,10 +6421,6 @@ Path: `%2$s`
                 'PLEASE_CONFIGURE_A_TO_ADDRESS' => 'Por favor configura una dirección de \'remitente\' en la configuración del Plugin de Email o en el formulario',
                 'PLEASE_CONFIGURE_A_FROM_ADDRESS' => 'Por favor configura una dirección de \'destinatario\' en la configuración del Plugin de Email o en el formulario'
             ],
-            'PLUGIN_ERROR' => [
-                'ERROR' => 'Error',
-                'ERROR_MESSAGE' => 'Woops. Looks like this page doesn\'t exist.'
-            ],
             'PLUGIN_FORM' => [
                 'NOT_VALIDATED' => 'Falló la validación del formulario. Uno o más campos obligatorios no fueron cubiertos.',
                 'NONCE_NOT_VALIDATED' => 'Oops, hay un problema, por favor revise la información e intente enviar el formulario otra vez.',
@@ -6441,6 +6437,12 @@ Path: `%2$s`
                 'RECAPTCHA_SITE_KEY_HELP' => 'Para más información visita https://developers.google.com/recaptcha',
                 'RECAPTCHA_SECRET_KEY' => 'Secret key',
                 'RECAPTCHA_SECRET_KEY_HELP' => 'Para más información visita https://developers.google.com/recaptcha'
+            ],
+            'PLUGIN_SIMPLESEARCH' => [
+                'SEARCH_PLACEHOLDER' => 'Buscar...',
+                'SEARCH_RESULTS' => 'Resultados de la búsqueda',
+                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Consulta: <strong>%s</strong> se encontró 1 resultado',
+                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Consulta: <strong>%s</strong> se encontraron %s resultados'
             ],
             'FRONTMATTER_ERROR_PAGE' => '---
 title: %1$s
@@ -6883,6 +6885,12 @@ Ruta: `%2$s`
                 'NO_USER_ACCOUNTS' => 'حساب های کاربری پیدا نشد ، لطفا ابتدا یکی بسازید...',
                 'DEFAULT_DATE_FORMAT' => 'فرمت تاریخ صفحه',
                 'DEFAULT_DATE_FORMAT_HELP' => 'نوع نمایش تاریخ صفحه توسط Grav. به صورت پیش فرض Grav قصد دارد نوع نمایش تاریخ را پیشنهاد کند ، هرچند شما میتوانید یک نوع نمایش تاریخ با استفاده از سینتکس تاریخ PHP مشخص کنید (مانند: Y-m-d H:i)'
+            ],
+            'PLUGIN_SIMPLESEARCH' => [
+                'SEARCH_PLACEHOLDER' => 'جستجو...',
+                'SEARCH_RESULTS' => 'نتایج جستجو',
+                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'جستار: <strong>%s</strong> یک نتیجه یافت شد',
+                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'جستار: <strong>%s</strong> %s نتیجه یافت شد'
             ]
         ],
         'fi' => [
@@ -8633,6 +8641,10 @@ Path: `%2$s`
                 'EMAIL_NOT_CONFIGURED' => 'Email nije konfiguriran',
                 'PLEASE_CONFIGURE_A_TO_ADDRESS' => 'Konfigurirajte \'za\' (\'to\') adresu u postavkama Email dodatka ili u obrascu',
                 'PLEASE_CONFIGURE_A_FROM_ADDRESS' => 'Konfigurirajte \'od\' (\'from\') adresu u postavkama Email dodatka ili u obrascu'
+            ],
+            'PLUGIN_ERROR' => [
+                'ERROR' => 'Greška',
+                'ERROR_MESSAGE' => 'Uups. Izgleda da ova stranica ne postoji.'
             ],
             'PLUGIN_FORM' => [
                 'NOT_VALIDATED' => 'Formular nije validiran. Jedan ili više traženih polja nedostaju.',
@@ -10834,6 +10846,12 @@ Elérési út: `%2$s`
                 'UPDATING_PACKAGES' => 'パッケージを更新中...',
                 'PACKAGES_SUCCESSFULLY_UPDATED' => 'パッケージは正常に更新されました。',
                 'UPDATING' => '更新中'
+            ],
+            'PLUGIN_SIMPLESEARCH' => [
+                'SEARCH_PLACEHOLDER' => '検索する...',
+                'SEARCH_RESULTS' => '検索結果',
+                'SEARCH_RESULTS_SUMMARY_SINGULAR' => '検索 : <strong>%s</strong> に一つの結果があります。',
+                'SEARCH_RESULTS_SUMMARY_PLURAL' => '検索 : <strong>%s</strong> に %s の結果があります。'
             ],
             'FRONTMATTER_ERROR_PAGE' => '---
 title: %1$s
@@ -15112,7 +15130,7 @@ Calea: `%2$s`
             ],
             'PLUGIN_ERROR' => [
                 'ERROR' => 'Ошибка',
-                'ERROR_MESSAGE' => 'Упс. Похоже, эта страница не существует.'
+                'ERROR_MESSAGE' => 'Упс. Похоже, этой страницы не существует.'
             ],
             'PLUGIN_SIMPLESEARCH' => [
                 'SEARCH_PLACEHOLDER' => 'Найти...',
@@ -18163,6 +18181,6 @@ Path: `%2$s`
                 6 => 'søndag'
             ]
         ],
-        'checksum' => '00c715611cfc6e69dc6af2e14639c83b'
+        'checksum' => 'f6bcffc76c310e251025b18318b25645'
     ]
 ];

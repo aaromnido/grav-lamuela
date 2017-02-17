@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1487336325,
-    'checksum' => '5b0472240d7c89c16bf90929024d8b0a',
+    'timestamp' => 1487337169,
+    'checksum' => '65cb6b4a7fa52330abeabbb90de459a4',
     'files' => [
         'user/config' => [
             'media' => [
@@ -71,11 +71,11 @@ return [
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
-                'modified' => 1482494067
+                'modified' => 1487336490
             ],
             'plugins/feed' => [
                 'file' => 'user/plugins/feed/feed.yaml',
-                'modified' => 1471162502
+                'modified' => 1487337105
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
@@ -83,7 +83,7 @@ return [
             ],
             'plugins/jscomments' => [
                 'file' => 'user/plugins/jscomments/jscomments.yaml',
-                'modified' => 1474580164
+                'modified' => 1487337122
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
@@ -107,11 +107,11 @@ return [
             ],
             'plugins/simplesearch' => [
                 'file' => 'user/plugins/simplesearch/simplesearch.yaml',
-                'modified' => 1482494239
+                'modified' => 1487337138
             ],
             'plugins/sitemap' => [
                 'file' => 'user/plugins/sitemap/sitemap.yaml',
-                'modified' => 1482494212
+                'modified' => 1487337152
             ],
             'plugins/taxonomylist' => [
                 'file' => 'user/plugins/taxonomylist/taxonomylist.yaml',
@@ -119,7 +119,7 @@ return [
             ],
             'plugins/youtube' => [
                 'file' => 'user/plugins/youtube/youtube.yaml',
-                'modified' => 1484153929
+                'modified' => 1487337168
             ]
         ]
     ],
@@ -411,6 +411,7 @@ return [
                     'category' => 'blog'
                 ],
                 'filter_combinator' => 'and',
+                'ignore_accented_characters' => true,
                 'order' => [
                     'by' => 'date',
                     'dir' => 'desc'

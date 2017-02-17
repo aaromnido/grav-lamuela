@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-lamuela-dev/user/plugins/error/blueprints.yaml',
-    'modified' => 1487335832,
+    'modified' => 1487336490,
     'data' => [
         'name' => 'Error',
-        'version' => '1.5.1',
+        'version' => '1.6.0',
         'description' => 'Displays the error page.',
         'icon' => 'warning',
         'author' => [

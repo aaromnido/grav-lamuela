@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-lamuela-dev/user/plugins/youtube/blueprints.yaml',
-    'modified' => 1487335832,
+    'modified' => 1487337168,
     'data' => [
         'name' => 'YouTube',
-        'version' => '2.0.2',
+        'version' => '2.0.3',
         'description' => '**YouTube** is a simple plugin that converts markdown links into responsive embeds.',
         'icon' => 'youtube',
         'author' => [

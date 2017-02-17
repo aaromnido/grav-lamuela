@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1487336325,
-    'checksum' => 'b2013ecc72543c7e10dbcea9b502e87d',
+    'timestamp' => 1487337169,
+    'checksum' => 'f4c6ac7fd62c630dfe749c08e960b624',
     'files' => [
         'system/blueprints/config' => [
             'media' => [
@@ -41,11 +41,11 @@ return [
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/blueprints.yaml',
-                'modified' => 1487335832
+                'modified' => 1487336490
             ],
             'plugins/feed' => [
                 'file' => 'user/plugins/feed/blueprints.yaml',
-                'modified' => 1471162502
+                'modified' => 1487337105
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/blueprints.yaml',
@@ -53,7 +53,7 @@ return [
             ],
             'plugins/jscomments' => [
                 'file' => 'user/plugins/jscomments/blueprints.yaml',
-                'modified' => 1474580164
+                'modified' => 1487337122
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/blueprints.yaml',
@@ -77,11 +77,11 @@ return [
             ],
             'plugins/simplesearch' => [
                 'file' => 'user/plugins/simplesearch/blueprints.yaml',
-                'modified' => 1487335832
+                'modified' => 1487337138
             ],
             'plugins/sitemap' => [
                 'file' => 'user/plugins/sitemap/blueprints.yaml',
-                'modified' => 1487335832
+                'modified' => 1487337152
             ],
             'plugins/taxonomylist' => [
                 'file' => 'user/plugins/taxonomylist/blueprints.yaml',
@@ -89,7 +89,7 @@ return [
             ],
             'plugins/youtube' => [
                 'file' => 'user/plugins/youtube/blueprints.yaml',
-                'modified' => 1487335832
+                'modified' => 1487337168
             ]
         ]
     ],
@@ -3918,6 +3918,21 @@ return [
                 'name' => 'plugins.simplesearch.display_button',
                 'validation' => 'strict'
             ],
+            'plugins.simplesearch.ignore_accented_characters' => [
+                'type' => 'toggle',
+                'label' => 'Ignote accented characters',
+                'highlight' => 0,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.simplesearch.ignore_accented_characters',
+                'validation' => 'strict'
+            ],
             'plugins.simplesearch.min_query_length' => [
                 'type' => 'text',
                 'size' => 'x-small',
@@ -4834,6 +4849,7 @@ return [
                     'enabled' => 'plugins.simplesearch.enabled',
                     'built_in_css' => 'plugins.simplesearch.built_in_css',
                     'display_button' => 'plugins.simplesearch.display_button',
+                    'ignore_accented_characters' => 'plugins.simplesearch.ignore_accented_characters',
                     'min_query_length' => 'plugins.simplesearch.min_query_length',
                     'route' => 'plugins.simplesearch.route',
                     'template' => 'plugins.simplesearch.template',

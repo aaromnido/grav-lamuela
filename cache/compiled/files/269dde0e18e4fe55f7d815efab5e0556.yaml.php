@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'plugins://jscomments/jscomments.yaml',
-    'modified' => 1474580164,
+    'modified' => 1487337122,
     'data' => [
         'enabled' => true,
         'active' => true,
