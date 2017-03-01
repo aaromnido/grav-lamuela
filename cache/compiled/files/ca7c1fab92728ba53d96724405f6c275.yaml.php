@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-lamuela-dev/user/config/plugins/jscomments.yaml',
-    'modified' => 1488381220,
+    'modified' => 1488384907,
     'data' => [
         'enabled' => true,
         'active' => true,
