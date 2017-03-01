@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-lamuela-dev/user/themes/opentown/languages.yaml',
-    'modified' => 1487347165,
+    'modified' => 1488381221,
     'data' => [
         'en' => [
             'TRANSLATION_TEST' => 'Antimatter!',

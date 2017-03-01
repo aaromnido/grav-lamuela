@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-lamuela-dev/user/config/plugins/email.yaml',
-    'modified' => 1473865902,
+    'modified' => 1488381220,
     'data' => [
         'enabled' => true,
         'from' => 'aaromnido@gmail.com',

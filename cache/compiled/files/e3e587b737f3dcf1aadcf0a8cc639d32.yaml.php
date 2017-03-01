@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-lamuela-dev/user/plugins/form/blueprints.yaml',
-    'modified' => 1487337594,
+    'modified' => 1488384171,
     'data' => [
         'name' => 'Form',
-        'version' => '2.1.0',
+        'version' => '2.1.1',
         'description' => 'Enables the forms handling',
         'icon' => 'check-square',
         'author' => [
