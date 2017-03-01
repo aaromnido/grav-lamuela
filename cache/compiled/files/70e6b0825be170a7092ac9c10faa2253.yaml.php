@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-lamuela-dev/user/plugins/feed/feed.yaml',
-    'modified' => 1487337105,
+    'modified' => 1488384183,
     'data' => [
         'enabled' => true,
         'limit' => 10,

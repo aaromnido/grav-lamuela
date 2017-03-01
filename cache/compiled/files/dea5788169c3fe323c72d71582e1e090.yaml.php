@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-lamuela-dev/user/plugins/admin/languages/bg.yaml',
-    'modified' => 1488381221,
+    'modified' => 1488384196,
     'data' => [
         'PLUGIN_ADMIN' => [
             'LOGIN_BTN' => 'Вход',
