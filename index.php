@@ -6,6 +6,24 @@
  * @license    MIT License; see LICENSE file for details.
  */
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayuntamiento de La Muela</title>
+</head>
+<body>
+  <h3 style="text-align: center; margin-top:25%; font-family: Arial">
+    Página en mantenimiento, disculpen las molestias.
+  </h3>
+</body>
+</html>
+
+
+ /**
 namespace Grav;
 define('GRAV_PHP_MIN', '5.5.9');
 
@@ -54,3 +72,4 @@ try {
     $grav->fireEvent('onFatalException', new Event(array('exception' => $e)));
     throw $e;
 }
+*/
